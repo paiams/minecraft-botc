@@ -6,11 +6,13 @@ data merge storage ct:character_data \
 			"flavor": "Welcome, one and all, to the greatest show on earth.",\
 			"name": "Acrobat",\
 			"other": "The Acrobat chooses a player.",\
+			"other_night_key": "clocktower.role.acrobat.other_night",\
       "reminders": [{text:acrobat_dead,icon:acrobat}]\
 		},\
 		"alchemist": {\
 			"ability": "You have a Minion ability. When using this, the Storyteller may prompt you to choose differently.",\
 			"first": "Show the *YOU ARE* info token and a Minion token.",\
+			"first_night_key": "clocktower.role.alchemist.first_night",\
 			"flavor": "Visit the interior of the Earth. By rectification thou shalt find the hidden stone. Above the gold, lieth the red. Kether in Malkuth.",\
 			"name": "Alchemist",\
       "reminders": [{text:alchemist,icon:alchemist}],\
@@ -21,6 +23,7 @@ data merge storage ct:character_data \
 			"flavor": "Alsukut min dhahab.",\
 			"name": "Al-Hadikhia",\
 			"other": "The Al-Hadikhia chooses 3 players. In order, wake each target. They nod or shake their head. Put them to sleep before waking the next target.",\
+			"other_night_key": "clocktower.role.alhadikhia.other_night",\
       "reminders": [{text:alhadikhia_1,icon:alhadikhia},{text:alhadikhia_2,icon:alhadikhia},{text:alhadikhia_3,icon:alhadikhia},{text:alhadikhia_die,icon:alhadikhia},{text:alhadikhia_live,icon:alhadikhia}],\
 			"jinxes": [{id:mastermind},{id:princess},{id:scarletwoman}]\
 		},\
@@ -33,14 +36,17 @@ data merge storage ct:character_data \
 		"amnesiac": {\
 			"ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",\
 			"first": "Do whatever needs to be done to satisfy the Amnesiac's ability.",\
+			"first_night_key": "clocktower.role.amnesiac.first_night",\
 			"flavor": "Wait. What. Who? Oh, ok. Wait. What?",\
 			"name": "Amnesiac",\
 			"other": "Do whatever needs to be done to satisfy the Amnesiac's ability.",\
+			"other_night_key": "clocktower.role.amnesiac.other_night",\
       "reminders": [{text:amnesiac,icon:amnesiac}]\
 		},\
 		"angel": {\
 			"ability": "Something bad might happen to whoever is most responsible for the death of a new player.",\
 			"first": "Announce which players are protected by the Angel.",\
+			"first_night_key": "clocktower.role.angel.first_night",\
 			"flavor": "Let those who are without sin dare to raise their hand to my chosen, for I shall strike such fools down with the fury and righteousness of a thousand storms.",\
 			"name": "Angel",\
       "reminders": [{text:angel_protect,icon:angel},{text:angel_something_bad,icon:angel}]\
@@ -48,6 +54,7 @@ data merge storage ct:character_data \
 		"apprentice": {\
 			"ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",\
 			"first": "Show the *YOU ARE* info token, then a Townsfolk or Minion token. Swap the Apprentice & Townsfolk or Minion tokens.",\
+			"first_night_key": "clocktower.role.apprentice.first_night",\
 			"flavor": "For years have I traveled, studying the ways of The Craft. Which craft, you ask? Simply that of the simple folk. Nothing to worry about. Not yet.",\
 			"name": "Apprentice",\
       "reminders": [{text:apprentice,icon:apprentice}]\
@@ -63,6 +70,7 @@ data merge storage ct:character_data \
 			"flavor": "...",\
 			"name": "Assassin",\
 			"other": "The Assassin might choose a player.",\
+			"other_night_key": "clocktower.role.assassin.other_night",\
       "reminders": [{text:assassin_dead,icon:assassin},{text:assassin_no_ability,icon:assassin}]\
 		},\
 		"atheist": {\
@@ -74,9 +82,11 @@ data merge storage ct:character_data \
 		"balloonist": {\
 			"ability": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]",\
 			"first": "Point to any player.",\
+			"first_night_key": "clocktower.role.balloonist.first_night",\
 			"flavor": "More heat! Higher! Higher! Più alto! Ahhh... it is so beautiful from up here, don't you agree? Can you see the children fishing by the river, under the willow? Can you see the glint of the sun on the circus tent-poles? What's this? An old man, alone, passed out in the vineyard? Less heat! Lower! Lower! Vai più in basso!",\
 			"name": "Balloonist",\
 			"other": "Point to a player with a different character type to the previously shown player.",\
+			"other_night_key": "clocktower.role.balloonist.other_night",\
       "reminders": [{text:balloonist,icon:balloonist}],\
 			"jinxes": [{id:marionette}]\
 		},\
@@ -85,6 +95,7 @@ data merge storage ct:character_data \
 			"flavor": "Gorm do shúile, dearg do ghruaig, ní bheidh sé i bhfad, is a mbeidh tú san uaigh.",\
 			"name": "Banshee",\
 			"other": "If the Banshee was killed by the Demon tonight, announce that the Banshee has died.",\
+			"other_night_key": "clocktower.role.banshee.other_night",\
       "reminders": [{text:banshee,icon:banshee}],\
 			"jinxes": [{id:leviathan},{id:riot},{id:vortox}]\
 		},\
@@ -93,14 +104,17 @@ data merge storage ct:character_data \
 			"flavor": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",\
 			"name": "Barber",\
 			"other": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",\
+			"other_night_key": "clocktower.role.barber.other_night",\
       "reminders": [{text:barber,icon:barber}]\
 		},\
 		"barista": {\
 			"ability": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",\
 			"first": "Choose a player. Wake them, show the *THIS CHARACTER SELECTED YOU* & Barista tokens, then give a finger signal.",\
+			"first_night_key": "clocktower.role.barista.first_night",\
 			"flavor": "A cup of coffee with no cream, Monsieur? I’m terribly sorry, but we’re fresh out of cream — how about with no milk?",\
 			"name": "Barista",\
 			"other": "Choose a player. Wake them, show the *THIS CHARACTER SELECTED YOU* & Barista tokens, then give a finger signal.",\
+			"other_night_key": "clocktower.role.barista.other_night",\
       "reminders": [{text:barista_sober,icon:barista},{text:barista_twice,icon:barista}]\
 		},\
 		"baron": {\
@@ -128,6 +142,7 @@ data merge storage ct:character_data \
 		"boffin": {\
 			"ability": "The Demon (even if drunk or poisoned) has a not-in-play good character’s ability. You both know which.",\
 			"first": "Wake the Boffin and the Demon. Show the *THIS CHARACTER SELECTED YOU* & Boffin tokens, then the not-in-play good character token.",\
+			"first_night_key": "clocktower.role.boffin.first_night",\
 			"flavor": "Stellar hydrogen, vast, inert; carbon, oxygen, neon gases, all ruined. Molecular chaos, entropy, yields new cosmic phenomena, rebirth from atomic chaos, dense matter collapsing. All in a teeny little bottle.",\
 			"name": "Boffin",\
 			"jinxes": [{id:cultleader},{id:drunk},{id:goon},{id:heretic},{id:ogre},{id:politician},{id:villageidiot}]\
@@ -137,6 +152,7 @@ data merge storage ct:character_data \
 			"flavor": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers.",\
 			"name": "Bone Collector",\
 			"other": "The Bone Collector might choose a dead player. If necessary, wake the chosen player to use their ability.",\
+			"other_night_key": "clocktower.role.bonecollector.other_night",\
 			"reminders": [{text:bonecollector_has_ability,icon:bonecollector},{text:bonecollector_no_ability,icon:bonecollector}]\
 		},\
 		"boomdandy": {\
@@ -154,24 +170,29 @@ data merge storage ct:character_data \
 		"bountyhunter": {\
 			"ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",\
 			"first": "Point to the player marked *KNOW*.",\
+			"first_night_key": "clocktower.role.bountyhunter.first_night",\
 			"flavor": "Alone, I walk these streets, paved with the sick stench of corruption. Its thickness worms its way into my nostrils, unbidden, burning with revulsion. And anticipation. The illness of this wretched place grows each night. And I... I am the cure.",\
 			"name": "Bounty Hunter",\
 			"other": "If the player marked *KNOW* died today or tonight, point to the new player marked *KNOW*.",\
+			"other_night_key": "clocktower.role.bountyhunter.other_night",\
 			"reminders": [{text:bountyhunter,icon:bountyhunter}],\
 			"jinxes": [{id:kazali},{id:philosopher}]\
 		},\
 		"buddhist": {\
 			"ability": "For the first 2 minutes of each day, veteran players may not talk.",\
 			"first": "Announce which players are affected by the Buddhist.",\
+			"first_night_key": "clocktower.role.buddhist.first_night",\
 			"flavor": "You throw thorns. Falling in my silence, they become flowers.",\
 			"name": "Buddhist"\
 		},\
 		"bureaucrat": {\
 			"ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",\
 			"first": "The Bureaucrat chooses a player.",\
+			"first_night_key": "clocktower.role.bureaucrat.first_night",\
 			"flavor": "Sign here please. And here. And here. Aaaaaaaaand here. This should all be sorted and tallied by the end of the day, assuming everyone's signatures are legible. We haven't had a mix-up in the paperwork for ages. Yesterday noon, if memory serves...",\
 			"name": "Bureaucrat",\
 			"other": "The Bureaucrat chooses a player.",\
+			"other_night_key": "clocktower.role.bureaucrat.other_night",\
 			"reminders": [{text:bureaucrat,icon:bureaucrat}]\
 		},\
 		"butcher": {\
@@ -195,6 +216,7 @@ data merge storage ct:character_data \
 			"flavor": "Wire α To wire β. LigHt oN. BuZZer off. GAzOinks! Arms STra1ght. FingER 2 nose. hOooLd stiLL. BoiNgo-banGo! Ha-ha-ha!",\
 			"name": "Cacklejack",\
 			"other": "Before dawn, choose a player not marked *NOT ME*. Wake the target. Show the *YOU ARE* info token & their new character token."\
+			"other_night_key": "clocktower.role.cacklejack.other_night",\
 		},\
 		"cannibal": {\
 			"ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",\
@@ -206,18 +228,22 @@ data merge storage ct:character_data \
 		"cerenovus": {\
 			"ability": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",\
 			"first": "The Cerenovus chooses a player & a character. Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",\
+			"first_night_key": "clocktower.role.cerenovus.first_night",\
 			"flavor": "Reality is merely an opinion. Specifically, my opinion.",\
 			"name": "Cerenovus",\
 			"other": "The Cerenovus chooses a player & a character. Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",\
+			"other_night_key": "clocktower.role.cerenovus.other_night",\
 			"reminders": [{text:cerenovus,icon:cerenovus}],\
 			"jinxes": [{id:goblin}]\
 		},\
 		"chambermaid": {\
 			"ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",\
 			"first": "The Chambermaid chooses 2 living players. Give a finger signal.",\
+			"first_night_key": "clocktower.role.chambermaid.first_night",\
 			"flavor": "I aint seen nothin' untoward, Milady. Begging your pardon, but if I did see somethin', it certainly weren't the master o' the house sneaking into the professor's laboratory 'round eleven o'clock and mixing up fancy potions, just like you said, Miss.",\
 			"name": "Chambermaid",\
 			"other": "The Chambermaid chooses 2 living players. Give a finger signal.",\
+			"other_night_key": "clocktower.role.chambermaid.other_night",\
 			"jinxes": [{id:mathematician}]\
 		},\
 		"chef": {\
@@ -232,10 +258,12 @@ data merge storage ct:character_data \
 			"flavor": "I saw it, I did. I was in the pews, tidying the hymn books, when a dreadful tune started from the pipe organ. The organist had a long cloak, and long fingers on the keys. And a hat that looked… just like… yours.",\
 			"name": "Choirboy",\
 			"other": "If the Demon killed the King, point to the Demon player."\
+			"other_night_key": "clocktower.role.choirboy.other_night",\
 		},\
 		"clockmaker": {\
 			"ability": "You start knowing how many steps from the Demon to its nearest Minion.",\
 			"first": "Give a finger signal.",\
+			"first_night_key": "clocktower.role.clockmaker.first_night",\
 			"flavor": "Do not disturb me. The tick must continue, for the circle is a symbol of life and contains all things - all answers - in its divine machinery. I must work.",\
 			"name": "Clockmaker",\
 			"jinxes": [{id:summoner}]\
@@ -243,36 +271,45 @@ data merge storage ct:character_data \
 		"courtier": {\
 			"ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",\
 			"first": "The Courtier might choose a character.",\
+			"first_night_key": "clocktower.role.courtier.first_night",\
 			"flavor": "I am more afraid of an army of one hundred sheep led by a lion than an army of one hundred lions led by a sheep.",\
 			"name": "Courtier",\
 			"other": "The Courtier might choose a character.",\
+			"other_night_key": "clocktower.role.courtier.other_night",\
 			"reminders": [{text:courtier_1,icon:courtier},{text:courtier_2,icon:courtier},{text:courtier_3,icon:courtier},{text:courtier_no_ability,icon:courtier}],\
 			"jinxes": [{id:summoner},{id:vizier}]\
 		},\
 		"cultleader": {\
 			"ability": "Each night, you become the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.",\
 			"first": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token & give a thumb signal.",\
+			"first_night_key": "clocktower.role.cultleader.first_night",\
 			"flavor": "Thinking themselves wise, they became fools.",\
 			"name": "Cult Leader",\
 			"other": "The Cult Leader might change alignment. If so, show the *YOU ARE* info token & give a thumb signal.",\
+			"other_night_key": "clocktower.role.cultleader.other_night",\
 			"jinxes": [{id:pithag}]\
 		},\
 		"damsel": {\
 			"ability": "All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.",\
 			"first": "During Minion Info, show the Minions the Damsel token. If you haven't done this yet, do so now. If the Damsel was chosen by the Huntsman, show the *YOU ARE* info token & their new character token.",\
+			"first_night_key": "clocktower.role.damsel.first_night",\
 			"flavor": "Don't touch the hair, honey.",\
 			"name": "Damsel",\
 			"other": "If the Damsel was chosen by the Huntsman, show the *YOU ARE* info token & their new character token.",\
+			"other_night_key": "clocktower.role.damsel.other_night",\
 			"reminders": [{text:damsel,icon:damsel}],\
 			"jinxes": [{id:pithag},{id:spy},{id:widow}]\
 		},\
 		"dawn": {\
 			"first": "Wait for a few seconds. End the Night Phase.",\
+			"first_night_key": "clocktower.role.dawn.first_night",\
 			"name": "Dawn",\
 			"other": "Wait for a few seconds. End the Night Phase."\
+			"other_night_key": "clocktower.role.dawn.other_night",\
 		},\
 		"demoninfo": {\
 			"first": "If there are 7 or more players, wake the Demon: Show the *THESE ARE YOUR MINIONS* token. Point to all Minions. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",\
+			"first_night_key": "clocktower.role.demoninfo.first_night",\
 			"name": "Demon Info"\
 		},\
 		"deusexfiasco": {\
@@ -289,9 +326,11 @@ data merge storage ct:character_data \
 		"devilsadvocate": {\
 			"ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.",\
 			"first": "The Devil's Advocate chooses a living player.",\
+			"first_night_key": "clocktower.role.devilsadvocate.first_night",\
 			"flavor": "My client, should the objection be overruled, pleads innocent by virtue of the prosecution's non-observance of statute 27.B - incorrect or misleading conjugation of a verb. The fact that nine of the jury died last night is simply prima facie, which is, as Wills vs Thule set precedent for, further reason to acquit.",\
 			"name": "Devil's Advocate",\
 			"other": "The Devil's Advocate chooses a living player.",\
+			"other_night_key": "clocktower.role.devilsadvocate.other_night",\
 			"reminders": [{text:devilsadvocate,icon:devilsadvocate}]\
 		},\
 		"djinn": {\
@@ -307,9 +346,11 @@ data merge storage ct:character_data \
 		"dreamer": {\
 			"ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good & 1 evil character, 1 of which is correct.",\
 			"first": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",\
+			"first_night_key": "clocktower.role.dreamer.first_night",\
 			"flavor": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",\
 			"name": "Dreamer",\
 			"other": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character."\
+			"other_night_key": "clocktower.role.dreamer.other_night",\
 		},\
 		"drunk": {\
 			"ability": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",\
@@ -323,12 +364,15 @@ data merge storage ct:character_data \
 			"flavor": "We shall entertain between the hours of 6 and 7 precisely. Tea at 6:15. Scones at 6:45. Do not be late. Formal wear applies, as always.",\
 			"name": "Duchess",\
 			"other": "One at a time: Wake each player marked *VISITOR* or *FALSE INFO*. Show the *THIS CHARACTER SELECTED YOU* & Duchess tokens, then give a finger signal.",\
+			"other_night_key": "clocktower.role.duchess.other_night",\
 			"reminders": [{text:duchess_visitor,icon:duchess},{text:duchess_false_info,icon:duchess}]\
 		},\
 		"dusk": {\
 			"first": "Start the Night Phase.",\
+			"first_night_key": "clocktower.role.dusk.first_night",\
 			"name": "Dusk",\
 			"other": "Start the Night Phase."\
+			"other_night_key": "clocktower.role.dusk.other_night",\
 		},\
 		"empath": {\
 			"ability": "Each night, you learn how many of your 2 alive neighbors are evil.",\
@@ -342,15 +386,18 @@ data merge storage ct:character_data \
 		"engineer": {\
 			"ability": "Once per game, at night, choose which Minions or which Demon is in play.",\
 			"first": "The Engineer might choose Minions or Demons. Put the Engineer to sleep. Wake the target(s) one at a time. Show the *YOU ARE* info token & their new character token.",\
+			"first_night_key": "clocktower.role.engineer.first_night",\
 			"flavor": "If it bends, great. If it breaks, well, it probably needed fixing anyway.",\
 			"name": "Engineer",\
 			"other": "The Engineer might choose Minions or Demons. Put the Engineer to sleep. Wake the target(s) one at a time. Show the *YOU ARE* info token & their new character token.",\
+			"other_night_key": "clocktower.role.engineer.other_night",\
 			"reminders": [{text:engineer,icon:engineer}],\
 			"jinxes": [{id:legion},{id:summoner}]\
 		},\
 		"eviltwin": {\
 			"ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",\
 			"first": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",\
+			"first_night_key": "clocktower.role.eviltwin.first_night",\
 			"flavor": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",\
 			"name": "Evil Twin",\
 			"reminders": [{text:eviltwin,icon:eviltwin}],\
@@ -361,6 +408,7 @@ data merge storage ct:character_data \
 			"flavor": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of Our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",\
 			"name": "Exorcist",\
 			"other": "The Exorcist chooses a player. Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the *THIS CHARACTER SELECTED YOU* & Exorcist tokens. Point to the Exorcist.",\
+			"other_night_key": "clocktower.role.exorcist.other_night",\
 			"reminders": [{text:exorcist,icon:exorcist}],\
 			"jinxes": [{id:leviathan},{id:riot},{id:yaggababble}]\
 		},\
@@ -369,6 +417,7 @@ data merge storage ct:character_data \
 			"flavor": "Your walls and your weapons are but smoke in dreams.",\
 			"name": "Fang Gu",\
 			"other": "The Fang Gu chooses a player. If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens & give a thumbs-down.",\
+			"other_night_key": "clocktower.role.fanggu.other_night",\
 			"reminders": [{text:fanggu_dead,icon:fanggu},{text:fanggu_once,icon:fanggu}],\
 			"jinxes": [{id:scarletwoman}]\
 		},\
@@ -377,14 +426,17 @@ data merge storage ct:character_data \
 			"flavor": "Even the high and mighty need food on the table. Without us, the city starves.",\
 			"name": "Farmer",\
 			"other": "If the Farmer died tonight, wake a living good player. Show the *YOU ARE* info token and a Farmer token.",\
+			"other_night_key": "clocktower.role.farmer.other_night",\
 			"jinxes": [{id:leviathan},{id:riot}]\
 		},\
 		"fearmonger": {\
 			"ability": "Each night, choose a player: if you nominate & execute them, their team loses. All players know if you choose a new player.",\
 			"first": "The Fearmonger chooses a player. Announce that the Fearmonger has chosen a player.",\
+			"first_night_key": "clocktower.role.fearmonger.first_night",\
 			"flavor": "Beware of gazing long into the Abyss, lest the Abyss also gaze into you.",\
 			"name": "Fearmonger",\
 			"other": "The Fearmonger chooses a player. If the target is different to last night, announce that the Fearmonger has chosen a player.",\
+			"other_night_key": "clocktower.role.fearmonger.other_night",\
 			"reminders": [{text:fearmonger,icon:fearmonger}],\
 			"jinxes": [{id:plaguedoctor},{id:vizier}]\
 		},\
@@ -415,6 +467,7 @@ data merge storage ct:character_data \
 			"flavor": "Yesterday's violets have withered and died, but today my poppies bloom.",\
 			"name": "Flowergirl",\
 			"other": "Either nod or shake your head.",\
+			"other_night_key": "clocktower.role.flowergirl.other_night",\
 			"reminders": [{text:flowergirl_yes,icon:flowergirl},{text:flowergirl_no,icon:flowergirl}]\
 		},\
 		"fool": {\
@@ -438,6 +491,7 @@ data merge storage ct:character_data \
 			"flavor": "Heads, I win. Tails, you lose.",\
 			"name": "Gambler",\
 			"other": "The Gambler chooses a player & a character.",\
+			"other_night_key": "clocktower.role.gambler.other_night",\
 			"reminders": [{text:gambler,icon:gambler}]\
 		},\
 		"gangster": {\
@@ -453,9 +507,11 @@ data merge storage ct:character_data \
 		"general": {\
 			"ability": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",\
 			"first": "Give a thumb signal.",\
+			"first_night_key": "clocktower.role.general.first_night",\
 			"flavor": "I don’t have time for quotes.",\
 			"name": "General",\
 			"other": "Give a thumb signal."\
+			"other_night_key": "clocktower.role.general.other_night",\
 		},\
 		"gnome": {\
 			"ability": "All players start knowing a player of your alignment. You may choose to kill anyone who nominates them.",\
@@ -473,9 +529,11 @@ data merge storage ct:character_data \
 		"godfather": {\
 			"ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",\
 			"first": "Show the character tokens of all in-play Outsiders.",\
+			"first_night_key": "clocktower.role.godfather.first_night",\
 			"flavor": "Normally, it's just business. But when you insult my daughter, you insult me. And when you insult me, you insult my family. You really should be more careful - it would be a shame if you had an unfortunate accident.",\
 			"name": "Godfather",\
 			"other": "If an Outsider died today, the Godfather chooses a player.",\
+			"other_night_key": "clocktower.role.godfather.other_night",\
 			"reminders": [{text:godfather_active,icon:godfather},{text:godfather_dead,icon:godfather}],\
 			"jinxes": [{id:heretic}]\
 		},\
@@ -503,14 +561,17 @@ data merge storage ct:character_data \
 			"flavor": "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah. Blah.",\
 			"name": "Gossip",\
 			"other": "If the Gossip is due to kill a player, they die.",\
+			"other_night_key": "clocktower.role.gossip.other_night",\
 			"reminders": [{text:gossip,icon:gossip}]\
 		},\
 		"grandmother": {\
 			"ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",\
 			"first": "Point to the grandchild player & show their character token.",\
+			"first_night_key": "clocktower.role.grandmother.first_night",\
 			"flavor": "Take a jacket if you go outside, dearie. And your thermos. And your scarf. I have a weak heart, you know. Whatever would I do if you caught cold...or worse?",\
 			"name": "Grandmother",\
 			"other": "If the grandchild was killed by the Demon, the Grandmother dies too.",\
+			"other_night_key": "clocktower.role.grandmother.other_night",\
 			"reminders": [{text:grandmother,icon:grandmother}],\
 			"jinxes": [{id:leviathan},{id:riot}]\
 		},\
@@ -524,14 +585,17 @@ data merge storage ct:character_data \
 			"flavor": "Enchanté, Sailor. You look like you need someone to really listen to your troubles. I'm a good listener. Very, very good.",\
 			"name": "Harlot",\
 			"other": "The Harlot chooses a living player. Put the Harlot to sleep. Wake the chosen player, show them the *THIS CHARACTER SELECTED YOU* token, then the Harlot token. If that player nods their head, wake the Harlot and show them the chosen player's character token. Both players might die.",\
+			"other_night_key": "clocktower.role.harlot.other_night",\
 			"reminders": [{text:harlot,icon:harlot}]\
 		},\
 		"harpy": {\
 			"ability": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",\
 			"first": "The Harpy chooses 2 players. Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",\
+			"first_night_key": "clocktower.role.harpy.first_night",\
 			"flavor": "So fair a day I never did see, nor so fowl a presence hanging over me.",\
 			"name": "Harpy",\
 			"other": "The Harpy chooses 2 players. Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",\
+			"other_night_key": "clocktower.role.harpy.other_night",\
 			"reminders": [{text:harpy_mad,icon:harpy},{text:harpy_second,icon:harpy}]\
 		},\
 		"hatter": {\
@@ -539,6 +603,7 @@ data merge storage ct:character_data \
 			"flavor": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat.",\
 			"name": "Hatter",\
 			"other": "If the Hatter died, wake the Minions & Demons. Each may choose a new character. If they do, show the *YOU ARE* token & their new character token.",\
+			"other_night_key": "clocktower.role.hatter.other_night",\
 			"reminders": [{text:hatter,icon:hatter}],\
 			"jinxes": [{id:legion},{id:leviathan},{id:lilmonsta},{id:summoner}]\
 		},\
@@ -568,16 +633,20 @@ data merge storage ct:character_data \
 		"highpriestess": {\
 			"ability": "Each night, learn which player the Storyteller believes you should talk to most.",\
 			"first": "Point to a player.",\
+			"first_night_key": "clocktower.role.highpriestess.first_night",\
 			"flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",\
 			"name": "High Priestess",\
 			"other": "Point to a player."\
+			"other_night_key": "clocktower.role.highpriestess.other_night",\
 		},\
 		"huntsman": {\
 			"ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",\
 			"first": "The Huntsman might choose a player. If they chose the Damsel: Put the Huntsman to sleep. Wake the target. Show the *YOU ARE* info token & their new character token.",\
+			"first_night_key": "clocktower.role.huntsman.first_night",\
 			"flavor": "My cabin is warm and sturdy. My axe by the door, my boots drying by the fire, and elk stew a-simmering… Hark! A scream echoes through the valley! The rain and the mud and the cold, cold wind mask the scent of the wolves, but I know the path and my pace is steady. I am coming.",\
 			"name": "Huntsman",\
 			"other": "The Huntsman might choose a player. If they chose the Damsel: Put the Huntsman to sleep. Wake the target. Show the *YOU ARE* info token & their new character token.",\
+			"other_night_key": "clocktower.role.huntsman.other_night",\
 			"reminders": [{text:huntsman,icon:huntsman}],\
 			"jinxes": [{id:marionette}]\
 		},\
@@ -594,6 +663,7 @@ data merge storage ct:character_data \
 			"flavor": "Come inside, fair traveller, and rest your weary bones. Drink and be merry, for the legions of the Dark One shall not harass thee tonight.",\
 			"name": "Innkeeper",\
 			"other": "The Innkeeper chooses 2 players.",\
+			"other_night_key": "clocktower.role.innkeeper.other_night",\
 			"reminders": [{text:innkeeper_protected,icon:innkeeper},{text:innkeeper_drunk,icon:innkeeper}],\
 			"jinxes": [{id:leviathan},{id:riot}]\
 		},\
@@ -617,22 +687,27 @@ data merge storage ct:character_data \
 			"flavor": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",\
 			"name": "Juggler",\
 			"other": "Give a finger signal.",\
+			"other_night_key": "clocktower.role.juggler.other_night",\
 			"reminders": [{text:juggler,icon:juggler}]\
 		},\
 		"kazali": {\
 			"ability": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",\
 			"first": "The Kazali chooses which players are which Minions. Wake each target. Show the *YOU ARE* and Minion tokens & give a thumbs-down.",\
+			"first_night_key": "clocktower.role.kazali.first_night",\
 			"flavor": "Gon(z)a7les6. Take cau8tun. The mech4an4ion is iNvert10d. E99ors insy6tum. Reco{7}fig.",\
 			"name": "Kazali",\
 			"other": "The Kazali chooses a player.",\
+			"other_night_key": "clocktower.role.kazali.other_night",\
 			"reminders": [{text:kazali,icon:kazali}]\
 		},\
 		"king": {\
 			"ability": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows you are the King.",\
 			"first": "Wake the Demon: Show the *THIS PLAYER IS* & King tokens, then point to the King.",\
+			"first_night_key": "clocktower.role.king.first_night",\
 			"flavor": "Betwixt the unknown strains of mortal strife / And morbid night, sweet with mystery and woe / Lies unfettered joys of fate’s long and colored life / Who’s garden blooms with each painted Face to Show.",\
 			"name": "King",\
 			"other": "If the dead equal or outnumber the living, show the character token of a living player."\
+			"other_night_key": "clocktower.role.king.other_night",\
 		},\
 		"klutz": {\
 			"ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",\
@@ -647,6 +722,7 @@ data merge storage ct:character_data \
 		"knight": {\
 			"ability": "You start knowing 2 players that are not the Demon.",\
 			"first": "Point to the 2 players marked *KNOW*.",\
+			"first_night_key": "clocktower.role.knight.first_night",\
 			"flavor": "When a man lies, he murders some part of the world.",\
 			"name": "Knight",\
 			"reminders": [{text:knight,icon:knight}]\
@@ -656,14 +732,17 @@ data merge storage ct:character_data \
 			"flavor": "We are the chill wind on a winter’s day. We are the shadow in the moonless night. We are the poison in your tea and the whisper in your ear. We are everywhere.",\
 			"name": "Legion",\
 			"other": "A player might die.",\
+			"other_night_key": "clocktower.role.legion.other_night",\
 			"reminders": [{text:legion_dead,icon:legion},{text:legion_about_to_die,icon:legion}]\
 		},\
 		"leviathan": {\
 			"ability": "If more than 1 good player is executed, evil wins. All players know you are in play. After day 5, evil wins.",\
 			"first": "Announce that the Leviathan is in play.",\
+			"first_night_key": "clocktower.role.leviathan.first_night",\
 			"flavor": "To the last, I grapple with thee. From Hell’s heart, I stab at thee. For hate’s sake, I spit my last breath at thee.",\
 			"name": "Leviathan",\
 			"other": "Change the Leviathan reminder token to the relevant day. You may announce that the Leviathan is in play.",\
+			"other_night_key": "clocktower.role.leviathan.other_night",\
 			"reminders": [{text:leviathan,icon:leviathan}]\
 		},\
 		"librarian": {\
@@ -677,33 +756,41 @@ data merge storage ct:character_data \
 		"lilmonsta": {\
 			"ability": "Each night, Minions choose who babysits Lil' Monsta & \"is the Demon\". Each night*, a player might die. [+1 Minion]",\
 			"first": "Wake the Minions. They choose a player. Put the Minions to sleep. Wake the target. Show the *YOU ARE* & Lil' Monsta tokens.",\
+			"first_night_key": "clocktower.role.lilmonsta.first_night",\
 			"flavor": "Step 1: Be cute. Step 2: World domination. Step 3: Bweakfast.",\
 			"name": "Lil' Monsta",\
 			"other": "Wake the Minions. They choose a player. Put the Minions to sleep. Wake the target. Show the *YOU ARE* & Lil' Monsta tokens. A player might die.",\
+			"other_night_key": "clocktower.role.lilmonsta.other_night",\
 			"reminders": [{text:lilmonsta_demon,icon:lilmonsta},{text:lilmonsta_dead,icon:lilmonsta}]\
 		},\
 		"lleech": {\
 			"ability": "Each night*, choose a player: they die. You start by choosing a player: they are poisoned. You die if & only if they are dead.",\
 			"first": "The Lleech chooses a player.",\
+			"first_night_key": "clocktower.role.lleech.first_night",\
 			"flavor": "Tasty, tasty, tasty, tasty, tasty, tasty, tasty, tasty brai- I mean pie! Yes. Tasty pie. That’s what I meant to say.",\
 			"name": "Lleech",\
 			"other": "The Lleech chooses a player.",\
+			"other_night_key": "clocktower.role.lleech.other_night",\
 			"reminders": [{text:lleech_dead,icon:lleech},{text:lleech_poisoned,icon:lleech}]\
 		},\
 		"lordoftyphon": {\
 			"ability": "Each night*, choose a player: they die. [Evil characters are in a line. You are in the middle. +1 Minion. -? to +? Outsiders]",\
 			"first": "Wake the Lord of Typhon's neighbors. Show the *YOU ARE* and Minion tokens & give a thumbs-down.",\
+			"first_night_key": "clocktower.role.lordoftyphon.first_night",\
 			"flavor": "In the shadowed and forgotten corners of the cosmos, where the stars whisper secrets to the void, lies a truth so profound that the merest glimpse of it unravels the sanity of mortal minds.",\
 			"name": "Lord of Typhon",\
 			"other": "The Lord of Typhon chooses a player.",\
+			"other_night_key": "clocktower.role.lordoftyphon.other_night",\
 			"reminders": [{text:lordoftyphon,icon:lordoftyphon}]\
 		},\
 		"lunatic": {\
 			"ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",\
 			"first": "If there are 7 or more players, wake the Lunatic: Show the *THESE ARE YOUR MINIONS* token. Point to any players. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the *YOU ARE* info token and the Demon token. Show the *THIS PLAYER IS* info token and the Lunatic token, then point to the Lunatic.",\
+			"first_night_key": "clocktower.role.lunatic.first_night",\
 			"flavor": "I am the night... I think.",\
 			"name": "Lunatic",\
 			"other": "Do whatever needs to be done to simulate the Demon acting. Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).",\
+			"other_night_key": "clocktower.role.lunatic.other_night",\
 			"reminders": [{text:lunatic_1,icon:lunatic},{text:lunatic_2,icon:lunatic},{text:lunatic_3,icon:lunatic}]\
 		},\
 		"lycanthrope": {\
@@ -711,17 +798,20 @@ data merge storage ct:character_data \
 			"flavor": "Beneath the thin veneer of civilisation lies a howling madness.",\
 			"name": "Lycanthrope",\
 			"other": "The Lycanthrope chooses a player.",\
+			"other_night_key": "clocktower.role.lycanthrope.other_night",\
 			"reminders": [{text:lycanthrope_dead,icon:lycanthrope},{text:lycanthrope_faux_paw,icon:lycanthrope}]\
 		},\
 		"magician": {\
 			"ability": "The Demon thinks you are a Minion. Minions think you are a Demon.",\
 			"first": "During Minion Info, point to the Magician and the Demon. During Demon Info, point to the Magician and the Minions.",\
+			"first_night_key": "clocktower.role.magician.first_night",\
 			"flavor": "1... 2... Abra... 3... 4... Cadabra... *poof!* And, as you can see, ladies and gentlemen, Captain Farnsworth’s bag of gold has disappeared! Gone! Without a trace! Thank you, and goodnight!",\
 			"name": "Magician"\
 		},\
 		"marionette": {\
 			"ability": "You think you are a good character, but you are not. The Demon knows who you are. [You neighbor the Demon]",\
 			"first": "Wake the Demon. Show the *THIS PLAYER IS* & Marionette tokens. Point to the Marionette.",\
+			"first_night_key": "clocktower.role.marionette.first_night",\
 			"flavor": "Words, words. They're all we have to go on.",\
 			"name": "Marionette",\
 			"reminders": [{text:marionette,icon:marionette}]\
@@ -734,9 +824,11 @@ data merge storage ct:character_data \
 		"mathematician": {\
 			"ability": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",\
 			"first": "Give a finger signal.",\
+			"first_night_key": "clocktower.role.mathematician.first_night",\
 			"flavor": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; that is, there are statements of the language of x which can neither be proved nor disproved in x. Ergo, you are drunk.",\
 			"name": "Mathematician",\
 			"other": "Give a finger signal.",\
+			"other_night_key": "clocktower.role.mathematician.other_night",\
 			"reminders": [{text:mathematician,icon:mathematician}]\
 		},\
 		"matron": {\
@@ -752,13 +844,16 @@ data merge storage ct:character_data \
 		"mezepheles": {\
 			"ability": "You start knowing a secret word. The 1st good player to say this word becomes evil that night.",\
 			"first": "Show the secret word.",\
+			"first_night_key": "clocktower.role.mezepheles.first_night",\
 			"flavor": "That which issues from the heart alone, will bend the hearts of others to your own.",\
 			"name": "Mezepheles",\
 			"other": "If a good player said the secret word, wake the player. Show the *YOU ARE* info token & give a thumbs-down.",\
+			"other_night_key": "clocktower.role.mezepheles.other_night",\
 			"reminders": [{text:mezepheles_evil,icon:mezepheles},{text:mezepheles_no_ability,icon:mezepheles}]\
 		},\
 		"minioninfo": {\
 			"first": "If there are 7 or more players, wake all Minions: Show the *THIS IS THE DEMON* token. Point to the Demon. Show the *THESE ARE YOUR MINIONS* token. Point to the other Minions.",\
+			"first_night_key": "clocktower.role.minioninfo.first_night",\
 			"name": "Minion Info"\
 		},\
 		"minstrel": {\
@@ -780,6 +875,7 @@ data merge storage ct:character_data \
 			"flavor": "Scorpio looks sideways at the lovers, and you have a choice to make. With silver cross my palm, and your fate shall be revealed. With steel cross my throat, and by the stars you shall regret it.",\
 			"name": "Moonchild",\
 			"other": "If the Moonchild is due to kill a good player, they die.",\
+			"other_night_key": "clocktower.role.moonchild.other_night",\
 			"reminders": [{text:moonchild,icon:moonchild}]\
 		},\
 		"mutant": {\
@@ -790,14 +886,17 @@ data merge storage ct:character_data \
 		"nightwatchman": {\
 			"ability": "Once per game, at night, choose a player: they learn you are the Nightwatchman.",\
 			"first": "The Nightwatchman might choose a player. Put the Nightwatchman to sleep. Wake the target. Show the *THIS PLAYER IS* & Nightwatchman tokens, then point to the Nightwatchman.",\
+			"first_night_key": "clocktower.role.nightwatchman.first_night",\
 			"flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",\
 			"name": "Nightwatchman",\
 			"other": "The Nightwatchman might choose a player. Put the Nightwatchman to sleep. Wake the target. Show the *THIS PLAYER IS* & Nightwatchman tokens, then point to the Nightwatchman.",\
+			"other_night_key": "clocktower.role.nightwatchman.other_night",\
 			"reminders": [{text:nightwatchman,icon:nightwatchman}]\
 		},\
 		"noble": {\
 			"ability": "You start knowing 3 players, 1 and only 1 of which is evil.",\
 			"first": "Point to the 3 players marked *KNOW*.",\
+			"first_night_key": "clocktower.role.noble.first_night",\
 			"flavor": "Sarcasm is indeed the lowest form of wit. But speaking in response to your criticism, Sir, it is, nevertheless, a form of wit.",\
 			"name": "Noble",\
 			"reminders": [{text:noble,icon:noble}]\
@@ -807,11 +906,13 @@ data merge storage ct:character_data \
 			"flavor": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",\
 			"name": "No Dashii",\
 			"other": "The No Dashii chooses a player.",\
+			"other_night_key": "clocktower.role.nodashii.other_night",\
 			"reminders": [{text:nodashii_dead,icon:nodashii},{text:nodashii_poisoned,icon:nodashii}]\
 		},\
 		"ogre": {\
 			"ability": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",\
 			"first": "The Ogre chooses a player.",\
+			"first_night_key": "clocktower.role.ogre.first_night",\
 			"flavor": "<grunt><grin></grunt>",\
 			"name": "Ogre",\
 			"reminders": [{text:ogre,icon:ogre}]\
@@ -821,6 +922,7 @@ data merge storage ct:character_data \
 			"flavor": "Like a bonfire on a moonless night… I see you, mortal.",\
 			"name": "Ojo",\
 			"other": "The Ojo chooses a character.",\
+			"other_night_key": "clocktower.role.ojo.other_night",\
 			"reminders": [{text:ojo,icon:ojo}]\
 		},\
 		"oracle": {\
@@ -828,13 +930,16 @@ data merge storage ct:character_data \
 			"flavor": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",\
 			"name": "Oracle",\
 			"other": "Give a finger signal."\
+			"other_night_key": "clocktower.role.oracle.other_night",\
 		},\
 		"organgrinder": {\
 			"ability": "All players keep their eyes closed when voting and the vote tally is secret. Each night, choose if you are drunk until dusk.",\
 			"first": "The Organ Grinder either nods their head yes to be drunk, or shakes their head no to be sober.",\
+			"first_night_key": "clocktower.role.organgrinder.first_night",\
 			"flavor": "Round and round the handles go. The more you dance the less you know.",\
 			"name": "Organ Grinder",\
 			"other": "The Organ Grinder either nods their head yes to be drunk, or shakes their head no to be sober.",\
+			"other_night_key": "clocktower.role.organgrinder.other_night",\
 			"reminders": [{text:organgrinder_drunk,icon:organgrinder},{text:organgrinder_about_to_die,icon:organgrinder}]\
 		},\
 		"pacifist": {\
@@ -845,9 +950,11 @@ data merge storage ct:character_data \
 		"philosopher": {\
 			"ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",\
 			"first": "The Philosopher might choose a character. If necessary, swap their character token.",\
+			"first_night_key": "clocktower.role.philosopher.first_night",\
 			"flavor": "If anything is real, beer is real. Drink, for tomorrow we may die.",\
 			"name": "Philosopher",\
 			"other": "The Philosopher might choose a character. If necessary, swap their character token.",\
+			"other_night_key": "clocktower.role.philosopher.other_night",\
 			"reminders": [{text:philosopher_is,icon:philosopher},{text:philosopher_drunk,icon:philosopher}]\
 		},\
 		"pithag": {\
@@ -855,10 +962,12 @@ data merge storage ct:character_data \
 			"flavor": "Round about the cauldron go; In the poison'd entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",\
 			"name": "Pit-Hag",\
 			"other": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token."\
+			"other_night_key": "clocktower.role.pithag.other_night",\
 		},\
 		"pixie": {\
 			"ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",\
 			"first": "Show the Townsfolk character token marked *MAD*.",\
+			"first_night_key": "clocktower.role.pixie.first_night",\
 			"flavor": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town. Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",\
 			"name": "Pixie",\
 			"reminders": [{text:pixie_mad,icon:pixie},{text:pixie_has_ability,icon:pixie}]\
@@ -868,6 +977,7 @@ data merge storage ct:character_data \
 			"flavor": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",\
 			"name": "Plague Doctor",\
 			"other": "If the Plague Doctor died, the Storyteller gained a Minion ability. If you haven’t done this yet, do so now.",\
+			"other_night_key": "clocktower.role.plaguedoctor.other_night",\
 			"reminders": [{text:plaguedoctor,icon:plaguedoctor}]\
 		},\
 		"po": {\
@@ -875,6 +985,7 @@ data merge storage ct:character_data \
 			"flavor": "Would you like a flower? I'm so lonely.",\
 			"name": "Po",\
 			"other": "The Po may choose a player OR chooses 3 players if they chose no-one last night. or",\
+			"other_night_key": "clocktower.role.po.other_night",\
 			"reminders": [{text:po_dead,icon:po},{text:po_charged,icon:po}]\
 		},\
 		"poisoner": {\
@@ -900,17 +1011,21 @@ data merge storage ct:character_data \
 		"poppygrower": {\
 			"ability": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",\
 			"first": "Skip Minion Info and Demon Info. Wake the Demon. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",\
+			"first_night_key": "clocktower.role.poppygrower.first_night",\
 			"flavor": "In the hidden groves of the deep forest, the black poppy dwells. To see its revelry is to be enchanted. To smell its thick aroma is to be lost forever, a slave to the gods of light and dark.",\
 			"name": "Poppy Grower",\
 			"other": "If the Poppy Grower died today or tonight, wake all Minions. Show the *THIS IS THE DEMON* token. Point to the Demon. Put the Minions to sleep. Wake the Demon. Show the *THESE ARE YOUR MINIONS* token. Point to the Minions.",\
+			"other_night_key": "clocktower.role.poppygrower.other_night",\
 			"reminders": [{text:poppygrower,icon:poppygrower}]\
 		},\
 		"preacher": {\
 			"ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",\
 			"first": "The Preacher chooses a player. If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* & Preacher tokens.",\
+			"first_night_key": "clocktower.role.preacher.first_night",\
 			"flavor": "It is better to be rich and healthy than poor and sick.",\
 			"name": "Preacher",\
 			"other": "The Preacher chooses a player. If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* & Preacher tokens.",\
+			"other_night_key": "clocktower.role.preacher.other_night",\
 			"reminders": [{text:preacher,icon:preacher}]\
 		},\
 		"princess": {\
@@ -918,6 +1033,7 @@ data merge storage ct:character_data \
 			"flavor": "Our words are hounds, bound by silken threads, dear lords. Let kindness weave them true, lest the reigns unravel and rend our court.",\
 			"name": "Princess",\
 			"other": "If the Princess nominated the player who was executed today, wake the Demon as normal, but no one dies to the Demon's ability.",\
+			"other_night_key": "clocktower.role.princess.other_night",\
 			"reminders": [{text:princess,icon:princess}]\
 		},\
 		"professor": {\
@@ -925,6 +1041,7 @@ data merge storage ct:character_data \
 			"flavor": "The process is simple. Attach the hydraulic confabulator to the modified chi matrix amplifier, add 20 CCs of pseudodorafine, keep his Z levels above 20%, and your husband will be fine. Now, all we need is a lightning strike.",\
 			"name": "Professor",\
 			"other": "The Professor might choose a dead player.",\
+			"other_night_key": "clocktower.role.professor.other_night",\
 			"reminders": [{text:professor_alive,icon:professor},{text:professor_no_ability,icon:professor}]\
 		},\
 		"psychopath": {\
@@ -935,9 +1052,11 @@ data merge storage ct:character_data \
 		"pukka": {\
 			"ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",\
 			"first": "The Pukka chooses a player.",\
+			"first_night_key": "clocktower.role.pukka.first_night",\
 			"flavor": "You truly have been kind welcoming me into your beautiful home. I am so sorry I accidentally scratched you. A little thing. No matter. But please, take this golden toothpick as a humble token of my regret.",\
 			"name": "Pukka",\
 			"other": "The Pukka chooses a player. The previously poisoned player dies then becomes healthy.",\
+			"other_night_key": "clocktower.role.pukka.other_night",\
 			"reminders": [{text:pukka_poisoned,icon:pukka},{text:pukka_dead,icon:pukka}]\
 		},\
 		"puzzlemaster": {\
@@ -967,6 +1086,7 @@ data merge storage ct:character_data \
 		"riot": {\
 			"ability": "On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.",\
 			"other": "Change the Riot reminder token to the relevant day. If it is night 3, you may wake the Minions. Show the *YOU ARE* & Riot tokens.",\
+			"other_night_key": "clocktower.role.riot.other_night",\
 			"flavor": "Larga vida a la revolución! Mi revolucion!",\
 			"name": "Riot"\
 		},\
@@ -975,13 +1095,16 @@ data merge storage ct:character_data \
 			"flavor": "These mountainous tomes guard the secret, I am sure of it! Twixt word and word, it lies in wait. More candles, boy! More ink! These notes may look arcane, but the infernal puzzle is revealing itself.",\
 			"name": "Sage",\
 			"other": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon."\
+			"other_night_key": "clocktower.role.sage.other_night",\
 		},\
 		"sailor": {\
 			"ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",\
 			"first": "The Sailor chooses a living player.",\
+			"first_night_key": "clocktower.role.sailor.first_night",\
 			"flavor": "I'll drink any one of yer under the table! You! The chatterbox! Reckon you can take me? No? Howza 'bout you, Grandma? You ever tried Old McKillys Extra Spiced Rum before? Guaranteed to put hairs on yer chest! Step aboard, aye!",\
 			"name": "Sailor",\
 			"other": "The Sailor chooses a living player.",\
+			"other_night_key": "clocktower.role.sailor.other_night",\
 			"reminders": [{text:sailor,icon:sailor}]\
 		},\
 		"saint": {\
@@ -1009,9 +1132,11 @@ data merge storage ct:character_data \
 		"seamstress": {\
 			"ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",\
 			"first": "The Seamstress might choose 2 players. Nod or shake your head.",\
+			"first_night_key": "clocktower.role.seamstress.first_night",\
 			"flavor": "Did you hear that stranger in the cashmere coat put the word on our young Belle? And she said yes? Well, that's nothing compared to what Harry and that juggler got up to at the fair! The things I could say if I was a tattletale... my, yes.",\
 			"name": "Seamstress",\
 			"other": "The Seamstress might choose 2 players. Nod or shake your head.",\
+			"other_night_key": "clocktower.role.seamstress.other_night",\
 			"reminders": [{text:seamstress,icon:seamstress}]\
 		},\
 		"sentinel": {\
@@ -1024,11 +1149,13 @@ data merge storage ct:character_data \
 			"flavor": "Blarg f'taag nm mataan! No sho gumtha m'sik na yuuu. Fluuuuuuuuurg h-sikkkh.",\
 			"name": "Shabaloth",\
 			"other": "A previously chosen player might be resurrected. The Shabaloth chooses 2 players.",\
+			"other_night_key": "clocktower.role.shabaloth.other_night",\
 			"reminders": [{text:shabaloth_dead,icon:shabaloth},{text:shabaloth_alive,icon:shabaloth}]\
 		},\
 		"shugenja": {\
 			"ability": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",\
 			"first": "Point clockwise or anticlockwise.",\
+			"first_night_key": "clocktower.role.shugenja.first_night",\
 			"flavor": "これは夢。それも夢。すべて夢です。",\
 			"name": "Shugenja"\
 		},\
@@ -1041,14 +1168,17 @@ data merge storage ct:character_data \
 		"snakecharmer": {\
 			"ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",\
 			"first": "The Snake Charmer chooses a player. If they chose the Demon: Show the *YOU ARE* & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the *YOU ARE* and Snake Charmer tokens & give a thumbs up.",\
+			"first_night_key": "clocktower.role.snakecharmer.first_night",\
 			"flavor": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Inshallah. They say that greed hangs more men than rope. But not I, Effendi... not I.",\
 			"name": "Snake Charmer",\
 			"other": "The Snake Charmer chooses a player. If they chose the Demon: Show the *YOU ARE* & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the *YOU ARE* and Snake Charmer tokens & give a thumbs up.",\
+			"other_night_key": "clocktower.role.snakecharmer.other_night",\
 			"reminders": [{text:snakecharmer,icon:snakecharmer}]\
 		},\
 		"snitch": {\
 			"ability": "Each Minion gets 3 bluffs.",\
 			"first": "Wake each Minion. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play character tokens.",\
+			"first_night_key": "clocktower.role.snitch.first_night",\
 			"flavor": "It was John.",\
 			"name": "Snitch"\
 		},\
@@ -1075,6 +1205,7 @@ data merge storage ct:character_data \
 		"steward": {\
 			"ability": "You start knowing 1 good player.",\
 			"first": "Point to the player marked *KNOW*.",\
+			"first_night_key": "clocktower.role.steward.first_night",\
 			"flavor": "How DARE you accuse Her Ladyship of wrongdoing? I’ve known her my entire life! All nine years!",\
 			"name": "Steward",\
 			"reminders": [{text:steward,icon:steward}]\
@@ -1082,6 +1213,7 @@ data merge storage ct:character_data \
 		"stormcatcher": {\
 			"ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",\
 			"first": "Announce which character is stormcaught. If that character is in play, mark that player as *STORMCAUGHT*. Wake each evil player and show them the character token, then the marked player.  If not in play, wake each evil player, show them the *THESE CHARACTERS ARE NOT IN PLAY* token & the relevant character token.",\
+			"first_night_key": "clocktower.role.stormcatcher.first_night",\
 			"flavor": "At dawn, the temple’s long shadow creeps to the fountain. At dusk, the obelisk blocks the red glare, cooling warm water under the archway. All lines converge here. A storm is coming, and this, this pebbled and lush and holy place between the apple trees, is the eye.",\
 			"name": "Storm Catcher",\
 			"reminders": [{text:stormcatcher,icon:stormcatcher}]\
@@ -1089,9 +1221,11 @@ data merge storage ct:character_data \
 		"summoner": {\
 			"ability": "You get 3 bluffs. On the 3rd night, choose a player: they become an evil Demon of your choice. [No Demon]",\
 			"first": "Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",\
+			"first_night_key": "clocktower.role.summoner.first_night",\
 			"flavor": "Hail the guardians of the north; by my intellect, thou art cut. Hail the guardians of the east; by my will, thou art dominated. Hail the guardians of the south; by that which lies beyond, the mystery is revealed. Hail the guardians of the west; a shield in the darkness.",\
 			"name": "Summoner",\
 			"other": "Change the Summoner reminder token to the relevant night. If it is night 3, the Summoner chooses a player & a Demon character. Put the Summoner to sleep. Wake the target. Show the *YOU ARE* and Demon tokens & give a thumbs-down.",\
+			"other_night_key": "clocktower.role.summoner.other_night",\
 			"reminders": [{text:summoner_1,icon:summoner},{text:summoner_2,icon:summoner},{text:summoner_3,icon:summoner}]\
 		},\
 		"sweetheart": {\
@@ -1099,6 +1233,7 @@ data merge storage ct:character_data \
 			"flavor": "I will never forget her. Never.",\
 			"name": "Sweetheart",\
 			"other": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",\
+			"other_night_key": "clocktower.role.sweetheart.other_night",\
 			"reminders": [{text:sweetheart,icon:sweetheart}]\
 		},\
 		"tealady": {\
@@ -1110,9 +1245,11 @@ data merge storage ct:character_data \
 		"thief": {\
 			"ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",\
 			"first": "The Thief chooses a player.",\
+			"first_night_key": "clocktower.role.thief.first_night",\
 			"flavor": "I ain't done nuffink. I weren't even in dat alley last night! It weren't me what stole Mayor Bruno's briefcase wiv all dem fancy dockoments innit. Besides, it was too 'eavy to carry far.",\
 			"name": "Thief",\
 			"other": "The Thief chooses a player.",\
+			"other_night_key": "clocktower.role.thief.other_night",\
 			"reminders": [{text:thief,icon:thief}]\
 		},\
 		"tinker": {\
@@ -1120,11 +1257,13 @@ data merge storage ct:character_data \
 			"flavor": "I think I see the problem. Luckily, I have an idea! This catapult will shoot twice as far with just a minor adjustment...",\
 			"name": "Tinker",\
 			"other": "The Tinker might die.",\
+			"other_night_key": "clocktower.role.tinker.other_night",\
 			"reminders": [{text:tinker,icon:tinker}]\
 		},\
 		"tor": {\
 			"ability": "Players don't know their character or alignment. They learn them when they die.",\
 			"other": "If a player died tonight, show the *YOU ARE* info token, their character token, & a thumbs up or thumbs down.",\
+			"other_night_key": "clocktower.role.tor.other_night",\
 			"flavor": "With thunder as my voice and lightning as my blade, I, the eternal guardian, feast upon the fools who dare approach the forbidden gate. Behold, my sacred goal! To purge the beetle from the belly of the rocky earth, to ensnare it in a net of stars, on the hilltop where heaven meets earth.",\
 			"name": "Tor"\
 		},\
@@ -1133,14 +1272,17 @@ data merge storage ct:character_data \
 			"flavor": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",\
 			"name": "Town Crier",\
 			"other": "Either nod or shake your head.",\
+			"other_night_key": "clocktower.role.towncrier.other_night",\
 			"reminders": [{text:towncrier_no,icon:towncrier},{text:towncrier_yes,icon:towncrier}]\
 		},\
 		"toymaker": {\
 			"ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info.",\
 			"first": "Resolve Minion Info and Demon Info, even though there are fewer than 7 players.",\
+			"first_night_key": "clocktower.role.toymaker.first_night",\
 			"flavor": "It buzzes! It walks down stairs! It keeps you warm at night! It tastes like sugar! The kiddies love it! Introducing... the brand new... Warm'o-buzzy-wuzzy-walk'a'bot-thingy-contraption! Fun for all ages!",\
 			"name": "Toymaker",\
 			"other": "If a Demon attack could end the game, and the Demon is marked *FINAL NIGHT: NO ATTACK*, do not wake the Demon.",\
+			"other_night_key": "clocktower.role.toymaker.other_night",\
 			"reminders": [{text:toymaker,icon:toymaker}]\
 		},\
 		"undertaker": {\
@@ -1162,14 +1304,17 @@ data merge storage ct:character_data \
 			"flavor": "All doors are one door. All keys are one key. All cups are one cup, but whosoever drinketh of the water that I give shall never thirst, but the water shall be in him a well springing up into everlasting life.",\
 			"name": "Vigormortis",\
 			"other": "The Vigormortis chooses a player. If that player is a Minion, poison a neighboring Townsfolk.",\
+			"other_night_key": "clocktower.role.vigormortis.other_night",\
 			"reminders": [{text:vigormortis_dead,icon:vigormortis},{text:vigormortis_has_ability,icon:vigormortis},{text:vigormortis_poisoned,icon:vigormortis}]\
 		},\
 		"villageidiot": {\
 			"ability": "Each night, choose a player: you learn their alignment. [+0 to +2 Village Idiots. 1 of the extras is drunk]",\
 			"first": "If there are multiple Village Idiots, mark one as *DRUNK*. Wake the Village Idiots one at a time to choose a player. Give a thumb signal.",\
+			"first_night_key": "clocktower.role.villageidiot.first_night",\
 			"flavor": "Roses are blue, and violets are red, Please reverse what I just said.",\
 			"name": "Village Idiot",\
 			"other": "Wake the Village Idiots one at a time to choose a player. Give a thumb signal.",\
+			"other_night_key": "clocktower.role.villageidiot.other_night",\
 			"reminders": [{text:villageidiot,icon:villageidiot}]\
 		},\
 		"virgin": {\
@@ -1181,6 +1326,7 @@ data merge storage ct:character_data \
 		"vizier": {\
 			"ability": "All players know you are the Vizier. You cannot die during the day. If good voted, you may choose to execute immediately.",\
 			"first": "Announce which player is the Vizier.",\
+			"first_night_key": "clocktower.role.vizier.first_night",\
 			"flavor": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",\
 			"name": "Vizier"\
 		},\
@@ -1189,6 +1335,7 @@ data merge storage ct:character_data \
 			"flavor": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",\
 			"name": "Vortox",\
 			"other": "The Vortox chooses a player.",\
+			"other_night_key": "clocktower.role.vortox.other_night",\
 			"reminders": [{text:vortox,icon:vortox}]\
 		},\
 		"voudon": {\
@@ -1207,6 +1354,7 @@ data merge storage ct:character_data \
 		"widow": {\
 			"ability": "On your 1st night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.",\
 			"first": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player. Put the Widow to sleep. Wake the player marked *KNOW* & show the Widow token.",\
+			"first_night_key": "clocktower.role.widow.first_night",\
 			"flavor": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",\
 			"name": "Widow",\
 			"reminders": [{text:widow_knows,icon:widow},{text:widow_poisoned,icon:widow}]\
@@ -1214,40 +1362,50 @@ data merge storage ct:character_data \
 		"witch": {\
 			"ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",\
 			"first": "The Witch chooses a player.",\
+			"first_night_key": "clocktower.role.witch.first_night",\
 			"flavor": "Three drops of goat's blood. A lock of hair, torn in anger. The name is spoken, the shadow cast. Walk left foot first down that brambled path, and don't look back.",\
 			"name": "Witch",\
 			"other": "The Witch chooses a player.",\
+			"other_night_key": "clocktower.role.witch.other_night",\
 			"reminders": [{text:witch,icon:witch}]\
 		},\
 		"wizard": {\
 			"ability": "Once per game, choose to make a wish. If granted, it might have a price & leave a clue as to its nature.",\
 			"first": "Do whatever needs to be done to satisfy the Wizard's ability.",\
+			"first_night_key": "clocktower.role.wizard.first_night",\
 			"flavor": "Every man and every woman is a star. Love is the law, love under will.",\
 			"name": "Wizard",\
 			"other": "Do whatever needs to be done to satisfy the Wizard's ability.",\
+			"other_night_key": "clocktower.role.wizard.other_night",\
 			"reminders": [{text:wizard,icon:wizard}]\
 		},\
 		"wraith": {\
 			"ability": "You may choose to open your eyes at night. You wake when other evil players do.",\
 			"first": "Wake the Wraith whenever other evil players wake.",\
+			"first_night_key": "clocktower.role.wraith.first_night",\
 			"flavor": "Ra'āb ina pān ṣilli ša dāri. Rigim qallu ina šūri, šītu ša šunātīka iredde, u napšutka idlul ina pān maṣṣartī dāriti.",\
 			"name": "Wraith",\
 			"other": "Wake the Wraith whenever other evil players wake."\
+			"other_night_key": "clocktower.role.wraith.other_night",\
 		},\
 		"xaan": {\
 			"ability": "On night X, all Townsfolk are poisoned until dusk. [X Outsiders]",\
 			"first": "If X is 1, mark the Xaan with the *X* reminder token.",\
+			"first_night_key": "clocktower.role.xaan.first_night",\
 			"flavor": "Down they fall. One by one. By two, by three, by five.",\
 			"name": "Xaan",\
 			"other": "Change the Xaan reminder token to the relevant night. If it is night X, mark the Xaan with the *X* reminder token.",\
+			"other_night_key": "clocktower.role.xaan.other_night",\
 			"reminders": [{text:xaan_1,icon:xaan},{text:xaan_2,icon:xaan},{text:xaan_3,icon:xaan},{text:xaan_x,icon:xaan}]\
 		},\
 		"yaggababble": {\
 			"ability": "You start knowing a secret phrase. For each time you said it publicly today, a player might die.",\
 			"first": "Show the Yaggababble their secret phrase.",\
+			"first_night_key": "clocktower.role.yaggababble.first_night",\
 			"flavor": "Murders inside the Rue Morgue? Фальшивые новости! Hounds on the Baskerville moor? Фальшивые новости! Death while sailing the Nile? Фальшивые новости!",\
 			"name": "Yaggababble",\
 			"other": "For each time the Yaggababble said their phrase today, a player might die.",\
+			"other_night_key": "clocktower.role.yaggababble.other_night",\
 			"reminders": [{text:yaggababble,icon:yaggababble}]\
 		},\
 		"zealot": {\
@@ -1266,6 +1424,7 @@ data merge storage ct:character_data \
 			"flavor": "I do not. Understand. Your ways. Fellow human. Show me. The dirt. Where the holy. Lay. Sleeping. I too. Must sleep. Soon.",\
 			"name": "Zombuul",\
 			"other": "If no one died today, the Zombuul chooses a player.",\
+			"other_night_key": "clocktower.role.zombuul.other_night",\
 			"reminders": [{text:zombuul_died,icon:zombuul},{text:zombuul_died,icon:zombuul}]\
 		}\
 	}\
