@@ -182,9 +182,11 @@ data merge storage ct:character_data \
 		"butler": {\
 			"ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",\
 			"first": "The Butler chooses a player.",\
+			"first_night_key": "clocktower.role.butler.first_night",\
 			"flavor": "Yes, sir... No, sir... Certainly, sir.",\
 			"name": "Butler",\
 			"other": "The Butler chooses a player.",\
+			"other_night_key": "clocktower.role.butler.other_night",\
 			"reminders": [{text:butler,icon:butler}],\
 			"jinxes": [{id:cannibal},{id:organgrinder}]\
 		},\
@@ -221,6 +223,7 @@ data merge storage ct:character_data \
 		"chef": {\
 			"ability": "You start knowing how many pairs of evil players there are.",\
 			"first": "Give a finger signal.",\
+			"first_night_key": "clocktower.role.chef.first_night",\
 			"flavor": "This evening's reservations seem odd. Never before has Mrs. Mayweather kept company with that scamp from Hudson Lane. Yet, tonight, they have a table for two. Strange.",\
 			"name": "Chef"\
 		},\
@@ -330,9 +333,11 @@ data merge storage ct:character_data \
 		"empath": {\
 			"ability": "Each night, you learn how many of your 2 alive neighbors are evil.",\
 			"first": "Give a finger signal.",\
+			"first_night_key": "clocktower.role.empath.first_night",\
 			"flavor": "My skin prickles. Something is not right here. I can feel it.",\
 			"name": "Empath",\
-			"other": "Give a finger signal."\
+			"other": "Give a finger signal.",\
+			"other_night_key": "clocktower.role.empath.other_night"\
 		},\
 		"engineer": {\
 			"ability": "Once per game, at night, choose which Minions or which Demon is in play.",\
@@ -421,9 +426,11 @@ data merge storage ct:character_data \
 		"fortuneteller": {\
 			"ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",\
 			"first": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",\
+			"first_night_key": "clocktower.role.fortuneteller.first_night",\
 			"flavor": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",\
 			"name": "Fortune Teller",\
 			"other": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",\
+			"other_night_key": "clocktower.role.fortuneteller.other_night",\
 			"reminders": [{text:fortuneteller,icon:fortuneteller}]\
 		},\
 		"gambler": {\
@@ -579,6 +586,7 @@ data merge storage ct:character_data \
 			"flavor": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",\
 			"name": "Imp",\
 			"other": "The Imp chooses a player. If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the *YOU ARE* token, then show the Imp token.",\
+			"other_night_key": "clocktower.role.imp.other_night",\
 			"reminders": [{text:imp,icon:imp}]\
 		},\
 		"innkeeper": {\
@@ -592,6 +600,7 @@ data merge storage ct:character_data \
 		"investigator": {\
 			"ability": "You start knowing that 1 of 2 players is a particular Minion.",\
 			"first": "Show the Minion character token. Point to both the *MINION* and *WRONG* players.",\
+			"first_night_key": "clocktower.role.investigator.first_night",\
 			"flavor": "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?",\
 			"name": "Investigator",\
 			"reminders": [{text:investigator_minion,icon:investigator},{text:investigator_wrong,icon:investigator}],\
@@ -660,6 +669,7 @@ data merge storage ct:character_data \
 		"librarian": {\
 			"ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",\
 			"first": "Show the Outsider character token. Point to both the *OUTSIDER* and *WRONG* players.",\
+			"first_night_key": "clocktower.role.librarian.first_night",\
 			"flavor": "Certainly madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",\
 			"name": "Librarian",\
 			"reminders": [{text:librarian_outsider,icon:librarian},{text:librarian_wrong,icon:librarian}]\
@@ -762,6 +772,7 @@ data merge storage ct:character_data \
 			"flavor": "'Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",\
 			"name": "Monk",\
 			"other": "The Monk chooses a player.",\
+			"other_night_key": "clocktower.role.monk.other_night",\
 			"reminders": [{text:monk,icon:monk}]\
 		},\
 		"moonchild": {\
@@ -869,9 +880,11 @@ data merge storage ct:character_data \
 		"poisoner": {\
 			"ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",\
 			"first": "The Poisoner chooses a player.",\
+			"first_night_key": "clocktower.role.poisoner.first_night",\
 			"flavor": "Add compound Alpha to compound Beta... NOT TOO MUCH!",\
 			"name": "Poisoner",\
 			"other": "The Poisoner chooses a player.",\
+			"other_night_key": "clocktower.role.poisoner.other_night",\
 			"reminders": [{text:poisoner,icon:poisoner}]\
 		},\
 		"politician": {\
@@ -937,7 +950,8 @@ data merge storage ct:character_data \
 			"ability": "If you die at night, you are woken to choose a player: you learn their character.",\
 			"flavor": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! To the manor and to the river! To the alleys and to the salons! Fly!",\
 			"name": "Ravenkeeper",\
-			"other": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token."\
+			"other": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",\
+			"other_night_key": "clocktower.role.ravenkeeper.other_night"\
 		},\
 		"recluse": {\
 			"ability": "You might register as evil & as a Minion or Demon, even if dead.",\
@@ -989,7 +1003,8 @@ data merge storage ct:character_data \
 			"ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",\
 			"flavor": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",\
 			"name": "Scarlet Woman",\
-			"other": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token."\
+			"other": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",\
+			"other_night_key": "clocktower.role.scarletwoman.other_night"\
 		},\
 		"seamstress": {\
 			"ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",\
@@ -1051,9 +1066,11 @@ data merge storage ct:character_data \
 		"spy": {\
 			"ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",\
 			"first": "Show the Grimoire for as long as the Spy needs.",\
+			"first_night_key": "clocktower.role.spy.first_night",\
 			"flavor": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",\
 			"name": "Spy",\
-			"other": "Show the Grimoire for as long as the Spy needs."\
+			"other": "Show the Grimoire for as long as the Spy needs.",\
+			"other_night_key": "clocktower.role.spy.other_night"\
 		},\
 		"steward": {\
 			"ability": "You start knowing 1 good player.",\
@@ -1131,6 +1148,7 @@ data merge storage ct:character_data \
 			"flavor": "Hmmm....what have we here? The left boot is worn down to the heel, with flint shavings under the tongue. This is the garb of a Military man.",\
 			"name": "Undertaker",\
 			"other": "If a player was executed today, show their character token.",\
+			"other_night_key": "clocktower.role.undertaker.other_night",\
 			"reminders": [{text:undertaker,icon:undertaker}]\
 		},\
 		"ventriloquist": {\
@@ -1181,6 +1199,7 @@ data merge storage ct:character_data \
 		"washerwoman": {\
 			"ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",\
 			"first": "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",\
+			"first_night_key": "clocktower.role.washerwoman.first_night",\
 			"flavor": "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",\
 			"name": "Washerwoman",\
 			"reminders": [{text:washerwoman_town,icon:washerwoman},{text:washerwoman_wrong,icon:washerwoman}]\

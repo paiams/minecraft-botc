@@ -46,7 +46,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = true
-  source = Other Nights Order
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.other_nights_order"}}
   source_mode = direct
   shadow = true
   scale = 1.5
@@ -2150,7 +2150,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[0].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[0].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[0].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[0].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2217,7 +2217,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[1].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[1].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[1].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[1].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2284,7 +2284,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[2].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[2].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[2].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[2].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2351,7 +2351,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[3].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[3].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[3].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[3].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2418,7 +2418,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[4].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[4].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[4].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[4].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2485,7 +2485,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[5].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[5].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[5].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[5].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2552,7 +2552,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[6].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[6].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[6].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[6].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2619,7 +2619,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[7].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[7].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[7].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[7].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2686,7 +2686,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[8].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[8].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[8].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[8].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2753,7 +2753,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[9].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[9].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[9].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[9].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2820,7 +2820,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[10].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[10].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[10].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[10].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2887,7 +2887,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[11].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[11].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[11].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[11].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -2954,7 +2954,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[12].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[12].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[12].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[12].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3021,7 +3021,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[13].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[13].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[13].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[13].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3088,7 +3088,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[14].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[14].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[14].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[14].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3155,7 +3155,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[15].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[15].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[15].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[15].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3222,7 +3222,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[16].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[16].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[16].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[16].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3289,7 +3289,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[17].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[17].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[17].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[17].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3356,7 +3356,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[18].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[18].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[18].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[18].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3423,7 +3423,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[19].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[19].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[19].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[19].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3490,7 +3490,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[20].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[20].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[20].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[20].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3557,7 +3557,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[21].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[21].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[21].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[21].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3624,7 +3624,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[22].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[22].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[22].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[22].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3691,7 +3691,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[23].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[23].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[23].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[23].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3758,7 +3758,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[24].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[24].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[24].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[24].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3825,7 +3825,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[25].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[25].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[25].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[25].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497
@@ -3892,7 +3892,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[26].id"}}}].other_nights_hint"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[26].localized"}}","cases":"yes:{"placeholder":"local","values":{"key":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[26].id"}}}].other_night_key"}}"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[{id:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.other[26].id"}}}].other_nights_hint"}}"}}
   label = 
   navigatable = false
   widget_active_state_requirement_container_identifier = 34771429-3f01-4e73-b08d-f1c5061361ba-1777861603497

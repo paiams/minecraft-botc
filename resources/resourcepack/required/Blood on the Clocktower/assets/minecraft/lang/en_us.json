@@ -84,6 +84,7 @@
     "clocktower.ui.demon_bluffs": "Demon Bluffs",
     "clocktower.ui.first_night_order": "First Night",
     "clocktower.ui.other_nights_order": "Other Nights",
+    "clocktower.script.trouble_brewing.name": "Trouble Brewing",
     // Items
     "clocktower.item.skull.name": "Notebook [Right Click]",
     "clocktower.item.skull.lore": "whatever lore",
@@ -842,12 +843,32 @@
     "clocktower.jinx.summoner-zombuul": "If the Summoner summons a dead player into the Zombuul, the Zombuul has already \"died once\".",
     "clocktower.jinx.vizier-zealot": "The Zealot might register as evil to the Vizier.",
     //
+    // LOCALIZED NIGHT INSTRUCTIONS
+    //
+    "clocktower.role.butler.first_night": "The Butler chooses a player.",
+    "clocktower.role.butler.other_night": "The Butler chooses a player.",
+    "clocktower.role.chef.first_night": "Give a finger signal.",
+    "clocktower.role.empath.first_night": "Give a finger signal.",
+    "clocktower.role.empath.other_night": "Give a finger signal.",
+    "clocktower.role.fortuneteller.first_night": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+    "clocktower.role.fortuneteller.other_night": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+    "clocktower.role.imp.other_night": "The Imp chooses a player. If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the *YOU ARE* token, then show the Imp token.",
+    "clocktower.role.investigator.first_night": "Show the Minion character token. Point to both the *MINION* and *WRONG* players.",
+    "clocktower.role.librarian.first_night": "Show the Outsider character token. Point to both the *OUTSIDER* and *WRONG* players.",
+    "clocktower.role.monk.other_night": "The Monk chooses a player.",
+    "clocktower.role.poisoner.first_night": "The Poisoner chooses a player.",
+    "clocktower.role.poisoner.other_night": "The Poisoner chooses a player.",
+    "clocktower.role.ravenkeeper.other_night": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
+    "clocktower.role.scarletwoman.other_night": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",
+    "clocktower.role.spy.first_night": "Show the Grimoire for as long as the Spy needs.",
+    "clocktower.role.spy.other_night": "Show the Grimoire for as long as the Spy needs.",
+    "clocktower.role.undertaker.other_night": "If a player was executed today, show their character token.",
+    "clocktower.role.washerwoman.first_night": "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
+    //
     //EMPTY SPACE
     //
     "clocktower.jinx.none.none": "",
     "clocktower.role.none.name": "",
     "clocktower.role.none.desc": "",
-    "clocktower.reminder.none.text": "",
-    "clocktower.role.none.name": "",
-    "clocktower.role.none.desc": ""
+    "clocktower.reminder.none.text": ""
 }
