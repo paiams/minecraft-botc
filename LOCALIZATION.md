@@ -32,7 +32,8 @@ Korean covers every built-in 1.6.0 character name and ability, all reminder
 tokens, first- and other-night instructions, Jinxes, the three built-in script
 selection labels, and the modpack-owned setup, role assignment, phase,
 nomination, voting, death, execution, Grimoire, quick-action, settings, timer,
-HUD, Home Compass, tutorial, and special-character flows.
+HUD, Home Compass, tutorial, sound subtitles, pack descriptions, credits,
+main/pause menus, the pinned 1.6.0 changelog, and special-character flows.
 
 The GitHub wiki is a test reference, not part of the pack, and remains English.
 Character flavor text is retained as internal source data because 1.6.0 never
@@ -40,7 +41,8 @@ renders it. Imported script titles, authors, and unknown night hints are shown
 verbatim. Third-party Chatbind labels and EnhancedGroups group names also remain
 English because those mods store shared literal names instead of resolving a
 per-client locale; changing them would break mixed Korean/English clients or
-their command bindings. External mod settings are owned by their respective mods.
+their command bindings. External mod settings and third-party pack metadata are
+owned by their respective mods.
 The Home Compass uses one translation component for both item creation and the
 dawn cleanup predicate.
 
@@ -59,5 +61,6 @@ dawn cleanup predicate.
    directory.
 
 The checker requires `ko_kr.json` and `en_us.json` to contain the same keys. It
-also verifies every built-in night instruction and rejects hardcoded English in
-the modpack-owned datapack and FancyMenu paths.
+also verifies every built-in night instruction, translated sound subtitle and
+pack reference, and rejects hardcoded English in the modpack-owned datapack,
+Melius command, and FancyMenu paths.

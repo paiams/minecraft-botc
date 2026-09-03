@@ -394,8 +394,7 @@ EMPTY_TRANSLATION_ALLOWED = frozenset({"clocktower.prefix.the"})
 def format_tokens(value: str) -> dict[str, object]:
     """Extract user-visible formatting tokens that translations must retain."""
 
-    # FancyMenu uses %n% for a line break.  It is not currently present in the
-    # language file, but treating it explicitly makes this checker reusable.
+    # FancyMenu uses %n% for a line break.
     fm_breaks = value.count("%n%")
     without_fm_breaks = value.replace("%n%", "")
     return {
@@ -420,7 +419,7 @@ LOCAL_KEY_RE = re.compile(
 )
 TRANSLATE_KEY_RE = re.compile(
     r'(?<![\w.])(?:"translate"|translate)\s*:\s*'
-    r'["\'](clocktower\.[A-Za-z0-9_.-]+)["\']'
+    r'["\']((?:clocktower|subtitles\.ct|pack\.ct)\.[A-Za-z0-9_.-]+)["\']'
 )
 
 
@@ -447,8 +446,8 @@ def local_key_references(directory: Path) -> Iterator[KeyReference]:
                     yield KeyReference(key, path, line_number)
 
 
-def datapack_translate_references(directory: Path) -> Iterator[KeyReference]:
-    for path in iter_files(directory.parent.parent.parent.parent, directory, (".mcfunction", ".json", ".jsonc")):
+def translate_references(directory: Path) -> Iterator[KeyReference]:
+    for path in iter_files(directory.parent, directory, (".mcfunction", ".json", ".jsonc", ".mcmeta")):
         try:
             lines = path.read_text(encoding="utf-8-sig").splitlines()
         except UnicodeDecodeError:
@@ -460,8 +459,7 @@ def datapack_translate_references(directory: Path) -> Iterator[KeyReference]:
                 yield KeyReference(match.group(1), path, line_number)
 
 
-FM_VISIBLE_FIELDS = frozenset({"label", "description", "hoverlabel", "title", "text", "source"})
-FIELD_RE = re.compile(r"^\s*(label|description|hoverlabel|title|text|source)\s*=\s*(.*)$")
+FIELD_RE = re.compile(r"^\s*(label|description|hoverlabel|title|text|source|tooltip|slider_label|slider_list_value_\d+)\s*=\s*(.*)$")
 TEXT_FIELD_RE = re.compile(r'(?<![\w])"?text"?\s*:\s*"((?:\\.|[^"\\])*)"')
 DIRECT_TELLRAW_RE = re.compile(r'\btellraw\s+\S+\s+"((?:\\.|[^"\\])*)"\s*$')
 DIRECT_TITLE_RE = re.compile(r"\btitle\b[^\n]*?\btitle\s+\"([^\"]+)\"")
@@ -512,6 +510,7 @@ def _looks_like_user_english(value: str) -> bool:
     cleaned = cleaned.replace("this is a custom font", " ")
     cleaned = re.sub(r"https?://\S+", " ", cleaned)
     cleaned = re.sub(r"\$\([^)]*\)", " ", cleaned)
+    cleaned = re.sub(r"\$\$[A-Za-z]+", " ", cleaned)
     cleaned = re.sub(r"%[^%\n]*%", " ", cleaned)
     cleaned = re.sub(r"\[[^\]\n]*\]", " ", cleaned)
     cleaned = re.sub(r"(?:^|\s)/[A-Za-z0-9_./<>-]+", " ", cleaned)
@@ -527,7 +526,7 @@ def find_hardcoded_fancymenu(path: Path) -> Iterator[HardcodedText]:
         if line.lstrip().startswith("#"):
             continue
         match = FIELD_RE.match(line)
-        if not match or match.group(1) not in FM_VISIBLE_FIELDS:
+        if not match:
             continue
         value = match.group(2).strip()
         # ``source`` is also FancyMenu's image/font path field.  Those paths
@@ -623,6 +622,8 @@ def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[
         if not isinstance(en_value, str) or not isinstance(ko_value, str):
             report.error(f"{key}: language values must both be strings")
             continue
+        if "\ufffd" in ko_value:
+            report.error(f"{key}: Korean translation contains a replacement character")
         if not ko_value.strip() and en_value.strip() and key not in EMPTY_TRANSLATION_ALLOWED:
             report.error(f"{key}: Korean translation is empty")
         expected = format_tokens(en_value)
@@ -757,29 +758,43 @@ def check_references(
     report: Report,
 ) -> None:
     fm_directory = root / "config" / "fancymenu" / "customization"
-    datapack_directory = root / "resources" / "datapack" / "required" / "ct"
     for reference in local_key_references(fm_directory):
         if reference.key not in en_keys:
             report.error(
                 f"{_relative(reference.path, root)}:{reference.line}: "
                 f"FancyMenu local key is absent from en_us: {reference.key}"
             )
-    for reference in datapack_translate_references(datapack_directory):
-        if reference.key not in en_keys:
-            report.error(
-                f"{_relative(reference.path, root)}:{reference.line}: "
-                f"datapack translate key is absent from en_us: {reference.key}"
-            )
+    for directory in (root / "resources", root / "config" / "melius-commands"):
+        for reference in translate_references(directory):
+            if reference.key not in en_keys:
+                report.error(
+                    f"{_relative(reference.path, root)}:{reference.line}: "
+                    f"translate key is absent from en_us: {reference.key}"
+                )
+
+
+def check_sound_subtitles(root: Path, en_keys: Mapping[str, object], ko_keys: Mapping[str, object], report: Report) -> None:
+    path = root / "resources" / "resourcepack" / "required" / "Blood on the Clocktower" / "assets" / "ct" / "sounds.json"
+    try:
+        sounds = json.loads(path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError) as error:
+        report.error(f"cannot read sound definitions: {error}")
+        return
+    for sound, definition in sounds.items():
+        subtitle = definition.get("subtitle") if isinstance(definition, dict) else None
+        if subtitle is None:
+            continue
+        if not isinstance(subtitle, str):
+            report.error(f"{_relative(path, root)}: {sound} has an invalid subtitle key")
+        elif subtitle not in en_keys or subtitle not in ko_keys:
+            report.error(f"{_relative(path, root)}: missing localized subtitle key: {subtitle}")
 
 
 def _core_paths(root: Path) -> tuple[list[Path], list[Path]]:
     datapack = list(iter_files(root, root / "resources" / "datapack" / "required" / "ct", (".mcfunction", ".json", ".jsonc")))
+    datapack.extend(iter_files(root, root / "config" / "melius-commands", (".json", ".jsonc")))
     fm_root = root / "config" / "fancymenu" / "customization"
-    fm = [
-        path
-        for path in iter_files(root, fm_root, (".txt",))
-        if path.name.startswith("ct-") or path.name in {"chat_screen_layout.txt", "connect_screen_layout.txt"}
-    ]
+    fm = list(iter_files(root, fm_root, (".txt",)))
     return datapack, fm
 
 
@@ -811,6 +826,7 @@ def run_checks(root: Path, en_path: Path | None = None, ko_path: Path | None = N
             ko_keys = {}
         check_character_keys(root, en_keys, ko_keys, report)
         check_references(root, en_keys, report)
+        check_sound_subtitles(root, en_keys, ko_keys, report)
     check_hardcoded_text(root, report)
     return report
 
@@ -834,11 +850,12 @@ def _self_test() -> None:
     assert _looks_like_user_english('prefix {"placeholder":"getvariable"}')
     assert not _looks_like_user_english('%!!unlovable%this is a custom font %!!arial%this is a custom font')
     assert not _looks_like_user_english('{"placeholder":"local","values":{"key":"clocktower.ui.x"}}')
+    assert not _looks_like_user_english('{"placeholder":"local","values":{"key":"clocktower.ui.x"}}$$value')
     assert TEXT_FIELD_RE.findall('{"text":"Hello there"}') == ["Hello there"]
     assert DIRECT_TELLRAW_RE.search('tellraw @s "Hello there"').group(1) == "Hello there"
-    assert [m.group(1) for m in TRANSLATE_KEY_RE.finditer('{"translate":"clocktower.ui.x"} translate:"clocktower.ui.y"')] == [
+    assert [m.group(1) for m in TRANSLATE_KEY_RE.finditer('{"translate":"clocktower.ui.x"} translate:"subtitles.ct.y"')] == [
         "clocktower.ui.x",
-        "clocktower.ui.y",
+        "subtitles.ct.y",
     ]
     night_sample = '\t\t"sample": {\\\n\t\t\t"first": "Show \\\"YES\\\".",\\\n\t\t\t"first_night_key": "clocktower.role.sample.first_night"\\\n\t\t},\\\n'
     assert character_fields(night_sample) == {
