@@ -1,6 +1,6 @@
 execute if score has_initialized game_data matches 0 run function ct:util/send_tutorial
 
-tellraw @s[tag=!joined] [{"text":"! ","color":"green","bold":true},{"translate":"clocktower.notice.welcome_pronouns","color":"gray","bold":false,"with":[{"text":"/pronouns <pronouns>","color":"white"}]}]
+tellraw @s[tag=!joined] [{"text":"! ","color":"green","bold":true},{"translate":"clocktower.notice.welcome_pronouns","color":"gray","bold":false,"with":[{"translate":"clocktower.command.pronouns","color":"white"}]}]
 tp @s[tag=!joined] 122 72 70 -145 0
 gamemode adventure @s[tag=!joined]
 tag @s add joined

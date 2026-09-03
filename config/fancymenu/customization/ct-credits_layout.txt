@@ -51,7 +51,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Back
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.back"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 3ba332dc-ef22-4028-9ce9-5faddf50b40f-1768689686249
   [loading_requirement_container_meta:3ba332dc-ef22-4028-9ce9-5faddf50b40f-1768689686249] = [groups:][instances:]
@@ -108,7 +108,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%# Modpack Credits%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.title"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -180,7 +180,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%### Modpack Creator%n%Sybillian%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.modpack_creator"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -253,7 +253,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%### Bug Fixes%n%Jvkeh%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.bug_fixes"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -326,7 +326,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Ciel\_4%n%Jvkeh%n%MacadamiaNut%n%Sybillian%n%CJCougar8%n%aure%n%Jmc%n%MAATbud%n%Lord Woolfy%n%Gendemo%n%Geminpie%n%poof%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.contributors"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -399,7 +399,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%### Playtest Icons%n%tomozbot%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.playtest_icons"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -472,7 +472,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%### Pixel Art Icons%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.pixel_art_icons"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -545,7 +545,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Axo%n%Dos%n%OliverIsJester%n%allie\_cat\_\_%n%khangnsn%n%Starburst%n%jadedragon2000%n%Orange Tears%n%Brokengamer%n%jek\_le\_snek%n%hububy%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.pixel_art_contributors"}}
   source_mode = direct
   shadow = true
   scale = 1.0

@@ -361,7 +361,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = true
-  source = Travellers
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.travellers.title"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -532,7 +532,7 @@ element {
 
 element {
   interactable = true
-  source = *Every night except the first.
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.script.every_night_except_first"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -624,7 +624,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = View Night Order
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_night_order"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -702,7 +702,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Close
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.close"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -774,7 +774,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Travellers are characters for players who turn up late or will need to leave early.%n%%n%Travellers tend to have extremely effective abilities but gain little information.%n%%n%They have maximum power and minimum responsibility.%n%%n%This page displays all Travellers in Blood on the Clocktower. Any of them can be added to any game, but many scripts come with recommended Travellers chosen to play nice with the rest of the script.%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.travellers.description"}}
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -866,7 +866,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = View Jinxes
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_jinxes"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:9e1fb97e-4753-4397-9883-81d85dc2884f-1770102615981;]
@@ -3866,7 +3866,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = View Script
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_script"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -3938,7 +3938,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#ffff55%⚠ %#% %#ff5555%**IMPORTANT** %#% %#ffff55%⚠ %#%%n%Travellers are not yet implemented; this page is here in advance for when they are.%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.travellers.important_notice"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false

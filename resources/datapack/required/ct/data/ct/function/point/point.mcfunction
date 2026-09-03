@@ -1,4 +1,4 @@
-$tellraw @a [{"text":"$(pointer) is pointing at $(target)"}]
+$tellraw @a {"translate":"clocktower.notice.pointing","with":[{"text":"$(pointer)"},{"text":"$(target)"}]}
 $execute as $(target) if entity @s[scores={id=1}] run scoreboard players set $(pointer) pointing_at 1
 $execute as $(target) if entity @s[scores={id=2}] run scoreboard players set $(pointer) pointing_at 2
 $execute as $(target) if entity @s[scores={id=3}] run scoreboard players set $(pointer) pointing_at 3
@@ -14,4 +14,4 @@ $execute as $(target) if entity @s[scores={id=12}] run scoreboard players set $(
 $execute as $(target) if entity @s[scores={id=13}] run scoreboard players set $(pointer) pointing_at 13
 $execute as $(target) if entity @s[scores={id=14}] run scoreboard players set $(pointer) pointing_at 14
 $execute as $(target) if entity @s[scores={id=15}] run scoreboard players set $(pointer) pointing_at 15
-$execute as $(target) if entity @s[team=99_storyteller] run tellraw $(pointer) "Pointing at a Storyteller will not change your target."
+$execute as $(target) if entity @s[team=99_storyteller] run tellraw $(pointer) {"translate":"clocktower.notice.point_storyteller_ignored"}

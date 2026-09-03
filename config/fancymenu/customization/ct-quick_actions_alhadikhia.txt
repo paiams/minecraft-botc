@@ -411,7 +411,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Who did the%n%Al-Hadikhia choose?%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.alhadikhia_prompt"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false

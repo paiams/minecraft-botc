@@ -120,7 +120,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Connecting to the server...%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.connecting"}}
   source_mode = direct
   shadow = true
   scale = 0.75

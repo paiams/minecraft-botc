@@ -496,7 +496,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%THE FEARMONGER HAS%n%CHOSEN A NEW VICTIM.%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.hud.fearmonger_alert"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -669,7 +669,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%THE BANSHEE%n%HAS AWOKEN.%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.hud.banshee_alert"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -756,7 +756,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%THE AL-HADIKHIA%n%HAS CHOSEN...%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.hud.alhadikhia_alert"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -931,7 +931,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%THE LEVIATHAN%n%APPROACHES.%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.hud.leviathan_alert"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false

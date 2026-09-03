@@ -16,7 +16,7 @@ execute if score organ_grinder settings matches 0 run tellraw @a {"translate":"c
 execute if score organ_grinder settings matches 1 run tellraw @a[tag=storyteller] {"translate":"clocktower.notice.votes_received","with":[{"selector":"@a[tag=nominee]"},{"score":{"name":"total","objective":"vote"},"bold":true,"color":"white"}]}
 tellraw @a[tag=storyteller] [{"text":"✔ ","bold":true,"color":"green"},{"translate":"clocktower.notice.players_voted","bold":false,"color":"white"},{"selector":"@a[tag=!voting_no,tag=!spectator,tag=!storyteller]","bold":false}]
 execute as @a[tag=!storyteller,tag=!spectator] unless entity @s[scores={role=404}] run tag @s add not_legion
-execute if entity @a[scores={role=404},tag=voting_yes] unless entity @a[tag=not_legion,tag=voting_yes] run tellraw @a[tag=storyteller] [{"text":"! ","bold":true,"color":"dark_red"},{"text":"Only Legion voted.","bold":false,"color":"red"}]
+execute if entity @a[scores={role=404},tag=voting_yes] unless entity @a[tag=not_legion,tag=voting_yes] run tellraw @a[tag=storyteller] [{"text":"! ","bold":true,"color":"dark_red"},{"translate":"clocktower.notice.only_legion_voted","bold":false,"color":"red"}]
 function ct:util/color_prefixes
 
 clear @a minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["start_vote"]}]

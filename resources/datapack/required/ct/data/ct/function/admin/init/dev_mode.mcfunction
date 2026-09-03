@@ -1,2 +1,2 @@
-tellraw @a {"text":"Dev Mode is currently active. Make sure to run the package function and reload again before shipping.","color":"gray"}
+tellraw @a {"translate":"clocktower.notice.dev_mode.active","color":"gray"}
 function ct:dev/dev_mode

@@ -38,7 +38,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = true
-  source =  %n%  %n%---%n%The Magician wakes with Legion and might register as evil. Legion knows if a Magician is in play, but not which player it is.
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.jinxes.magician_legion"}}
   source_mode = direct
   shadow = true
   scale = 1.0

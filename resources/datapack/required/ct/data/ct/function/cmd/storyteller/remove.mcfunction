@@ -1,5 +1,5 @@
-$execute if entity @s[tag=!storyteller] run tellraw @s "$(target) is already not a Storyteller."
-$execute if entity @s[tag=storyteller] run tellraw @s "$(target) is no longer a Storyteller."
+$execute if entity @s[tag=!storyteller] run tellraw @s {"translate":"clocktower.notice.storyteller.already_removed","with":[{"text":"$(target)"}]}
+$execute if entity @s[tag=storyteller] run tellraw @s {"translate":"clocktower.notice.storyteller.removed","with":[{"text":"$(target)"}]}
 
 execute if entity @s[tag=storyteller] run team leave @s
 fmvariable set storyteller false false

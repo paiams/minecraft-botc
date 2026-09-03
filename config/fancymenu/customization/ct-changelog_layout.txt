@@ -475,7 +475,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Back to Main Menu
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.back_to_main_menu"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 53ed9407-1215-483a-8477-7bd6ccd1955d-1768099473989
   [loading_requirement_container_meta:53ed9407-1215-483a-8477-7bd6ccd1955d-1768099473989] = [groups:][instances:]
@@ -535,7 +535,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Changelog%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.changelog.title"}}
   source_mode = direct
   shadow = true
   scale = 1.0
