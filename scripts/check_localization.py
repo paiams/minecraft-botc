@@ -656,6 +656,7 @@ CHARACTER_FIELD_RE = re.compile(
     r'"(?P<value>(?:\\.|[^"\\])*)"'
 )
 REMINDER_ID_RE = re.compile(r'(?:^|[,{])text:([a-z0-9_]+)(?=[,}])')
+NIGHT_KEY_LINE_RE = re.compile(r'"(?:first|other)_night_key"\s*:')
 
 
 def character_fields(source: str) -> dict[str, dict[str, str]]:
@@ -697,6 +698,12 @@ def check_character_keys(root: Path, en_keys: Mapping[str, object], ko_keys: Map
     except (OSError, UnicodeDecodeError) as error:
         report.error(f"cannot read character data for night-key check: {error}")
         return
+    lines = source.splitlines()
+    for index, line in enumerate(lines):
+        if NIGHT_KEY_LINE_RE.search(line) and (index == 0 or not lines[index - 1].rstrip().endswith(",\\")):
+            report.error(
+                f"{_relative(path, root)}:{index + 1}: night locale key lacks a preceding field separator"
+            )
     for role, fields in sorted(character_fields(source).items()):
         for source_field, suffix in (("name", "name"), ("ability", "desc")):
             if source_field not in fields:

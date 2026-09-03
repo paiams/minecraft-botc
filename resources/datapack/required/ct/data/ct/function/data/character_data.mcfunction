@@ -215,7 +215,7 @@ data merge storage ct:character_data \
 			"ability": "Each day, choose a player: a different player changes character tonight.",\
 			"flavor": "Wire α To wire β. LigHt oN. BuZZer off. GAzOinks! Arms STra1ght. FingER 2 nose. hOooLd stiLL. BoiNgo-banGo! Ha-ha-ha!",\
 			"name": "Cacklejack",\
-			"other": "Before dawn, choose a player not marked *NOT ME*. Wake the target. Show the *YOU ARE* info token & their new character token."\
+			"other": "Before dawn, choose a player not marked *NOT ME*. Wake the target. Show the *YOU ARE* info token & their new character token.",\
 			"other_night_key": "clocktower.role.cacklejack.other_night",\
 		},\
 		"cannibal": {\
@@ -257,7 +257,7 @@ data merge storage ct:character_data \
 			"ability": "If the Demon kills the King, you learn which player is the Demon. [+the King]",\
 			"flavor": "I saw it, I did. I was in the pews, tidying the hymn books, when a dreadful tune started from the pipe organ. The organist had a long cloak, and long fingers on the keys. And a hat that looked… just like… yours.",\
 			"name": "Choirboy",\
-			"other": "If the Demon killed the King, point to the Demon player."\
+			"other": "If the Demon killed the King, point to the Demon player.",\
 			"other_night_key": "clocktower.role.choirboy.other_night",\
 		},\
 		"clockmaker": {\
@@ -304,7 +304,7 @@ data merge storage ct:character_data \
 			"first": "Wait for a few seconds. End the Night Phase.",\
 			"first_night_key": "clocktower.role.dawn.first_night",\
 			"name": "Dawn",\
-			"other": "Wait for a few seconds. End the Night Phase."\
+			"other": "Wait for a few seconds. End the Night Phase.",\
 			"other_night_key": "clocktower.role.dawn.other_night",\
 		},\
 		"demoninfo": {\
@@ -349,7 +349,7 @@ data merge storage ct:character_data \
 			"first_night_key": "clocktower.role.dreamer.first_night",\
 			"flavor": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",\
 			"name": "Dreamer",\
-			"other": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character."\
+			"other": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",\
 			"other_night_key": "clocktower.role.dreamer.other_night",\
 		},\
 		"drunk": {\
@@ -371,7 +371,7 @@ data merge storage ct:character_data \
 			"first": "Start the Night Phase.",\
 			"first_night_key": "clocktower.role.dusk.first_night",\
 			"name": "Dusk",\
-			"other": "Start the Night Phase."\
+			"other": "Start the Night Phase.",\
 			"other_night_key": "clocktower.role.dusk.other_night",\
 		},\
 		"empath": {\
@@ -510,7 +510,7 @@ data merge storage ct:character_data \
 			"first_night_key": "clocktower.role.general.first_night",\
 			"flavor": "I don’t have time for quotes.",\
 			"name": "General",\
-			"other": "Give a thumb signal."\
+			"other": "Give a thumb signal.",\
 			"other_night_key": "clocktower.role.general.other_night",\
 		},\
 		"gnome": {\
@@ -636,7 +636,7 @@ data merge storage ct:character_data \
 			"first_night_key": "clocktower.role.highpriestess.first_night",\
 			"flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",\
 			"name": "High Priestess",\
-			"other": "Point to a player."\
+			"other": "Point to a player.",\
 			"other_night_key": "clocktower.role.highpriestess.other_night",\
 		},\
 		"huntsman": {\
@@ -706,7 +706,7 @@ data merge storage ct:character_data \
 			"first_night_key": "clocktower.role.king.first_night",\
 			"flavor": "Betwixt the unknown strains of mortal strife / And morbid night, sweet with mystery and woe / Lies unfettered joys of fate’s long and colored life / Who’s garden blooms with each painted Face to Show.",\
 			"name": "King",\
-			"other": "If the dead equal or outnumber the living, show the character token of a living player."\
+			"other": "If the dead equal or outnumber the living, show the character token of a living player.",\
 			"other_night_key": "clocktower.role.king.other_night",\
 		},\
 		"klutz": {\
@@ -929,7 +929,7 @@ data merge storage ct:character_data \
 			"ability": "Each night*, you learn how many dead players are evil.",\
 			"flavor": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",\
 			"name": "Oracle",\
-			"other": "Give a finger signal."\
+			"other": "Give a finger signal.",\
 			"other_night_key": "clocktower.role.oracle.other_night",\
 		},\
 		"organgrinder": {\
@@ -961,7 +961,7 @@ data merge storage ct:character_data \
 			"ability": "Each night*, choose a player & a character they become (if not in play). If a Demon is made, deaths tonight are arbitrary.",\
 			"flavor": "Round about the cauldron go; In the poison'd entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",\
 			"name": "Pit-Hag",\
-			"other": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token."\
+			"other": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token.",\
 			"other_night_key": "clocktower.role.pithag.other_night",\
 		},\
 		"pixie": {\
@@ -1094,7 +1094,7 @@ data merge storage ct:character_data \
 			"ability": "If the Demon kills you, you learn that it is 1 of 2 players.",\
 			"flavor": "These mountainous tomes guard the secret, I am sure of it! Twixt word and word, it lies in wait. More candles, boy! More ink! These notes may look arcane, but the infernal puzzle is revealing itself.",\
 			"name": "Sage",\
-			"other": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon."\
+			"other": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",\
 			"other_night_key": "clocktower.role.sage.other_night",\
 		},\
 		"sailor": {\
@@ -1385,7 +1385,7 @@ data merge storage ct:character_data \
 			"first_night_key": "clocktower.role.wraith.first_night",\
 			"flavor": "Ra'āb ina pān ṣilli ša dāri. Rigim qallu ina šūri, šītu ša šunātīka iredde, u napšutka idlul ina pān maṣṣartī dāriti.",\
 			"name": "Wraith",\
-			"other": "Wake the Wraith whenever other evil players wake."\
+			"other": "Wake the Wraith whenever other evil players wake.",\
 			"other_night_key": "clocktower.role.wraith.other_night",\
 		},\
 		"xaan": {\
