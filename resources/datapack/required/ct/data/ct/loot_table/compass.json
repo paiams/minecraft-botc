@@ -461,7 +461,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Home Compass",
+                "translate": "clocktower.item.home_compass",
                 "italic": false
               }
             }

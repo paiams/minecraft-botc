@@ -583,7 +583,7 @@ element {
 
 element {
   interactable = true
-  source = |||%n%{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"phase"}}","cases":"1:Day,2:Day,3:Day,4:Night","default":"Error"}} {"placeholder":"getvariable","values":{"name":"current_day"}}%n%Since {"placeholder":"getvariable","values":{"name":"day_start"}}%n%|||
+  source = |||%n%{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"phase"}}","cases":"1:{"placeholder":"local","values":{"key":"clocktower.ui.hud.day"}},2:{"placeholder":"local","values":{"key":"clocktower.ui.hud.day"}},3:{"placeholder":"local","values":{"key":"clocktower.ui.hud.day"}},4:{"placeholder":"local","values":{"key":"clocktower.ui.hud.night"}}","default":"{"placeholder":"local","values":{"key":"clocktower.ui.hud.error"}}"}} {"placeholder":"getvariable","values":{"name":"current_day"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.hud.since"}}{"placeholder":"getvariable","values":{"name":"day_start"}}%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false

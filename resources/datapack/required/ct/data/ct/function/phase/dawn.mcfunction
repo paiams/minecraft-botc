@@ -33,6 +33,6 @@ team modify 00_spectator nametagVisibility always
 tag @a remove universal_vc
 execute as @a run voicechat leave
 
-clear @a minecraft:compass[minecraft:custom_name={italic:0b,text:"Home Compass"}]
+clear @a minecraft:compass[minecraft:custom_name={translate:"clocktower.item.home_compass",italic:0b}]
 
 function ct:util/sync_variables
