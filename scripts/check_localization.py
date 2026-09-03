@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static checks for the Korean localization of the Clocktower pack.
+"""Static checks for the complete Korean localization of the Clocktower pack.
 
 The language file is JSON with comments (JSONC), while datapack and FancyMenu
 files contain a mixture of JSON-like snippets and plain text.  This checker is
@@ -12,7 +12,6 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import subprocess
 import sys
 from collections import Counter
 from dataclasses import dataclass, field
@@ -20,54 +19,7 @@ from pathlib import Path
 from typing import Iterator, Mapping, Sequence
 
 
-TB_ROLES: tuple[str, ...] = (
-    # Trouble Brewing: 13 Townsfolk, 4 Outsiders, 4 Minions, 1 Demon.
-    "washerwoman",
-    "librarian",
-    "investigator",
-    "chef",
-    "empath",
-    "fortuneteller",
-    "undertaker",
-    "monk",
-    "ravenkeeper",
-    "virgin",
-    "slayer",
-    "soldier",
-    "mayor",
-    "butler",
-    "saint",
-    "recluse",
-    "drunk",
-    "poisoner",
-    "spy",
-    "baron",
-    "scarletwoman",
-    "imp",
-)
-
-# The reminders used by the 22 TB tokens.  Several TB roles have no reminder
-# token; keeping the explicit list avoids requiring unrelated expansion roles.
-TB_REMINDERS: tuple[str, ...] = (
-    "washerwoman_town",
-    "washerwoman_wrong",
-    "librarian_outsider",
-    "librarian_wrong",
-    "investigator_minion",
-    "investigator_wrong",
-    "fortuneteller",
-    "undertaker",
-    "monk",
-    "virgin",
-    "slayer",
-    "butler",
-    "drunk",
-    "poisoner",
-    "imp",
-)
-
-# UI used while setting up and running a TB game.  Non-TB quick actions (for
-# example Banshee and Al-Hadikhia) intentionally remain English fallback.
+# UI used while setting up and running a game.
 CORE_UI_KEYS: tuple[str, ...] = (
     "clocktower.header.town",
     "clocktower.header.outsiders",
@@ -511,55 +463,9 @@ def datapack_translate_references(directory: Path) -> Iterator[KeyReference]:
 FM_VISIBLE_FIELDS = frozenset({"label", "description", "hoverlabel", "title", "text", "source"})
 FIELD_RE = re.compile(r"^\s*(label|description|hoverlabel|title|text|source)\s*=\s*(.*)$")
 TEXT_FIELD_RE = re.compile(r'(?<![\w])"?text"?\s*:\s*"((?:\\.|[^"\\])*)"')
+DIRECT_TELLRAW_RE = re.compile(r'\btellraw\s+\S+\s+"((?:\\.|[^"\\])*)"\s*$')
 DIRECT_TITLE_RE = re.compile(r"\btitle\b[^\n]*?\btitle\s+\"([^\"]+)\"")
 WORD_RE = re.compile(r"\b[A-Za-z]{2,}\b")
-
-# These files now route all in-scope copy through locale keys.  Keep them
-# permanently strict after the localization commit; other files remain
-# warnings until their scripts/roles enter the translated scope.
-STRICT_HARDCODED_PATHS = frozenset(
-    {
-        "config/fancymenu/customization/chat_screen_layout.txt",
-        "config/fancymenu/customization/ct-bag_import.txt",
-        "config/fancymenu/customization/ct-bag_layout.txt",
-        "config/fancymenu/customization/ct-confirm_reset_layout.txt",
-        "config/fancymenu/customization/ct-execute_step_1.txt",
-        "config/fancymenu/customization/ct-execute_step_2.txt",
-        "config/fancymenu/customization/ct-grimoire_actions.txt",
-        "config/fancymenu/customization/ct-grimoire_background.txt",
-        "config/fancymenu/customization/ct-grimoire_background_player.txt",
-        "config/fancymenu/customization/ct-grimoire_bluffs.txt",
-        "config/fancymenu/customization/ct-grimoire_bluffs_player.txt",
-        "config/fancymenu/customization/ct-grimoire_order_first_night.txt",
-        "config/fancymenu/customization/ct-grimoire_order_other_nights.txt",
-        "config/fancymenu/customization/ct-night-order_layout.txt",
-        "config/fancymenu/customization/ct-noms_nominator.txt",
-        "config/fancymenu/customization/ct-noms_nominee.txt",
-        "config/fancymenu/customization/ct-quick_actions_root.txt",
-        "config/fancymenu/customization/ct-role_toggler.txt",
-        "config/fancymenu/customization/ct-role_toggler_player.txt",
-        "config/fancymenu/customization/ct-script.txt",
-        "config/fancymenu/customization/ct-script_phobos.txt",
-        "config/fancymenu/customization/ct-settings_layout.txt",
-        "config/fancymenu/customization/ct-st_special_actions_layout.txt",
-        "config/fancymenu/customization/ct-timer_layout.txt",
-        "config/fancymenu/customization/ct-tutorial_page_1.txt",
-        "resources/datapack/required/ct/data/ct/function/cmd/hand/lower.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/hand/raise.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/request_chat/off.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/request_chat/on.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/togglevc/join.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/togglevc/leave.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/tpallhome.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/cmd/tpchurch.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/loop/voicechat/messages.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/loop/vote/display_in_actionbar.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/loop/vote/start_vote.mcfunction",
-        "resources/datapack/required/ct/data/ct/function/util/send_tutorial.mcfunction",
-        "resources/datapack/required/ct/data/ct/loot_table/compass.json",
-        "resources/datapack/required/ct/data/ct/loot_table/skulls.json",
-    }
-)
 
 
 @dataclass(frozen=True)
@@ -602,6 +508,8 @@ def _remove_braced_placeholders(value: str) -> str:
 
 def _looks_like_user_english(value: str) -> bool:
     cleaned = _remove_braced_placeholders(value)
+    # FancyMenu uses this invisible sentinel to measure two bundled fonts.
+    cleaned = cleaned.replace("this is a custom font", " ")
     cleaned = re.sub(r"https?://\S+", " ", cleaned)
     cleaned = re.sub(r"\$\([^)]*\)", " ", cleaned)
     cleaned = re.sub(r"%[^%\n]*%", " ", cleaned)
@@ -653,10 +561,11 @@ def find_hardcoded_datapack(path: Path) -> Iterator[HardcodedText]:
             if _looks_like_user_english(value):
                 found = True
                 yield HardcodedText(path, line_number, value)
-        if not found:
-            match = DIRECT_TITLE_RE.search(line)
-            if match and _looks_like_user_english(match.group(1)):
-                yield HardcodedText(path, line_number, match.group(1))
+        if found:
+            continue
+        match = DIRECT_TELLRAW_RE.search(line) or DIRECT_TITLE_RE.search(line)
+        if match and _looks_like_user_english(match.group(1)):
+            yield HardcodedText(path, line_number, match.group(1))
 
 
 def _relative(path: Path, root: Path) -> str:
@@ -679,18 +588,8 @@ class Report:
 
 
 def _required_keys() -> tuple[str, ...]:
-    role_keys = tuple(
-        f"clocktower.role.{role}.{part}"
-        for role in TB_ROLES
-        for part in ("name", "desc")
-    )
-    reminder_keys = tuple(f"clocktower.reminder.{name}.text" for name in TB_REMINDERS)
     # Preserve declaration order while removing any accidental duplicate.
-    return tuple(
-        dict.fromkeys(
-            (*role_keys, *reminder_keys, *CORE_UI_KEYS, *CORE_FANCYMENU_KEYS)
-        )
-    )
+    return tuple(dict.fromkeys((*CORE_UI_KEYS, *CORE_FANCYMENU_KEYS)))
 
 
 def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[Mapping[str, object], Mapping[str, object]]:
@@ -714,6 +613,9 @@ def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[
     for key in unknown:
         report.error(f"ko_kr key is not present in en_us (fallback key typo?): {key}")
 
+    for key in sorted(set(en.data) - set(ko.data)):
+        report.error(f"ko_kr missing English fallback key: {key}")
+
     for key, ko_value in ko.data.items():
         if key not in en.data:
             continue
@@ -721,7 +623,7 @@ def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[
         if not isinstance(en_value, str) or not isinstance(ko_value, str):
             report.error(f"{key}: language values must both be strings")
             continue
-        if not ko_value.strip() and key not in EMPTY_TRANSLATION_ALLOWED:
+        if not ko_value.strip() and en_value.strip() and key not in EMPTY_TRANSLATION_ALLOWED:
             report.error(f"{key}: Korean translation is empty")
         expected = format_tokens(en_value)
         actual = format_tokens(ko_value)
@@ -734,13 +636,13 @@ def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[
     required = _required_keys()
     for key in required:
         if key not in en.data:
-            report.error(f"en_us missing required TB/UI key: {key}")
+            report.error(f"en_us missing required UI key: {key}")
         if (
             key not in ko.data
             or not isinstance(ko.data.get(key), str)
             or (not str(ko.data.get(key)).strip() and key not in EMPTY_TRANSLATION_ALLOWED)
         ):
-            report.error(f"ko_kr missing required TB/UI key: {key}")
+            report.error(f"ko_kr missing required UI key: {key}")
     return en.data, ko.data
 
 
@@ -748,10 +650,44 @@ NIGHT_KEY_RE = re.compile(
     r'"(?P<kind>first_night_key|other_night_key)"\s*:\s*'
     r'"(?P<key>clocktower\.role\.(?P<role>[a-z0-9_]+)\.(?:first_night|other_night))"'
 )
+CHARACTER_START_RE = re.compile(r'^\t\t"(?P<role>[a-z0-9_]+)"\s*:\s*\{')
+CHARACTER_FIELD_RE = re.compile(
+    r'^\s*"(?P<field>name|ability|first|other|first_night_key|other_night_key)"\s*:\s*'
+    r'"(?P<value>(?:\\.|[^"\\])*)"'
+)
+REMINDER_ID_RE = re.compile(r'(?:^|[,{])text:([a-z0-9_]+)(?=[,}])')
 
 
-def check_night_keys(root: Path, en_keys: Mapping[str, object], ko_keys: Mapping[str, object], report: Report) -> None:
-    """Require localized night hints for TB roles that define one in data."""
+def character_fields(source: str) -> dict[str, dict[str, str]]:
+    """Extract localizable fields from character_data.mcfunction."""
+
+    characters: dict[str, dict[str, str]] = {}
+    current_role: str | None = None
+    for line in source.splitlines():
+        role_match = CHARACTER_START_RE.match(line)
+        if role_match:
+            current_role = role_match.group("role")
+            characters[current_role] = {}
+            continue
+        if current_role is None:
+            continue
+        if line.startswith("\t\t}"):
+            current_role = None
+            continue
+        field_match = CHARACTER_FIELD_RE.match(line)
+        if not field_match:
+            continue
+        raw_value = field_match.group("value")
+        try:
+            value = json.loads(f'"{raw_value}"')
+        except json.JSONDecodeError:
+            value = raw_value
+        characters[current_role][field_match.group("field")] = value
+    return characters
+
+
+def check_character_keys(root: Path, en_keys: Mapping[str, object], ko_keys: Mapping[str, object], report: Report) -> None:
+    """Require localized names, abilities, reminders, and night hints."""
 
     path = root / "resources" / "datapack" / "required" / "ct" / "data" / "ct" / "function" / "data" / "character_data.mcfunction"
     if not path.is_file():
@@ -761,15 +697,51 @@ def check_night_keys(root: Path, en_keys: Mapping[str, object], ko_keys: Mapping
     except (OSError, UnicodeDecodeError) as error:
         report.error(f"cannot read character data for night-key check: {error}")
         return
-    required: set[str] = set()
-    for match in NIGHT_KEY_RE.finditer(source):
-        if match.group("role") in TB_ROLES:
-            required.add(match.group("key"))
-    for key in sorted(required):
-        if key not in en_keys:
-            report.error(f"en_us missing TB night hint key declared by character_data: {key}")
-        if key not in ko_keys or not isinstance(ko_keys.get(key), str) or not str(ko_keys.get(key)).strip():
-            report.error(f"ko_kr missing TB night hint key declared by character_data: {key}")
+    for role, fields in sorted(character_fields(source).items()):
+        for source_field, suffix in (("name", "name"), ("ability", "desc")):
+            if source_field not in fields:
+                continue
+            expected_key = f"clocktower.role.{role}.{suffix}"
+            if expected_key not in en_keys:
+                report.error(f"en_us missing built-in character key: {expected_key}")
+            if (
+                expected_key not in ko_keys
+                or not isinstance(ko_keys.get(expected_key), str)
+                or not str(ko_keys.get(expected_key)).strip()
+            ):
+                report.error(f"ko_kr missing built-in character key: {expected_key}")
+        for source_field, key_field, suffix in (
+            ("first", "first_night_key", "first_night"),
+            ("other", "other_night_key", "other_night"),
+        ):
+            if source_field not in fields:
+                continue
+            expected_key = f"clocktower.role.{role}.{suffix}"
+            if fields.get(key_field) != expected_key:
+                report.error(
+                    f"character_data {role}.{source_field} missing locale field "
+                    f"{key_field}={expected_key!r}"
+                )
+            if en_keys.get(expected_key) != fields[source_field]:
+                report.error(
+                    f"en_us {expected_key} must preserve character_data {source_field} fallback"
+                )
+            if (
+                expected_key not in ko_keys
+                or not isinstance(ko_keys.get(expected_key), str)
+                or not str(ko_keys.get(expected_key)).strip()
+            ):
+                report.error(f"ko_kr missing built-in night hint key: {expected_key}")
+    for reminder in sorted(set(REMINDER_ID_RE.findall(source))):
+        expected_key = f"clocktower.reminder.{reminder}.text"
+        if expected_key not in en_keys:
+            report.error(f"en_us missing built-in reminder key: {expected_key}")
+        if (
+            expected_key not in ko_keys
+            or not isinstance(ko_keys.get(expected_key), str)
+            or not str(ko_keys.get(expected_key)).strip()
+        ):
+            report.error(f"ko_kr missing built-in reminder key: {expected_key}")
 
 
 def check_references(
@@ -804,52 +776,6 @@ def _core_paths(root: Path) -> tuple[list[Path], list[Path]]:
     return datapack, fm
 
 
-def _git_added_lines(root: Path, path: Path) -> set[int] | None:
-    """Return added line numbers; None means git could not provide a baseline."""
-
-    relative = path.resolve().relative_to(root.resolve()).as_posix()
-    try:
-        tracked = subprocess.run(
-            ["git", "ls-files", "--error-unmatch", "--", relative],
-            cwd=root,
-            check=False,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-        )
-        if tracked.returncode != 0:
-            # An untracked core file is entirely new.
-            return set(range(1, len(path.read_text(encoding="utf-8-sig").splitlines()) + 1))
-        diff = subprocess.run(
-            ["git", "diff", "HEAD", "--no-color", "--unified=0", "--", relative],
-            cwd=root,
-            check=False,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-        )
-    except (OSError, ValueError):
-        return None
-    if diff.returncode != 0:
-        return None
-    added: set[int] = set()
-    new_line = 0
-    for line in diff.stdout.splitlines():
-        if line.startswith("@@"):
-            match = re.search(r"\+(\d+)(?:,(\d+))?", line)
-            if match:
-                new_line = int(match.group(1))
-            continue
-        if line.startswith("+") and not line.startswith("+++"):
-            added.add(new_line)
-            new_line += 1
-        elif not line.startswith("-"):
-            new_line += 1
-    return added
-
-
 def check_hardcoded_text(root: Path, report: Report) -> None:
     datapack_paths, fm_paths = _core_paths(root)
     findings: list[HardcodedText] = []
@@ -858,16 +784,9 @@ def check_hardcoded_text(root: Path, report: Report) -> None:
     for path in fm_paths:
         findings.extend(find_hardcoded_fancymenu(path))
 
-    added_by_path = {path: _git_added_lines(root, path) for path in {finding.path for finding in findings}}
     for finding in findings:
-        added = added_by_path.get(finding.path)
         location = f"{_relative(finding.path, root)}:{finding.line}"
-        if _relative(finding.path, root) in STRICT_HARDCODED_PATHS:
-            report.error(f"{location}: hardcoded user-facing English in localized path: {finding.text!r}")
-        elif added is not None and finding.line in added:
-            report.error(f"{location}: new hardcoded user-facing English: {finding.text!r}")
-        else:
-            report.warning(f"{location}: existing hardcoded user-facing English: {finding.text!r}")
+        report.error(f"{location}: hardcoded user-facing English: {finding.text!r}")
 
 
 def run_checks(root: Path, en_path: Path | None = None, ko_path: Path | None = None) -> Report:
@@ -883,7 +802,7 @@ def run_checks(root: Path, en_path: Path | None = None, ko_path: Path | None = N
             ko_keys = read_jsonc(ko_path).data
         except (OSError, JsoncError):
             ko_keys = {}
-        check_night_keys(root, en_keys, ko_keys, report)
+        check_character_keys(root, en_keys, ko_keys, report)
         check_references(root, en_keys, report)
     check_hardcoded_text(root, report)
     return report
@@ -906,12 +825,21 @@ def _self_test() -> None:
     assert format_tokens("%s\n§a") == format_tokens("%s\n§a")
     assert format_tokens("%s") != format_tokens("%d")
     assert _looks_like_user_english('prefix {"placeholder":"getvariable"}')
+    assert not _looks_like_user_english('%!!unlovable%this is a custom font %!!arial%this is a custom font')
     assert not _looks_like_user_english('{"placeholder":"local","values":{"key":"clocktower.ui.x"}}')
     assert TEXT_FIELD_RE.findall('{"text":"Hello there"}') == ["Hello there"]
+    assert DIRECT_TELLRAW_RE.search('tellraw @s "Hello there"').group(1) == "Hello there"
     assert [m.group(1) for m in TRANSLATE_KEY_RE.finditer('{"translate":"clocktower.ui.x"} translate:"clocktower.ui.y"')] == [
         "clocktower.ui.x",
         "clocktower.ui.y",
     ]
+    night_sample = '\t\t"sample": {\\\n\t\t\t"first": "Show \\\"YES\\\".",\\\n\t\t\t"first_night_key": "clocktower.role.sample.first_night"\\\n\t\t},\\\n'
+    assert character_fields(night_sample) == {
+        "sample": {
+            "first": 'Show "YES".',
+            "first_night_key": "clocktower.role.sample.first_night",
+        }
+    }
     print("self-test: ok")
 
 

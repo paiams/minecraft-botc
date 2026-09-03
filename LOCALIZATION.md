@@ -1,8 +1,8 @@
 # Localization
 
-This fork adds Korean localization for the Trouble Brewing script on top of
-Minecraft BotC 1.6.0 (`fc5d8ee`). It is not affiliated with or endorsed by The
-Pandemonium Institute, MTS Games, or the upstream modpack maintainers.
+This fork adds Korean localization for the built-in content of Minecraft BotC
+1.6.0 (`fc5d8ee`). It is not affiliated with or endorsed by The Pandemonium
+Institute, MTS Games, or the upstream modpack maintainers.
 
 The upstream project prohibits AI-assisted contributions. This localization was
 created with AI assistance. Do not contact upstream or submit any part of it
@@ -28,23 +28,29 @@ alive = 생존.
 
 ## Current scope
 
-Korean covers Trouble Brewing's 22 character names and abilities, its reminder
-tokens and night instructions, and the shared setup, role assignment, phase,
+Korean covers every built-in 1.6.0 character name and ability, all reminder
+tokens, first- and other-night instructions, Jinxes, the three built-in script
+selection labels, and the modpack-owned setup, role assignment, phase,
 nomination, voting, death, execution, Grimoire, quick-action, settings, timer,
-HUD, Home Compass, and first-page tutorial flow needed to run that script.
+HUD, Home Compass, tutorial, and special-character flows.
 
-Characters outside Trouble Brewing, Travellers, Fabled, Lorics, Jinxes, external
-mod settings, third-party saved Chatbind labels, flavor text, and the GitHub wiki
-remain English. Imported custom scripts retain their embedded English night hints
-when they do not provide a known localization key. The Home Compass now uses one
-translation component for both item creation and the dawn cleanup predicate.
+The GitHub wiki is a test reference, not part of the pack, and remains English.
+Character flavor text is retained as internal source data because 1.6.0 never
+renders it. Imported script titles, authors, and unknown night hints are shown
+verbatim. Third-party Chatbind labels and EnhancedGroups group names also remain
+English because those mods store shared literal names instead of resolving a
+per-client locale; changing them would break mixed Korean/English clients or
+their command bindings. External mod settings are owned by their respective mods.
+The Home Compass uses one translation component for both item creation and the
+dawn cleanup predicate.
 
 ## Updating
 
 1. Rebase on the intended upstream release; do not mix release branches.
 2. Compare `assets/minecraft/lang/en_us.json` and hardcoded user-facing strings.
 3. Compare official Korean terminology against the recorded TPI commit.
-4. Translate only new or changed Trouble Brewing/shared-flow text.
+4. Translate every new or changed built-in character, reminder, Jinx, and
+   modpack-owned UI/message string.
 5. Run `python scripts/check_localization.py`.
 6. Smoke-test the full setup → night → day → nomination → vote → execution flow
    in both Korean and English, including a mixed-language multiplayer session.
@@ -52,6 +58,6 @@ translation component for both item creation and the dawn cleanup predicate.
    `.mrpack` contains the Korean language file under the included `resources`
    directory.
 
-The checker permits `ko_kr.json` to be a subset of `en_us.json`; omitted keys use
-Minecraft's normal English fallback. New localized references and all required
-Trouble Brewing keys must still exist in both files.
+The checker requires `ko_kr.json` and `en_us.json` to contain the same keys. It
+also verifies every built-in night instruction and rejects hardcoded English in
+the modpack-owned datapack and FancyMenu paths.
