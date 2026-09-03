@@ -594,7 +594,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}"%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.created_by"}}{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.author"}}%n%^^^
+  source = ^^^%n%"{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}","cases":"Trouble Brewing:{"placeholder":"local","values":{"key":"clocktower.script.trouble_brewing.name"}},Sects and Violets:{"placeholder":"local","values":{"key":"clocktower.ui.script.sects_violets.name"}},Bad Moon Rising:{"placeholder":"local","values":{"key":"clocktower.ui.script.bad_moon_rising.name"}}","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}"}}"%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.created_by"}}{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.author"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false

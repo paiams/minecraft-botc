@@ -395,8 +395,8 @@ element {
 
 element {
   interactable = true
-  source = [source:web]https://raw.githubusercontent.com/Sybillian/minecraft-botc/refs/heads/main/changelog.txt
-  source_mode = resource
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.changelog.body"}}
+  source_mode = direct
   shadow = true
   scale = 1.0
   base_color = #FFFFFFFF

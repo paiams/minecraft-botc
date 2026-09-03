@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Blood on the Clocktower\nBy Sybillian",
+    "description": {"translate":"pack.ct.datapack.description"},
     "pack_format": 94.1,
     "min_format": 94.1,
     "max_format": 94.1

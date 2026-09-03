@@ -356,7 +356,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Report Modpack Bugs
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.pause.report_bugs"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 347508ab-74b4-45c8-8286-bf79429b3b16-1771556548597
   [loading_requirement_container_meta:347508ab-74b4-45c8-8286-bf79429b3b16-1771556548597] = [groups:][instances:]
@@ -494,7 +494,7 @@ element {
 
 element {
   interactable = false
-  source = BotC {"placeholder":"getvariable","values":{"name":"version"}}
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.brand_short"}} {"placeholder":"getvariable","values":{"name":"version"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false

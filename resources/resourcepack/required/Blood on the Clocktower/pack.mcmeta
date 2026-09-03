@@ -1,7 +1,7 @@
 {
     "pack": {
       "pack_format": 65,
-      "description": "Required assets for\nBotC modpack.",
+      "description": {"translate":"pack.ct.resourcepack.description"},
       "max_format": 1000,
       "min_format": 65
     }

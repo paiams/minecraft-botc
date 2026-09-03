@@ -4682,10 +4682,10 @@ element {
 element {
   slider_type = integer_range
   pre_selected_value = {"placeholder":"getvariable","values":{"name":"player_count"}}
-  slider_label = Player Count: $$value
-  slider_list_value_0 = some_value
-  slider_list_value_1 = another_value
-  slider_list_value_2 = third_value
+  slider_label = {"placeholder":"local","values":{"key":"clocktower.ui.bag.player_count_prefix"}}$$value
+  slider_list_value_0 = 0
+  slider_list_value_1 = 1
+  slider_list_value_2 = 2
   slider_element_executable_block_identifier = 2ec4abc8-d80f-4add-9023-a5249c1d0065-1751846002247
   [executable_action_instance:481ebe33-8106-41f7-8fe0-4bc75f3f2ec3-1751846144609][action_type:set_variable] = stored_player_count:$$value
   [executable_block:2ec4abc8-d80f-4add-9023-a5249c1d0065-1751846002247][type:generic] = [executables:481ebe33-8106-41f7-8fe0-4bc75f3f2ec3-1751846144609;]

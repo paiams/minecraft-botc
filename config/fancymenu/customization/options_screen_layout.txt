@@ -357,7 +357,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Mod Options
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.options.mod_options"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = c4561f55-f69c-4d33-8dd4-2468f2652f92-1750819023056
   [loading_requirement_container_meta:c4561f55-f69c-4d33-8dd4-2468f2652f92-1750819023056] = [groups:][instances:]
@@ -437,8 +437,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"current_dimension","values":{"as_key":"false"}}","cases":"Overworld:Edit BotC game settings.","default":"This menu is only accessible while in a world."}}
-  label = BotC Options
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"current_dimension","values":{"as_key":"false"}}","cases":"Overworld:{"placeholder":"local","values":{"key":"clocktower.ui.options.botc.description"}}","default":"{"placeholder":"local","values":{"key":"clocktower.ui.options.botc.world_required"}}"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.options.botc.label"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = c4561f55-f69c-4d33-8dd4-2468f2652f92-1750819023056
   [loading_requirement_container_meta:c4561f55-f69c-4d33-8dd4-2468f2652f92-1750819023056] = [groups:][instances:e9e8e884-391a-439b-a78c-4c16ca2d0677-1768680834180;]
@@ -519,7 +519,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Modpack Credits
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.options.modpack_credits"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = c4561f55-f69c-4d33-8dd4-2468f2652f92-1750819023056
   [loading_requirement_container_meta:c4561f55-f69c-4d33-8dd4-2468f2652f92-1750819023056] = [groups:][instances:]

@@ -348,16 +348,16 @@ layout_action_executable_blocks {
 
 element {
   slider_type = list
-  pre_selected_value = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"role_scale"}}","cases":"0:OFF,1:Small,2:Medium,3:Large","default":"default case"}}
-  slider_label = Role Icon Scale: $$value
-  slider_list_value_0 = OFF
-  slider_list_value_1 = Small
-  slider_list_value_2 = Medium
-  slider_list_value_3 = Large
+  pre_selected_value = {"placeholder":"getvariable","values":{"name":"role_scale"}}
+  slider_label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale_prefix"}}{"placeholder":"switch_case","values":{"value":"$$value","cases":"0:{"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale.off"}},1:{"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale.small"}},2:{"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale.medium"}},3:{"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale.large"}}","default":"{"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale.medium"}}"}}
+  slider_list_value_0 = 0
+  slider_list_value_1 = 1
+  slider_list_value_2 = 2
+  slider_list_value_3 = 3
   slider_element_executable_block_identifier = b7215360-91fa-48ed-a983-140d2ca5e9db-1761252152548
-  [executable_action_instance:4041a794-73c7-42a0-a9de-f3064a31294d-1761252549860][action_type:set_variable] = role_scale:{"placeholder":"switch_case","values":{"value":"$$value","cases":"OFF:0,Small:1,Medium:2,Large:3","default":"default case"}}
+  [executable_action_instance:4041a794-73c7-42a0-a9de-f3064a31294d-1761252549860][action_type:set_variable] = role_scale:$$value
   [executable_block:b7215360-91fa-48ed-a983-140d2ca5e9db-1761252152548][type:generic] = [executables:4041a794-73c7-42a0-a9de-f3064a31294d-1761252549860;]
-  tooltip = Determines the size of the role icon in the top left of your screen, or disables it entirely.%n%%n%DEFAULT: Medium
+  tooltip = {"placeholder":"local","values":{"key":"clocktower.ui.settings.role_icon_scale.tooltip"}}
   underline_label_on_hover = false
   transparent_background = false
   restart_background_animations = true
@@ -597,15 +597,15 @@ element {
 element {
   slider_type = decimal_range
   pre_selected_value = {"placeholder":"calc","values":{"expression":"{"placeholder":"getvariable","values":{"name":"clock_speed"}} / 10","decimal":"true"}}
-  slider_label = Voting Delay: $$values
-  slider_list_value_0 = OFF
-  slider_list_value_1 = Small
-  slider_list_value_2 = Medium
-  slider_list_value_3 = Large
+  slider_label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.voting_delay_prefix"}}$$values
+  slider_list_value_0 = 0
+  slider_list_value_1 = 1
+  slider_list_value_2 = 2
+  slider_list_value_3 = 3
   slider_element_executable_block_identifier = b7215360-91fa-48ed-a983-140d2ca5e9db-1761252152548
   [executable_action_instance:73eddedd-1d6d-448f-92a7-fe279842fcb0-1769832164810][action_type:sendmessage] = /settings clock_speed {"placeholder":"calc","values":{"expression":"$$value * 10","decimal":"false"}}
   [executable_block:b7215360-91fa-48ed-a983-140d2ca5e9db-1761252152548][type:generic] = [executables:73eddedd-1d6d-448f-92a7-fe279842fcb0-1769832164810;]
-  tooltip = During voting, there will be this much time between each player's vote registering.%n%%n%DEFAULT: 2.0s
+  tooltip = {"placeholder":"local","values":{"key":"clocktower.ui.settings.voting_delay.tooltip"}}
   underline_label_on_hover = false
   transparent_background = false
   restart_background_animations = true

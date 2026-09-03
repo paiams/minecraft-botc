@@ -504,7 +504,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Play Game%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.main.play_game"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -670,7 +670,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Options%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.main.options"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -836,7 +836,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Quit Game%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.main.quit_game"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -922,7 +922,7 @@ element {
 
 element {
   interactable = false
-  source = BotC {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"version"}}","cases":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/Sybillian/minecraft-botc/refs/heads/main/version.txt"}}: {"placeholder":"getvariable","values":{"name":"version"}}","default":"{"placeholder":"getvariable","values":{"name":"version"}}: %#77fc03%Update available!%#%"}}
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.brand_short"}} {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"version"}}","cases":"{"placeholder":"webtext","values":{"link":"https://raw.githubusercontent.com/Sybillian/minecraft-botc/refs/heads/main/version.txt"}}: {"placeholder":"getvariable","values":{"name":"version"}}","default":"{"placeholder":"getvariable","values":{"name":"version"}}: %#77fc03%{"placeholder":"local","values":{"key":"clocktower.ui.main.update_available"}}%#%"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -1013,7 +1013,7 @@ element {
   transparent_background = true
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = New Button
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.main.play_game"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = afa2db5f-177b-455a-8e3d-7f46bc9f379c-1770421335363
   [loading_requirement_container_meta:afa2db5f-177b-455a-8e3d-7f46bc9f379c-1770421335363] = [groups:][instances:]
@@ -1095,7 +1095,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Click to join the modpack Discord server for development updates, support, and games!
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.main.discord.description"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 8dba51a0-dc7f-43e7-9d83-93421fd34b21-1771026931222
   [loading_requirement_container_meta:8dba51a0-dc7f-43e7-9d83-93421fd34b21-1771026931222] = [groups:][instances:]
@@ -1348,7 +1348,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#ffff55% ⚠ %#% %#ff5555%**IMPORTANT** %#% %#ffff55%⚠ %#%%n%You are using a **BETA** version of the modpack. Here there be bugs!%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.main.beta_warning"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -1441,7 +1441,7 @@ element {
   transparent_background = true
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Click here to view the latest Changelog!
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.main.changelog"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 3e5acf72-c987-46e8-9c49-ce68163c593f-1781064089484
   [loading_requirement_container_meta:3e5acf72-c987-46e8-9c49-ce68163c593f-1781064089484] = [groups:][instances:]

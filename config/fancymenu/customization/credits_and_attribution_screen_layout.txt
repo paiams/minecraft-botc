@@ -33,7 +33,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = true
-  source = ^^^%n%Blood on the Clocktower is a game created by Steven Medway and published by the Pandemonium Institute.%n%^^^
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.credits.game_attribution"}}
   source_mode = direct
   shadow = true
   scale = 1.0
