@@ -597,7 +597,7 @@ element {
 element {
   slider_type = decimal_range
   pre_selected_value = {"placeholder":"calc","values":{"expression":"{"placeholder":"getvariable","values":{"name":"clock_speed"}} / 10","decimal":"true"}}
-  slider_label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.voting_delay_prefix"}}$$values
+  slider_label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.voting_delay_prefix"}}$$value
   slider_list_value_0 = 0
   slider_list_value_1 = 1
   slider_list_value_2 = 2
