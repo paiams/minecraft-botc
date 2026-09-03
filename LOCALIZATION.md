@@ -23,20 +23,21 @@ also be required before a contribution. See `CONTRIBUTING.md`.
 Core terms: Trouble Brewing = 점철되는 혼란, Storyteller = 이야기꾼,
 Townsfolk = 주민, Outsider = 외지인, Minion = 하수인, Demon = 악마,
 Grimoire = 마도서, nomination = 지목, execution = 처형, vote = 투표,
-red herring = 허상, poisoned = 중독, drunk = 취함.
+red herring = 허상, poisoned = 중독, drunk = 취함, dead = 사망,
+alive = 생존.
 
 ## Current scope
 
 Korean covers Trouble Brewing's 22 character names and abilities, its reminder
-tokens and night instructions, and the shared setup, phase, nomination, voting,
-death, execution, Grimoire, and tutorial flow needed to run that script.
+tokens and night instructions, and the shared setup, role assignment, phase,
+nomination, voting, death, execution, Grimoire, quick-action, settings, timer,
+HUD, Home Compass, and first-page tutorial flow needed to run that script.
 
 Characters outside Trouble Brewing, Travellers, Fabled, Lorics, Jinxes, external
 mod settings, third-party saved Chatbind labels, flavor text, and the GitHub wiki
 remain English. Imported custom scripts retain their embedded English night hints
-when they do not provide a known localization key. The Home Compass display name
-also remains English because the v1.6.0 datapack uses that literal name as an
-internal item predicate; localizing it safely requires a separate item-data change.
+when they do not provide a known localization key. The Home Compass now uses one
+translation component for both item creation and the dawn cleanup predicate.
 
 ## Updating
 
@@ -47,6 +48,9 @@ internal item predicate; localizing it safely requires a separate item-data chan
 5. Run `python scripts/check_localization.py`.
 6. Smoke-test the full setup → night → day → nomination → vote → execution flow
    in both Korean and English, including a mixed-language multiplayer session.
+7. Follow `.github/PACKAGING_INSTRUCTIONS.md` and confirm that the exported
+   `.mrpack` contains the Korean language file under the included `resources`
+   directory.
 
 The checker permits `ko_kr.json` to be a subset of `en_us.json`; omitted keys use
 Minecraft's normal English fallback. New localized references and all required

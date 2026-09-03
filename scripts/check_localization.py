@@ -114,6 +114,7 @@ CORE_UI_KEYS: tuple[str, ...] = (
     "clocktower.ui.start_night_1",
     "clocktower.ui.home_of",
     "clocktower.ui.you_are",
+    "clocktower.item.home_compass",
     "clocktower.vote.yes",
     "clocktower.vote.no",
     "clocktower.vote.close",
@@ -152,6 +153,19 @@ CORE_UI_KEYS: tuple[str, ...] = (
     "clocktower.voicechat.listening",
     "clocktower.voicechat.listening_night",
     "clocktower.voicechat.listening_local",
+    "clocktower.voicechat.night_chat",
+    "clocktower.voicechat.joined",
+    "clocktower.voicechat.exited",
+    "clocktower.voicechat.joined_location",
+    "clocktower.notice.demon_warning",
+    *(f"clocktower.voicechat.location.{location}" for location in (
+        "beet_field", "wheat_field", "church_of_miku", "graveyard",
+        "greenhouse", "inn", "bakery", "storyteller_den", "red_house",
+        "orange_house", "yellow_house", "lime_house", "green_house",
+        "mint_house", "cyan_house", "blue_house", "navy_house",
+        "purple_house", "pink_house", "lavender_house", "white_house",
+        "gray_house", "black_house",
+    )),
     "clocktower.role.alignment.townsfolk",
     "clocktower.role.alignment.outsider",
     "clocktower.role.alignment.minion",
@@ -222,6 +236,81 @@ CORE_FANCYMENU_KEYS: tuple[str, ...] = (
     "clocktower.ui.grimoire.add_reminder",
     "clocktower.ui.grimoire.clear_bluff",
     "clocktower.ui.grimoire.bluffs",
+    "clocktower.ui.view_script",
+    "clocktower.ui.view_night_order",
+    "clocktower.ui.close",
+    "clocktower.ui.first_night_order_title",
+    "clocktower.ui.other_nights_order_title",
+    "clocktower.ui.view_travellers",
+    "clocktower.ui.view_jinxes",
+    "clocktower.ui.script.every_night_except_first",
+    "clocktower.ui.script.created_by",
+    "clocktower.ui.script.composition_prefix",
+    "clocktower.ui.script.composition_suffix",
+    "clocktower.ui.script.composition_townsfolk",
+    "clocktower.ui.script.composition_outsider",
+    "clocktower.ui.script.composition_minion",
+    "clocktower.ui.script.composition_demon",
+    "clocktower.ui.script.composition_note",
+    "clocktower.ui.script.npcs",
+    "clocktower.ui.quick_actions.visibility_description",
+    "clocktower.ui.quick_actions.gamemode_prefix",
+    "clocktower.ui.quick_actions.teleport",
+    "clocktower.ui.quick_actions.execute",
+    "clocktower.ui.quick_actions.teleport_house",
+    "clocktower.ui.quick_actions.special_abilities",
+    "clocktower.ui.quick_actions.teleport_house_question",
+    "clocktower.ui.quick_actions.announce",
+    "clocktower.ui.quick_actions.nominate",
+    "clocktower.ui.nomination.nominator_prompt",
+    "clocktower.ui.nomination.nominee_prompt",
+    "clocktower.ui.settings.player_options",
+    "clocktower.ui.settings.demon_sounds.description",
+    "clocktower.ui.settings.demon_sounds.label",
+    "clocktower.ui.settings.storyteller_options",
+    "clocktower.ui.settings.timer_ends_day.description",
+    "clocktower.ui.settings.timer_ends_day.label",
+    "clocktower.ui.settings.speed_boost.prefix",
+    "clocktower.ui.timer.set",
+    "clocktower.ui.timer.description",
+    "clocktower.ui.timer.cancel",
+    "clocktower.ui.timer.pause_nominations.prefix",
+    "clocktower.ui.tutorial.storytelling_guide",
+    "clocktower.ui.tutorial.index",
+    "clocktower.ui.tutorial.bag",
+    "clocktower.ui.tutorial.grimoire",
+    "clocktower.ui.tutorial.nominations",
+    "clocktower.ui.tutorial.executions",
+    "clocktower.ui.tutorial.other",
+    "clocktower.ui.role_toggler.view_travellers",
+    "clocktower.ui.role_toggler.close",
+    "clocktower.ui.role_toggler.clear_character",
+    "clocktower.ui.actions",
+    "clocktower.ui.hud.day",
+    "clocktower.ui.hud.night",
+    "clocktower.ui.hud.error",
+    "clocktower.ui.hud.since",
+    "clocktower.notice.request_chat.on",
+    "clocktower.notice.request_chat.off",
+    "clocktower.notice.hand.raised",
+    "clocktower.notice.hand.lowered",
+    "clocktower.notice.teleport.all_players_home",
+    "clocktower.notice.teleport.mysterious_home",
+    "clocktower.notice.teleport.minions_demons_church",
+    "clocktower.notice.teleport.mysterious_church",
+    "clocktower.tutorial.welcome",
+    "clocktower.command.storyteller_add",
+    "clocktower.tutorial.op_suffix",
+    "clocktower.tutorial.storyteller_suffix",
+    "clocktower.tutorial.docs_prefix",
+    "clocktower.tutorial.docs_link",
+    "clocktower.tutorial.docs_suffix",
+    "clocktower.item.death_token.name",
+    "clocktower.item.death_token.lore.cannot_nominate",
+    "clocktower.item.death_token.lore.no_ability",
+    "clocktower.item.death_token.lore.ghost_vote",
+    "clocktower.item.death_token.lore.ghost_vote_more",
+    "clocktower.item.death_token.lore.active",
 )
 
 # In future commits first/other night text can be added to en_us.  The checker
@@ -421,9 +510,56 @@ def datapack_translate_references(directory: Path) -> Iterator[KeyReference]:
 
 FM_VISIBLE_FIELDS = frozenset({"label", "description", "hoverlabel", "title", "text", "source"})
 FIELD_RE = re.compile(r"^\s*(label|description|hoverlabel|title|text|source)\s*=\s*(.*)$")
-TEXT_FIELD_RE = re.compile(r'(?<![\w])text\s*:\s*"((?:\\.|[^"\\])*)"')
+TEXT_FIELD_RE = re.compile(r'(?<![\w])"?text"?\s*:\s*"((?:\\.|[^"\\])*)"')
 DIRECT_TITLE_RE = re.compile(r"\btitle\b[^\n]*?\btitle\s+\"([^\"]+)\"")
 WORD_RE = re.compile(r"\b[A-Za-z]{2,}\b")
+
+# These files now route all in-scope copy through locale keys.  Keep them
+# permanently strict after the localization commit; other files remain
+# warnings until their scripts/roles enter the translated scope.
+STRICT_HARDCODED_PATHS = frozenset(
+    {
+        "config/fancymenu/customization/chat_screen_layout.txt",
+        "config/fancymenu/customization/ct-bag_import.txt",
+        "config/fancymenu/customization/ct-bag_layout.txt",
+        "config/fancymenu/customization/ct-confirm_reset_layout.txt",
+        "config/fancymenu/customization/ct-execute_step_1.txt",
+        "config/fancymenu/customization/ct-execute_step_2.txt",
+        "config/fancymenu/customization/ct-grimoire_actions.txt",
+        "config/fancymenu/customization/ct-grimoire_background.txt",
+        "config/fancymenu/customization/ct-grimoire_background_player.txt",
+        "config/fancymenu/customization/ct-grimoire_bluffs.txt",
+        "config/fancymenu/customization/ct-grimoire_bluffs_player.txt",
+        "config/fancymenu/customization/ct-grimoire_order_first_night.txt",
+        "config/fancymenu/customization/ct-grimoire_order_other_nights.txt",
+        "config/fancymenu/customization/ct-night-order_layout.txt",
+        "config/fancymenu/customization/ct-noms_nominator.txt",
+        "config/fancymenu/customization/ct-noms_nominee.txt",
+        "config/fancymenu/customization/ct-quick_actions_root.txt",
+        "config/fancymenu/customization/ct-role_toggler.txt",
+        "config/fancymenu/customization/ct-role_toggler_player.txt",
+        "config/fancymenu/customization/ct-script.txt",
+        "config/fancymenu/customization/ct-script_phobos.txt",
+        "config/fancymenu/customization/ct-settings_layout.txt",
+        "config/fancymenu/customization/ct-st_special_actions_layout.txt",
+        "config/fancymenu/customization/ct-timer_layout.txt",
+        "config/fancymenu/customization/ct-tutorial_page_1.txt",
+        "resources/datapack/required/ct/data/ct/function/cmd/hand/lower.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/hand/raise.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/request_chat/off.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/request_chat/on.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/togglevc/join.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/togglevc/leave.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/tpallhome.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/cmd/tpchurch.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/loop/voicechat/messages.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/loop/vote/display_in_actionbar.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/loop/vote/start_vote.mcfunction",
+        "resources/datapack/required/ct/data/ct/function/util/send_tutorial.mcfunction",
+        "resources/datapack/required/ct/data/ct/loot_table/compass.json",
+        "resources/datapack/required/ct/data/ct/loot_table/skulls.json",
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -726,7 +862,9 @@ def check_hardcoded_text(root: Path, report: Report) -> None:
     for finding in findings:
         added = added_by_path.get(finding.path)
         location = f"{_relative(finding.path, root)}:{finding.line}"
-        if added is not None and finding.line in added:
+        if _relative(finding.path, root) in STRICT_HARDCODED_PATHS:
+            report.error(f"{location}: hardcoded user-facing English in localized path: {finding.text!r}")
+        elif added is not None and finding.line in added:
             report.error(f"{location}: new hardcoded user-facing English: {finding.text!r}")
         else:
             report.warning(f"{location}: existing hardcoded user-facing English: {finding.text!r}")
@@ -769,6 +907,7 @@ def _self_test() -> None:
     assert format_tokens("%s") != format_tokens("%d")
     assert _looks_like_user_english('prefix {"placeholder":"getvariable"}')
     assert not _looks_like_user_english('{"placeholder":"local","values":{"key":"clocktower.ui.x"}}')
+    assert TEXT_FIELD_RE.findall('{"text":"Hello there"}') == ["Hello there"]
     assert [m.group(1) for m in TRANSLATE_KEY_RE.finditer('{"translate":"clocktower.ui.x"} translate:"clocktower.ui.y"')] == [
         "clocktower.ui.x",
         "clocktower.ui.y",
