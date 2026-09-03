@@ -51,7 +51,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = View Script
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_script"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -114,7 +114,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Close
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.close"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -865,7 +865,7 @@ element {
 
 element {
   interactable = true
-  source = First Night Order
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.first_night_order_title"}}
   source_mode = direct
   shadow = true
   scale = 2.5
@@ -4628,7 +4628,7 @@ element {
 
 element {
   interactable = true
-  source = Other Nights Order
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.other_nights_order_title"}}
   source_mode = direct
   shadow = true
   scale = 2.5
@@ -8242,7 +8242,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}"%n%Script created by: {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.author"}}%n%^^^
+  source = ^^^%n%"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}"%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.created_by"}}{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.author"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0

@@ -425,7 +425,7 @@ element {
 
 element {
   interactable = true
-  source = Townsfolk
+  source = {"placeholder":"local","values":{"key":"clocktower.header.town"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -1555,7 +1555,7 @@ element {
 
 element {
   interactable = true
-  source = *Every night except the first.
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.script.every_night_except_first"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -1641,7 +1641,7 @@ element {
 
 element {
   interactable = true
-  source = Outsiders
+  source = {"placeholder":"local","values":{"key":"clocktower.header.outsiders"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -1988,7 +1988,7 @@ element {
 
 element {
   interactable = true
-  source = Minions
+  source = {"placeholder":"local","values":{"key":"clocktower.header.minions"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2335,7 +2335,7 @@ element {
 
 element {
   interactable = true
-  source = Demons
+  source = {"placeholder":"local","values":{"key":"clocktower.header.demons"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2508,7 +2508,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}"%n%Script created by: {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.author"}}%n%^^^
+  source = ^^^%n%"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.name"}}"%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.created_by"}}{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"meta.author"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2601,7 +2601,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = View Night Order
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_night_order"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -2680,7 +2680,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Close
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.close"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -2753,7 +2753,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Because there are **{"placeholder":"getvariable","values":{"name":"player_count"}}** players, the game is made up of:%n%%n%%#1464e7%**{"placeholder":"getvariable","values":{"name":"town_count"}}** good Townsfolk%#%%n%%#1e14e7%**{"placeholder":"getvariable","values":{"name":"outsider_count"}}** good Outsider%#%%n%%#ff4949%**{"placeholder":"getvariable","values":{"name":"minion_count"}}** evil Minion%#%%n%%#cf0606%**{"placeholder":"getvariable","values":{"name":"demon_count"}}** evil Demon%#%%n%%n%Some roles, like the Baron, may cause these numbers to change.%n%---%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_prefix"}}{"placeholder":"getvariable","values":{"name":"player_count"}}{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_suffix"}}%n%%n%%#1464e7%**{"placeholder":"getvariable","values":{"name":"town_count"}}{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_townsfolk"}}%#%%n%%#1e14e7%**{"placeholder":"getvariable","values":{"name":"outsider_count"}}{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_outsider"}}%#%%n%%#ff4949%**{"placeholder":"getvariable","values":{"name":"minion_count"}}{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_minion"}}%#%%n%%#cf0606%**{"placeholder":"getvariable","values":{"name":"demon_count"}}{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_demon"}}%#%%n%%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.composition_note"}}%n%---%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -5418,7 +5418,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = View Travellers
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_travellers"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:]
@@ -5498,7 +5498,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = View Jinxes
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.view_jinxes"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747
   [loading_requirement_container_meta:ccc2366b-1fb4-4590-9951-f59f4fdffffc-1749872348747] = [groups:][instances:9e1fb97e-4753-4397-9883-81d85dc2884f-1770102615981;]
@@ -6246,7 +6246,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%NPCs%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.script.npcs"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
