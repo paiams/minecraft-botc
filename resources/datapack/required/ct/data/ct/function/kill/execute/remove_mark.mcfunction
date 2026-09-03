@@ -1,5 +1,5 @@
 tag @a remove marked_for_execution
-tellraw @a [{"text":"! ","color":"yellow","bold":true},{"text":"Nobody is about to die.","color":"gray","bold":false}]
+tellraw @a [{"text":"! ","color":"yellow","bold":true},{"translate":"clocktower.notice.no_execution","color":"gray","bold":false}]
 execute as @a run fmvariable set last_nom false none
 
 function ct:util/color_prefixes

@@ -11,5 +11,5 @@ scoreboard players set already_incremented vote 0
 
 execute as @a at @s run playsound ct:clocktower.bell voice @s
 
-tellraw @a [{"text":"⌚ ","color":"red"},{"text":"Time for private conversations has ended!","color":"gray"}]
-tellraw @a {"text":"Please return to the town square for nominations.","color":"gray"}
+tellraw @a [{"text":"⌚ ","color":"red"},{"translate":"clocktower.notice.phase.dusk","color":"gray"}]
+tellraw @a {"translate":"clocktower.notice.phase.dusk_nominations","color":"gray"}

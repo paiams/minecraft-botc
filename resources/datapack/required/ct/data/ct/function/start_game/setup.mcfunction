@@ -153,7 +153,7 @@ execute as @e[type=minecraft:item_display,tag=house_head] if score @s house_id <
 
 function ct:phase/night
 clear @a[tag=!storyteller] minecraft:carrot_on_a_stick
-item replace entity @a[tag=!storyteller,tag=!spectator] hotbar.0 with minecraft:writable_book[minecraft:custom_model_data={strings:["script"]},custom_name=[{text:"Notebook",color:"yellow",italic:false},{text:" [Right-Click]",color:"gray",italic:false}]]
+item replace entity @a[tag=!storyteller,tag=!spectator] hotbar.0 with minecraft:writable_book[minecraft:custom_model_data={strings:["script"]},custom_name=[{translate:"clocktower.item.notebook.name",color:"yellow",italic:false},{translate:"clocktower.item.right_click",color:"gray",italic:false}]]
 execute as @a run function ct:admin/give_script
 
 execute as @a run function ct:start_game/roles/set_grim_variables with storage ct:players players

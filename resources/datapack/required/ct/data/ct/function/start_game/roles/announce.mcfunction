@@ -2,28 +2,28 @@
 execute if data storage ct:script script.npcs[{id:tor}] run return run function ct:start_game/roles/hidden_character
 execute at @s run playsound ct:clocktower.reveal_role voice @s ~ ~ ~ 1 1
 
-execute as @s[scores={role=1..199}] run title @s subtitle {"text":"(Good Townsfolk)"}
+execute as @s[scores={role=1..199}] run title @s subtitle {"translate":"clocktower.role.alignment.townsfolk"}
 execute as @s[scores={role=1..199}] run fmvariable set team_color false #1464e7
 tag @s[scores={role=1..199}] add town
 
-execute as @s[scores={role=200..299}] run title @s subtitle {"text":"(Good Outsider)"}
+execute as @s[scores={role=200..299}] run title @s subtitle {"translate":"clocktower.role.alignment.outsider"}
 execute as @s[scores={role=200..299}] run fmvariable set team_color false #1e14e7
 tag @s[scores={role=200..299}] add outsider
 
-execute as @s[scores={role=300..399}] run title @s subtitle {"text":"(Evil Minion)"}
+execute as @s[scores={role=300..399}] run title @s subtitle {"translate":"clocktower.role.alignment.minion"}
 execute as @s[scores={role=300..399}] run fmvariable set team_color false #ff4949
 tag @s[scores={role=300..399}] add minion
 
-execute as @s[scores={role=400..499}] run title @s subtitle {"text":"(Evil Demon)"}
+execute as @s[scores={role=400..499}] run title @s subtitle {"translate":"clocktower.role.alignment.demon"}
 execute as @s[scores={role=400..499}] run fmvariable set team_color false #cf0606
 tag @s[scores={role=400..499}] add demon
 
-execute as @s[scores={role=500..599}] run title @s subtitle {"text":"(Traveller)"}
+execute as @s[scores={role=500..599}] run title @s subtitle {"translate":"clocktower.role.alignment.traveller"}
 execute as @s[scores={role=500..599}] run fmvariable set team_color false #cf0606
 tag @s[scores={role=500..599}] add traveller
 
-execute as @s[tag=storyteller] run title @s subtitle {"text":"Neutral"}
-execute as @s[tag=storyteller] run title @s title {"text":"The Storyteller","color":"#FFFF55"}
+execute as @s[tag=storyteller] run title @s subtitle {"translate":"clocktower.role.alignment.neutral"}
+execute as @s[tag=storyteller] run title @s title {"translate":"clocktower.role.alignment.storyteller","color":"#FFFF55"}
 execute as @s[tag=storyteller] run fmvariable set role false none
 
 ## 1-199: TOWNSFOLK

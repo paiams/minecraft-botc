@@ -1,4 +1,4 @@
-tellraw @a [{"selector":"@s"},{"text":" died.","color":"red"}]
+tellraw @a [{"selector":"@s"},{"translate":"clocktower.notice.player_died","color":"red"}]
 loot replace entity @s armor.head loot ct:skulls
 tag @s add dead
 tag @s add died_today

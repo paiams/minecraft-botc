@@ -8,8 +8,8 @@ tag @a[scores={role=400..499}] add demon
 tag @a[scores={role=500..599}] add traveller
 
 execute as @a[tag=!storyteller] run title @s subtitle {"text":""}
-execute as @a[tag=!storyteller] run title @s title {"text":"???","color":"#00AA00"}
+execute as @a[tag=!storyteller] run title @s title {"translate":"clocktower.role.hidden","color":"#00AA00"}
 
-execute as @a[tag=storyteller] run title @s subtitle {"text":"Neutral"}
-execute as @a[tag=storyteller] run title @s title {"text":"The Storyteller","color":"#FFFF55"}
+execute as @a[tag=storyteller] run title @s subtitle {"translate":"clocktower.role.alignment.neutral"}
+execute as @a[tag=storyteller] run title @s title {"translate":"clocktower.role.alignment.storyteller","color":"#FFFF55"}
 execute as @a run fmvariable set role false none

@@ -2,7 +2,7 @@ execute as @a if score @s id = @s vc run tag @s add in_house
 clear @a[tag=in_house] minecraft:compass
 tag @a remove in_house
 
-execute if entity @a[tag=!storyteller,tag=!spectator,scores={vc=0}] run title @a[tag=storyteller] actionbar [{"selector": "@a[tag=!storyteller,tag=!spectator,scores={vc=0}]"},{"text":" is not in a house.","color":"red"}]
+execute if entity @a[tag=!storyteller,tag=!spectator,scores={vc=0}] run title @a[tag=storyteller] actionbar [{"selector":"@a[tag=!storyteller,tag=!spectator,scores={vc=0}]"},{"translate":"clocktower.notice.player_not_in_house","color":"red"}]
 # execute unless entity @a[tag=!storyteller,tag=!spectator] unless entity @a[tag=requesting_chat] run title @a[tag=storyteller] actionbar [{"text":"All players are in a house.","color":"green"}]
 execute store result score growl game_data run random value 0..3000
 execute if score growl game_data matches 1 if score current_day game_data matches 2.. as @r[tag=!storyteller,tag=!spectator] at @s run playsound ct:clocktower.night.ambient voice @a ~ ~ ~10
@@ -10,7 +10,7 @@ execute if score growl game_data matches 1 if score current_day game_data matche
 execute as @a[scores={reveal_cd=139},tag=!spectator,tag=!storyteller] if score @s vc = @s id run function ct:start_game/roles/youare
 execute as @a[tag=!spectator,tag=!storyteller,scores={reveal_cd=1..}] if score @s vc = @s id run scoreboard players remove @s reveal_cd 1
 execute as @a[scores={reveal_cd=60}] run function ct:start_game/roles/announce
-tellraw @s[tag=!storyteller,tag=!spectator,scores={reveal_cd=1}] [{"text":"! ","color":"yellow","bold":true},{"text":"Press T to release your mouse, then hover over your character icon in the top left to see your ability.","color":"gray","bold":false}]
+tellraw @s[tag=!storyteller,tag=!spectator,scores={reveal_cd=1}] [{"text":"! ","color":"yellow","bold":true},{"translate":"clocktower.notice.reveal_ability_hint","color":"gray","bold":false}]
 execute as @a at @s run function ct:loop/player/night
 function ct:util/timer/end
 

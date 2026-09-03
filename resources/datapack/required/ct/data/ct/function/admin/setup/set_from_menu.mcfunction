@@ -162,5 +162,5 @@ execute if score gnome role_list matches 1 run data modify storage ct:roles role
 execute if score bishop role_list matches 1 run data modify storage ct:roles roles insert 0 value {id:516,name:bishop}
 execute if score voudon role_list matches 1 run data modify storage ct:roles roles insert 0 value {id:517,name:voudon}
 
-tellraw @s [{"text":"! ","color":"yellow","bold":true},{"text":"You've made a bag with the characters you selected. Press T and click \"Start Night 1\" in the top right to hand them out.","color":"gray","bold":false}]
+tellraw @s [{"text":"! ","color":"yellow","bold":true},{"translate":"clocktower.notice.setup.bag_created","color":"gray","bold":false,"with":[{"translate":"clocktower.ui.start_night_1"}]}]
 execute as @a run function ct:admin/setup/clear_variables

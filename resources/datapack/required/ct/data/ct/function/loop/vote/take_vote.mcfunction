@@ -9,9 +9,9 @@ execute if score organ_grinder settings matches 0 if entity @s[tag=voting_yes,ta
 tag @s remove voting_now
 
 tag @s[tag=voting_ghost] add voted_today
-tellraw @s[tag=voting_yes] [{"text":"You voted §aYES§r to execute "},{"selector":"@a[tag=nominee]"},{"text":"."}]
-tellraw @s[tag=voting_ghost] [{"text":"You voted §aYES§r to execute "},{"selector":"@a[tag=nominee]"},{"text":"."}]
-tellraw @s[tag=voting_banshee] [{"text":"You voted §aYES§r to execute "},{"selector":"@a[tag=nominee]"},{"text":"."}]
-tellraw @s[tag=voting_no] [{"text":"You voted §cNO§r to execute "},{"selector":"@a[tag=nominee]"},{"text":"."}]
+tellraw @s[tag=voting_yes] {"translate":"clocktower.notice.voting.cast","with":[{"translate":"clocktower.vote.yes","color":"green"},{"selector":"@a[tag=nominee]"}]}
+tellraw @s[tag=voting_ghost] {"translate":"clocktower.notice.voting.cast","with":[{"translate":"clocktower.vote.yes","color":"green"},{"selector":"@a[tag=nominee]"}]}
+tellraw @s[tag=voting_banshee] {"translate":"clocktower.notice.voting.cast","with":[{"translate":"clocktower.vote.yes","color":"aqua"},{"selector":"@a[tag=nominee]"}]}
+tellraw @s[tag=voting_no] {"translate":"clocktower.notice.voting.cast","with":[{"translate":"clocktower.vote.no","color":"red"},{"selector":"@a[tag=nominee]"}]}
 
 function ct:admin/variables/score

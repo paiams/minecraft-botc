@@ -1,7 +1,7 @@
 execute if score dev_mode game_data matches 1 run return fail
 function ct:admin/init/voice_chats
 
-bossbar add ct:day_time "Time for Conversations:"
+bossbar add ct:day_time {translate:"clocktower.bossbar.day_time"}
 bossbar set ct:day_time color blue
 bossbar set ct:day_time players @a
 bossbar set ct:day_time visible false
@@ -9,7 +9,7 @@ bossbar set ct:day_time style progress
 bossbar set ct:day_time max 300
 bossbar set ct:day_time value 300
 
-bossbar add ct:votes "Votes:"
+bossbar add ct:votes {translate:"clocktower.bossbar.votes"}
 bossbar set ct:votes color blue
 bossbar set ct:votes players @a
 bossbar set ct:votes visible false

@@ -13,7 +13,7 @@ execute as @a run playsound ct:clocktower.bell voice @s ~ ~ ~ 1 0.7
 scoreboard players set current_majority vote 0
 scoreboard players set already_incremented vote 0
 
-tellraw @a [{"text":"⌚ ","color":"blue"},{"text":"Night has fallen. Please return to your homes.","color":"gray"}]
+tellraw @a [{"text":"⌚ ","color":"blue"},{"translate":"clocktower.notice.phase.night","color":"gray"}]
 
 execute if score phase_causes_tp settings matches 1 run function ct:cmd/tpallhome
 

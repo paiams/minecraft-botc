@@ -8,7 +8,7 @@ execute as @e[type=minecraft:item_display,tag=exclamation_yellow] run data modif
 execute as @a at @s run playsound ct:clocktower.enable_sounds
 execute as @a at @s run playsound ct:clocktower.bell voice @s ~ ~ ~ 1 1.2
 
-tellraw @a [{"text":"⌚ ","color":"yellow"},{"text":"The sun has risen! Please return to the town square.","color":"gray"}]
+tellraw @a [{"text":"⌚ ","color":"yellow"},{"translate":"clocktower.notice.phase.dawn","color":"gray"}]
 
 execute if score phase_causes_tp settings matches 1 run function ct:cmd/tpseats
 

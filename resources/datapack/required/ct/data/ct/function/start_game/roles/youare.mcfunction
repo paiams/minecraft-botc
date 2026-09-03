@@ -1,2 +1,2 @@
 title @s subtitle " "
-title @s title "You are..."
+title @s title {"translate":"clocktower.ui.you_are"}

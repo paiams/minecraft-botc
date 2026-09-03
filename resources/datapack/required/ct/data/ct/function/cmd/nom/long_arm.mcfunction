@@ -7,15 +7,15 @@ tag @e[type=minecraft:item_display,tag=vote_marker,tag=arm_target] remove arm_ta
 
 ##vfied
 execute as @a at @s run playsound ct:clocktower.nominate voice @s ~ ~ ~
-item replace entity @a[tag=!expended_ghost,tag=!storyteller,tag=!spectator] weapon.offhand with minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["voting_no"]},custom_name=[{text:"Voting ",color:"white",italic:false},{text:"NO",color:"red",italic:false},{text:" [Right-Click]",color:"gray",italic:false}]]
-item replace entity @a[tag=storyteller] hotbar.6 with minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["start_vote"]},custom_name=[{text:"Start Vote",color:"white",italic:false},{text:" [Right-Click]",color:"gray",italic:false}]]
+item replace entity @a[tag=!expended_ghost,tag=!storyteller,tag=!spectator] weapon.offhand with minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["voting_no"]},custom_name=[{translate:"clocktower.item.voting_prefix",color:"white",italic:false},{translate:"clocktower.vote.no",color:"red",italic:false},{translate:"clocktower.item.right_click",color:"gray",italic:false}]]
+item replace entity @a[tag=storyteller] hotbar.6 with minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["start_vote"]},custom_name=[{translate:"clocktower.item.start_vote.name",color:"white",italic:false},{translate:"clocktower.item.right_click",color:"gray",italic:false}]]
 tag @a remove voting_yes
 tag @a remove voting_no
 tag @a remove voting_ghost
 tag @a remove voting_banshee
 tag @a[team=!00_spectator] add voting_no
 function ct:util/color_names
-tellraw @a [{"selector":"@a[tag=nominator]"},{"text":" has nominated ",color:white},{"selector":"@a[tag=nominee]"},{"text":".","color":white}]
+tellraw @a {"translate":"clocktower.notice.nomination","with":[{"selector":"@a[tag=nominator]"},{"selector":"@a[tag=nominee]"}]}
 function ct:util/color_prefixes
 
 execute as @e[type=minecraft:item_display,tag=vote_marker] if score @s id <= player_count game_data run data modify entity @s view_range set value 1

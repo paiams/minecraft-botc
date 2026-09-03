@@ -1,6 +1,6 @@
 execute if score has_initialized game_data matches 0 run function ct:util/send_tutorial
 
-tellraw @s[tag=!joined] [{"text":"! ","color":"green","bold":true},{"text":"Welcome! Please set your pronouns using ","color":"gray","bold":false},{"text":"/pronouns <pronouns>","color":"white","bold":false},{"text":" to display them below your username.","color":"gray","bold":false}]
+tellraw @s[tag=!joined] [{"text":"! ","color":"green","bold":true},{"translate":"clocktower.notice.welcome_pronouns","color":"gray","bold":false,"with":[{"text":"/pronouns <pronouns>","color":"white"}]}]
 tp @s[tag=!joined] 122 72 70 -145 0
 gamemode adventure @s[tag=!joined]
 tag @s add joined
@@ -8,7 +8,7 @@ tag @s remove spectator
 
 execute unless score @s[tag=!storyteller] game_id = active_game game_id if score phase game_data matches 1.. run function ct:loop/player/make_spectator
 
-execute if score phase game_data matches 1.. unless score @s id matches 1.. run tellraw @s[tag=!storyteller] [{"text":"! ","color":"yellow","bold":true},{"text":"A game is currently active. Please mute your microphone until it ends.","color":"gray","bold":false}]
+execute if score phase game_data matches 1.. unless score @s id matches 1.. run tellraw @s[tag=!storyteller] [{"text":"! ","color":"yellow","bold":true},{"translate":"clocktower.notice.game_active_mute","color":"gray","bold":false}]
 execute if score phase game_data matches 1.. unless score @s id matches 1.. run gamemode spectator @s[tag=!storyteller]
 
 fmvariable set jinx_1_a false none

@@ -3,7 +3,7 @@ scoreboard players reset @s role
 team join 00_spectator @s
 tag @s add spectator
 #tellraw @a[tag=storyteller] [{"text":"! ","color":"yellow","bold":true},{"selector":"@s","bold":false},{"text":" has joined as a spectator. You can use ","color":"gray","bold":false},{"text":"/traveller","color":"white","bold":false},{"text":" to add them to the game if you like.","color":"gray","bold":false}]
-tellraw @a[tag=storyteller] [{"text":"! ","color":"yellow","bold":true},{"selector":"@s","bold":false},{"text":" has joined as a spectator.","color":"gray","bold":false}]
+tellraw @a[tag=storyteller] [{"text":"! ","color":"yellow","bold":true},{"selector":"@s","bold":false},{"translate":"clocktower.notice.spectator_joined","bold":false,"color":"gray"}]
 tag @s remove has_role
 tag @s remove nominee
 tag @s remove voting_no
