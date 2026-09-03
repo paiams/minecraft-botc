@@ -13,8 +13,8 @@ execute if score current_majority vote matches 0 run scoreboard players operatio
 execute if score current_majority vote matches 0 run scoreboard players operation modulo math %= half math
 execute if score current_majority vote matches 0 run scoreboard players operation majority math += modulo math
 function ct:util/color_names
-execute if score organ_grinder settings matches 0 if score current_majority vote matches 0 run tellraw @a {"translate":"clocktower.notice.vote_started","with":[{"selector":"@a[tag=nominee]"},{"selector":"@a[tag=vote_start]"},{"score":{"name":"majority","objective":"math"}}]}
-execute if score organ_grinder settings matches 0 unless score current_majority vote matches 0 run tellraw @a {"translate":"clocktower.notice.vote_started","with":[{"selector":"@a[tag=nominee]"},{"selector":"@a[tag=vote_start]"},{"score":{"name":"current_majority","objective":"vote"}}]}
+execute if score organ_grinder settings matches 0 if score current_majority vote matches 0 run tellraw @a {"translate":"clocktower.notice.vote_started","with":[{"selector":"@a[tag=nominee]"},{"selector":"@a[tag=vote_start]"},{"score":{"name":"majority","objective":"math"},"bold":true,"color":"white"}]}
+execute if score organ_grinder settings matches 0 unless score current_majority vote matches 0 run tellraw @a {"translate":"clocktower.notice.vote_started","with":[{"selector":"@a[tag=nominee]"},{"selector":"@a[tag=vote_start]"},{"score":{"name":"current_majority","objective":"vote"},"bold":true,"color":"white"}]}
 execute if score organ_grinder settings matches 1 run tellraw @a {"translate":"clocktower.notice.vote_started_blind","with":[{"selector":"@a[tag=nominee]"},{"selector":"@a[tag=vote_start]"}]}
 function ct:util/color_prefixes
 

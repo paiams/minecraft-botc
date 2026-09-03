@@ -1,18 +1,18 @@
 {
   "type": "minecraft:command",
   "functions": [
-    { "function": "minecraft:set_name", "name": [{ "text": "☠ ", "color": "dark_red", "italic": false },{ "text": "YOU ARE DEAD", "color": "red", "italic": false }] },
+    { "function": "minecraft:set_name", "name": [{ "text": "☠ ", "color": "dark_red", "italic": false },{ "translate": "clocktower.item.death_token.name", "color": "red", "italic": false }] },
     {
       "function": "minecraft:set_lore",
       "mode": "replace_all",
       "lore": [
-        {"text": "You cannot nominate and", "color": "gray", "italic": false},
-        {"text": "have no ability.", "color": "gray", "italic": false},
+        {"translate": "clocktower.item.death_token.lore.cannot_nominate", "color": "gray", "italic": false},
+        {"translate": "clocktower.item.death_token.lore.no_ability", "color": "gray", "italic": false},
         {"text": ""},
-        {"text": "You may vote §ayes§r on a", "color": "gray", "italic": false},
-        {"text": "nomination one more time.", "color": "gray", "italic": false},
+        {"translate": "clocktower.item.death_token.lore.ghost_vote", "color": "gray", "italic": false},
+        {"translate": "clocktower.item.death_token.lore.ghost_vote_more", "color": "gray", "italic": false},
         {"text": ""},
-        {"text": "You are still an active player.", "color": "gray", "italic": false, "underlined": true}
+        {"translate": "clocktower.item.death_token.lore.active", "color": "gray", "italic": false, "underlined": true}
       ]
     },
     {
