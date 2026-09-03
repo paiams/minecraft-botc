@@ -80,7 +80,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%## Storytelling Guide%n%The following pages demonstrate how to mechanically Storytell a game with the modpack; if you want to learn how to Storytell from a rules perspective, The Pandemonium Institute has [a tutorial playlist](https://www.youtube.com/playlist?list=PLkpvZggdkEER79CfpiqKdHRpG5usX3u64) that'll help you out!%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.tutorial.storytelling_guide"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -153,7 +153,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%## Index%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.tutorial.index"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -231,7 +231,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = The Bag
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.tutorial.bag"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378
   [loading_requirement_container_meta:0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378] = [groups:][instances:]
@@ -294,7 +294,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = The Grimoire
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.tutorial.grimoire"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378
   [loading_requirement_container_meta:0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378] = [groups:][instances:]
@@ -357,7 +357,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Nominations
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.tutorial.nominations"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378
   [loading_requirement_container_meta:0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378] = [groups:][instances:]
@@ -420,7 +420,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Executions
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.tutorial.executions"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378
   [loading_requirement_container_meta:0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378] = [groups:][instances:]
@@ -483,7 +483,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Other
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.tutorial.other"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378
   [loading_requirement_container_meta:0e70ac8b-3afe-4c06-9bd2-04a5f8976a3f-1778026100378] = [groups:][instances:]

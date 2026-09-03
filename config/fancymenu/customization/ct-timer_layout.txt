@@ -430,7 +430,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Set Timer
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.timer.set"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845
   [loading_requirement_container_meta:59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845] = [groups:][instances:]
@@ -503,7 +503,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Setting a timer here will cause it to display on everyone's screens.%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.timer.description"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -658,7 +658,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Cancel Timer
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.timer.cancel"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845
   [loading_requirement_container_meta:59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845] = [groups:][instances:]
@@ -751,7 +751,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Pause during nominations: {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"noms_pause_timer"}}","cases":"0:NO,1:YES","default":"NO"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.timer.pause_nominations.prefix"}}{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"noms_pause_timer"}}","cases":"0:{"placeholder":"local","values":{"key":"clocktower.vote.no"}},1:{"placeholder":"local","values":{"key":"clocktower.vote.yes"}}","default":"{"placeholder":"local","values":{"key":"clocktower.vote.no"}}"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6691398e-694d-4665-9682-e10638b99e1e-1775779202029
   [loading_requirement_container_meta:6691398e-694d-4665-9682-e10638b99e1e-1775779202029] = [groups:][instances:]

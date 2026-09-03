@@ -402,7 +402,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Who is nominating?%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.nomination.nominator_prompt"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false

@@ -366,8 +366,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Click to toggle whether you are visible.
-  label = Gamemode: {"placeholder":"getvariable","values":{"name":"gamemode"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.visibility_description"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.gamemode_prefix"}}{"placeholder":"getvariable","values":{"name":"gamemode"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]
@@ -454,7 +454,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Teleport...
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.teleport"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]
@@ -787,7 +787,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Execute
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]
@@ -874,7 +874,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = TP to House
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.teleport_house"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]
@@ -1052,7 +1052,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Special abilities...
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.special_abilities"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]
@@ -1273,7 +1273,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Teleport to who's house?%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.teleport_house_question"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3585,7 +3585,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Announce...
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.announce"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]
@@ -4086,7 +4086,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Nominate
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.quick_actions.nominate"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
   [loading_requirement_container_meta:6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935] = [groups:][instances:]

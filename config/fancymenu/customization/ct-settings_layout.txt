@@ -429,7 +429,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Player Options%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.settings.player_options"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -520,8 +520,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = If enabled, you have a small chance of hearing ambient "growling" sounds at night.%n%%n%DEFAULT: ON
-  label = Demon sounds: ON
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.settings.demon_sounds.description"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.demon_sounds.label"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = a0d3a0d9-a07a-4325-b8ee-d88cb49b4297-1766514621154
   [loading_requirement_container_meta:a0d3a0d9-a07a-4325-b8ee-d88cb49b4297-1766514621154] = [groups:][instances:f163b4e9-5e84-4648-b483-a415e7da2174-1770102673881;]
@@ -678,7 +678,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Storyteller Options%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.settings.storyteller_options"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -769,8 +769,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = If enabled, any timer you set will cause the phase to immediately progress to Dusk upon ending (if it is not already Dusk).%n%%n%DEFAULT: OFF
-  label = Timer ends day immediately: OFF
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.settings.timer_ends_day.description"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.timer_ends_day.label"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = a0d3a0d9-a07a-4325-b8ee-d88cb49b4297-1766514621154
   [loading_requirement_container_meta:a0d3a0d9-a07a-4325-b8ee-d88cb49b4297-1766514621154] = [groups:][instances:f35413de-e937-4a23-a711-b6a7411c4e92-1770102681362;]
@@ -860,7 +860,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Dawn/Dusk speed boost: {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"speed_boost"}}","cases":"0:NO,1:YES","default":"NO"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.settings.speed_boost.prefix"}}{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"speed_boost"}}","cases":"0:{"placeholder":"local","values":{"key":"clocktower.vote.no"}},1:{"placeholder":"local","values":{"key":"clocktower.vote.yes"}}","default":"{"placeholder":"local","values":{"key":"clocktower.vote.no"}}"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 6691398e-694d-4665-9682-e10638b99e1e-1775779202029
   [loading_requirement_container_meta:6691398e-694d-4665-9682-e10638b99e1e-1775779202029] = [groups:][instances:]
