@@ -1053,7 +1053,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Bluffs%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.bluffs"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -1335,7 +1335,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Living Players
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.living_players"}}
   label = {"placeholder":"getvariable","values":{"name":"alive_players"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 30313c42-34f1-497b-bbc7-021ed174d368-1751836324804
@@ -1416,7 +1416,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Ghost Votes in Play
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.ghost_votes"}}
   label = {"placeholder":"getvariable","values":{"name":"ghost_votes"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 30313c42-34f1-497b-bbc7-021ed174d368-1751836324804
@@ -1497,7 +1497,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Current Day
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.current_day"}}
   label = {"placeholder":"getvariable","values":{"name":"current_day"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 30313c42-34f1-497b-bbc7-021ed174d368-1751836324804
@@ -3951,7 +3951,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -4567,7 +4567,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -5183,7 +5183,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -5799,7 +5799,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -6415,7 +6415,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -7031,7 +7031,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -7647,7 +7647,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -8263,7 +8263,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -8879,7 +8879,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -9495,7 +9495,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -10111,7 +10111,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -10728,7 +10728,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -12058,7 +12058,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -12674,7 +12674,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102
@@ -13290,7 +13290,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Add reminder token
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.add_reminder"}}
   label = +
   navigatable = true
   widget_active_state_requirement_container_identifier = 7a715db6-b033-4c44-a7d1-ac7f4398c420-1753239149102

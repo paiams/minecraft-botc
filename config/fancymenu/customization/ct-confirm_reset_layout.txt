@@ -44,7 +44,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = false
-  source = ^^^%n%Resetting the game will clear everyone's characters,%n%as well as all game data and progress. You should only%n%be doing this if the game is truly and absolutely over,%n%and you have announced that to the town.%n%%n%Do you want to reset the game?%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.reset.warning_intro"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.reset.warning_data"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.reset.warning_condition"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.reset.warning_announce"}}%n%%n%{"placeholder":"local","values":{"key":"clocktower.ui.reset.confirm_question"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.5
@@ -117,7 +117,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Yes
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.reset.yes"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 00c68f0f-f850-4452-b7da-a3ba00d329d9-1751852216524
   [loading_requirement_container_meta:00c68f0f-f850-4452-b7da-a3ba00d329d9-1751852216524] = [groups:][instances:]
@@ -175,7 +175,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = No
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.reset.no"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 00c68f0f-f850-4452-b7da-a3ba00d329d9-1751852216524
   [loading_requirement_container_meta:00c68f0f-f850-4452-b7da-a3ba00d329d9-1751852216524] = [groups:][instances:]

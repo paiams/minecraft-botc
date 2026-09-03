@@ -3638,7 +3638,7 @@ element {
 
 element {
   interactable = false
-  source = REMINDERS:%n%%n%Drunks, Lunatics, and Marionettes should never be put directly into the bag.%n%%n%Some roles affect the below counts during setup.
+  source = {"placeholder":"local","values":{"key":"clocktower.ui.bag.reminders.title"}}%n%%n%{"placeholder":"local","values":{"key":"clocktower.ui.bag.reminders.no_direct"}}%n%%n%{"placeholder":"local","values":{"key":"clocktower.ui.bag.reminders.setup_counts"}}
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3724,7 +3724,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 3%n%%#1e14e7%Outsiders:%#% 0%n%%#ff4949%Minions:%#% 1%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 3%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 0%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 1%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -3811,7 +3811,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 3%n%%#1e14e7%Outsiders:%#% 1%n%%#ff4949%Minions:%#% 1%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 3%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 1%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 1%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -3898,7 +3898,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 5%n%%#1e14e7%Outsiders:%#% 0%n%%#ff4949%Minions:%#% 1%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 5%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 0%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 1%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -3985,7 +3985,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 5%n%%#1e14e7%Outsiders:%#% 1%n%%#ff4949%Minions:%#% 1%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 5%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 1%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 1%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4072,7 +4072,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 5%n%%#1e14e7%Outsiders:%#% 2%n%%#ff4949%Minions:%#% 1%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 5%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 2%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 1%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4159,7 +4159,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 7%n%%#1e14e7%Outsiders:%#% 0%n%%#ff4949%Minions:%#% 2%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 7%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 0%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 2%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4246,7 +4246,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 7%n%%#1e14e7%Outsiders:%#% 1%n%%#ff4949%Minions:%#% 2%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 7%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 1%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 2%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4333,7 +4333,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 7%n%%#1e14e7%Outsiders:%#% 2%n%%#ff4949%Minions:%#% 2%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 7%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 2%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 2%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4420,7 +4420,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 9%n%%#1e14e7%Outsiders:%#% 0%n%%#ff4949%Minions:%#% 3%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 9%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 0%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 3%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4507,7 +4507,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 9%n%%#1e14e7%Outsiders:%#% 1%n%%#ff4949%Minions:%#% 3%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 9%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 1%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 3%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4594,7 +4594,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%#1464e7%Townsfolk:%#% 9%n%%#1e14e7%Outsiders:%#% 2%n%%#ff4949%Minions:%#% 3%n%%#cf0606%Demons:%#% 1%n%^^^
+  source = ^^^%n%%#1464e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_townsfolk"}}%#% 9%n%%#1e14e7%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_outsiders"}}%#% 2%n%%#ff4949%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_minions"}}%#% 3%n%%#cf0606%{"placeholder":"local","values":{"key":"clocktower.ui.bag.count_demons"}}%#% 1%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false
@@ -4766,8 +4766,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = If you had a bag set up previously, clicking this will wipe it.
-  label = Use this Bag
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.bag.use_hint"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.bag.use"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 08629023-c8bf-4217-981e-2657fce77609-1751841379540
   [loading_requirement_container_meta:08629023-c8bf-4217-981e-2657fce77609-1751841379540] = [groups:][instances:]
@@ -4847,7 +4847,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Change Script
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.bag.change_script"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477
   [loading_requirement_container_meta:d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477] = [groups:][instances:]
@@ -4921,7 +4921,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Townsfolk%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.header.town"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -5007,7 +5007,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Outsiders%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.header.outsiders"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -5093,7 +5093,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Minions%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.header.minions"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -5179,7 +5179,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Demons%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.header.demons"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -5265,7 +5265,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%⚠ You have selected a character that modifies setup! You will need to account for this yourself.%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.bag.setup_modifier_warning"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false

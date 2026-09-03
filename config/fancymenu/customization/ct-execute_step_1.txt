@@ -403,7 +403,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%Select a player to teleport them to the pyre.%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.execute.select_for_pyre"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2640,7 +2640,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Cancel
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.execute.cancel"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = c1d0cb97-64c1-4c9d-9647-bb83752ff54b-1784253843262
   [loading_requirement_container_meta:c1d0cb97-64c1-4c9d-9647-bb83752ff54b-1784253843262] = [groups:][instances:]

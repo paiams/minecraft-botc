@@ -350,8 +350,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = This will set the time to%n%night and give players%n%a random color and role.
-  label = Start Night 1
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.start_night.description"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.start_night_1"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845
   [loading_requirement_container_meta:59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845] = [groups:][instances:]
@@ -432,7 +432,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Timer
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.chat.timer"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845
   [loading_requirement_container_meta:59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845] = [groups:][instances:]
@@ -523,7 +523,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Click to request a chat%n%with the Storyteller.
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.request_storyteller.description"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 6db33429-1dea-4c3b-9223-a9c044f359c9-1754439563935
@@ -603,7 +603,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Advance Phase
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.chat.advance_phase"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845
   [loading_requirement_container_meta:59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845] = [groups:][instances:]
@@ -683,8 +683,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Mark {"placeholder":"getvariable","values":{"name":"last_nom"}} for execution.
-  label = ☠ Mark
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.mark_prefix"}}{"placeholder":"getvariable","values":{"name":"last_nom"}}{"placeholder":"local","values":{"key":"clocktower.ui.chat.mark_suffix"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.chat.mark"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 44f90eb7-7079-47e7-b708-801fb5ee46e9-1769646505023
   [loading_requirement_container_meta:44f90eb7-7079-47e7-b708-801fb5ee46e9-1769646505023] = [groups:][instances:]
@@ -765,8 +765,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Remove "About to Die" status from all players.
-  label = Clear Mark
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.clear_mark.description"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.chat.clear_mark"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 44f90eb7-7079-47e7-b708-801fb5ee46e9-1769646505023
   [loading_requirement_container_meta:44f90eb7-7079-47e7-b708-801fb5ee46e9-1769646505023] = [groups:][instances:]
@@ -847,8 +847,8 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = This can also be bound to a hotkey (R by default).
-  label = Quick Actions
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.quick_actions.description"}}
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.chat.quick_actions"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845
   [loading_requirement_container_meta:59bc1d6d-d710-494b-b571-199be4c0f903-1751840904845] = [groups:][instances:]

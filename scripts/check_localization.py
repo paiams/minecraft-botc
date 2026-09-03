@@ -167,6 +167,63 @@ CORE_UI_KEYS: tuple[str, ...] = (
     "clocktower.script.trouble_brewing.name",
 )
 
+CORE_FANCYMENU_KEYS: tuple[str, ...] = (
+    "clocktower.ui.chat.start_night.description",
+    "clocktower.ui.chat.timer",
+    "clocktower.ui.chat.request_storyteller.description",
+    "clocktower.ui.chat.advance_phase",
+    "clocktower.ui.chat.mark",
+    "clocktower.ui.chat.mark_prefix",
+    "clocktower.ui.chat.mark_suffix",
+    "clocktower.ui.chat.clear_mark",
+    "clocktower.ui.chat.clear_mark.description",
+    "clocktower.ui.chat.quick_actions",
+    "clocktower.ui.chat.quick_actions.description",
+    "clocktower.ui.bag.import",
+    "clocktower.ui.bag.import.instructions_intro",
+    "clocktower.ui.bag.import.instructions_format",
+    "clocktower.ui.bag.back",
+    "clocktower.ui.bag.import_from_file.description",
+    "clocktower.ui.bag.reminders.title",
+    "clocktower.ui.bag.reminders.no_direct",
+    "clocktower.ui.bag.reminders.setup_counts",
+    "clocktower.ui.bag.count_townsfolk",
+    "clocktower.ui.bag.count_outsiders",
+    "clocktower.ui.bag.count_minions",
+    "clocktower.ui.bag.count_demons",
+    "clocktower.ui.bag.use",
+    "clocktower.ui.bag.use_hint",
+    "clocktower.ui.bag.change_script",
+    "clocktower.ui.bag.setup_modifier_warning",
+    "clocktower.ui.reset.warning_intro",
+    "clocktower.ui.reset.warning_data",
+    "clocktower.ui.reset.warning_condition",
+    "clocktower.ui.reset.warning_announce",
+    "clocktower.ui.reset.confirm_question",
+    "clocktower.ui.reset.yes",
+    "clocktower.ui.reset.no",
+    "clocktower.ui.execute.select_for_pyre",
+    "clocktower.ui.execute.select_for_execution",
+    "clocktower.ui.execute.cancel",
+    "clocktower.ui.grimoire.teleport_prefix",
+    "clocktower.ui.grimoire.teleport_to_pyre",
+    "clocktower.ui.grimoire.light_pyre",
+    "clocktower.ui.grimoire.pyre",
+    "clocktower.ui.grimoire.execute_prefix",
+    "clocktower.ui.grimoire.execute_suffix",
+    "clocktower.ui.grimoire.execute",
+    "clocktower.ui.grimoire.change_prefix",
+    "clocktower.ui.grimoire.change_suffix",
+    "clocktower.ui.grimoire.change_character",
+    "clocktower.ui.grimoire.living_players",
+    "clocktower.ui.grimoire.ghost_votes",
+    "clocktower.ui.grimoire.current_day",
+    "clocktower.ui.grimoire.toggle_life",
+    "clocktower.ui.grimoire.add_reminder",
+    "clocktower.ui.grimoire.clear_bluff",
+    "clocktower.ui.grimoire.bluffs",
+)
+
 # In future commits first/other night text can be added to en_us.  The checker
 # then automatically requires its Korean counterpart through the shared key
 # subset/format pass; it does not invent fallback keys that are not in English.
@@ -493,7 +550,11 @@ def _required_keys() -> tuple[str, ...]:
     )
     reminder_keys = tuple(f"clocktower.reminder.{name}.text" for name in TB_REMINDERS)
     # Preserve declaration order while removing any accidental duplicate.
-    return tuple(dict.fromkeys((*role_keys, *reminder_keys, *CORE_UI_KEYS)))
+    return tuple(
+        dict.fromkeys(
+            (*role_keys, *reminder_keys, *CORE_UI_KEYS, *CORE_FANCYMENU_KEYS)
+        )
+    )
 
 
 def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[Mapping[str, object], Mapping[str, object]]:

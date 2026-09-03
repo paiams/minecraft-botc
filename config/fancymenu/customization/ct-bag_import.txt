@@ -351,7 +351,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Import
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.bag.import"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = cb23f509-e2bc-4c01-867a-d5d2375becb3-1756676226537
   [loading_requirement_container_meta:cb23f509-e2bc-4c01-867a-d5d2375becb3-1756676226537] = [groups:][instances:]
@@ -486,7 +486,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%To load a script, paste your .json file contents below.%n%%n%Scripts must be in the most recent format, i.e. your text should look like ["washerwoman", "chef"] instead of {"id":"washerwoman"},{"id":"chef"}.%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"clocktower.ui.bag.import.instructions_intro"}}%n%%n%{"placeholder":"local","values":{"key":"clocktower.ui.bag.import.instructions_format"}}%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -579,7 +579,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Back
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.bag.back"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477
   [loading_requirement_container_meta:d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477] = [groups:][instances:]
@@ -660,7 +660,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = Import from File
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.bag.import_from_file.description"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = d77d13ea-0986-4beb-82cb-83134f531899-1776270038427
@@ -743,7 +743,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Trouble Brewing
+  label = {"placeholder":"local","values":{"key":"clocktower.script.trouble_brewing.name"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477
   [loading_requirement_container_meta:d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477] = [groups:][instances:]
@@ -824,7 +824,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Sects & Violets
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.script.sects_violets.name"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477
   [loading_requirement_container_meta:d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477] = [groups:][instances:]
@@ -905,7 +905,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  label = Bad Moon Rising
+  label = {"placeholder":"local","values":{"key":"clocktower.ui.script.bad_moon_rising.name"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477
   [loading_requirement_container_meta:d1dcdd77-7043-4c0a-bf5a-098d46880232-1751849525477] = [groups:][instances:]
