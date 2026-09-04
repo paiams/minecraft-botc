@@ -90,6 +90,7 @@ config/cardinal-components-api.properties
 /config/polymer
 config/slurs_filter.txt
 /polymer
+/server/
 config/fancymenu/ui_themes/cherry_blossom.json
 config/fancymenu/ui_themes/cozy_campfire.json
 config/lingua_bib.json
