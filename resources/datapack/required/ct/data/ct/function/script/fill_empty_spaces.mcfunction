@@ -163,6 +163,11 @@ execute unless data storage ct:script night_order.other[27] run data modify stor
 execute unless data storage ct:script night_order.other[28] run data modify storage ct:script night_order.other append value {id:none,other_nights_hint:ERROR,other_night_key:"",localized:no}
 execute unless data storage ct:script night_order.other[29] run data modify storage ct:script night_order.other append value {id:none,other_nights_hint:ERROR,other_night_key:"",localized:no}
 
+# Normalize sentinel entries created by older pack versions. FancyMenu probes
+# these fields even while the slots are hidden.
+execute if data storage ct:script night_order.first[{id:none}] run data modify storage ct:script night_order.first[{id:none}] merge value {first_night_key:"",localized:no}
+execute if data storage ct:script night_order.other[{id:none}] run data modify storage ct:script night_order.other[{id:none}] merge value {other_night_key:"",localized:no}
+
 execute unless data storage ct:script reminders[0] run data modify storage ct:script reminders append value {text:none,icon:none}
 execute unless data storage ct:script reminders[1] run data modify storage ct:script reminders append value {text:none,icon:none}
 execute unless data storage ct:script reminders[2] run data modify storage ct:script reminders append value {text:none,icon:none}
