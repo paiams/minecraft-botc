@@ -234,6 +234,7 @@
     "clocktower.ui.grimoire.living_players": "생존 플레이어",
     "clocktower.ui.grimoire.ghost_votes": "남은 유령 투표",
     "clocktower.ui.grimoire.current_day": "현재 일차",
+    "clocktower.ui.empty_seat": "빈 자리",
     "clocktower.ui.grimoire.toggle_life": "생사 전환",
     "clocktower.ui.grimoire.add_reminder": "리마인더 토큰 추가",
     "clocktower.ui.grimoire.clear_bluff": "위장 역할 지우기",

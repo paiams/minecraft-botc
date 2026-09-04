@@ -1339,7 +1339,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_1"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_1"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_1"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1426,7 +1426,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_2"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_2"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_2"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1513,7 +1513,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_3"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_3"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_3"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1600,7 +1600,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_4"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_4"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_4"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1687,7 +1687,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_5"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_5"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_5"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1774,7 +1774,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_6"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_6"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_6"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1861,7 +1861,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_7"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_7"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_7"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -1948,7 +1948,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_8"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_8"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_8"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2035,7 +2035,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_9"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_9"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_9"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2122,7 +2122,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_10"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_10"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_10"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2209,7 +2209,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_11"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_11"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_11"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2296,7 +2296,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_12"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_12"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_12"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2383,7 +2383,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_13"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_13"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_13"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2470,7 +2470,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_14"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_14"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_14"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077
@@ -2557,7 +2557,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"getvariable","values":{"name":"player_15"}}
+  description = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_15"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_15"}}"}}
   label = 
   navigatable = true
   widget_active_state_requirement_container_identifier = 111ce696-640d-4dea-bbc5-201957a3f345-1783304714077

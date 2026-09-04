@@ -2638,7 +2638,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_12"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_12"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_12"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2724,7 +2724,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_1"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_1"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_1"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2810,7 +2810,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_2"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_2"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_2"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2896,7 +2896,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_3"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_3"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_3"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -2982,7 +2982,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_11"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_11"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_11"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3068,7 +3068,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_10"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_10"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_10"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3154,7 +3154,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_4"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_4"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_4"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3240,7 +3240,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_5"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_5"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_5"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3326,7 +3326,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_9"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_9"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_9"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3412,7 +3412,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_7"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_7"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_7"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3498,7 +3498,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_8"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_8"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_8"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -3584,7 +3584,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_6"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_6"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_6"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -11762,7 +11762,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_14"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_14"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_14"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -11848,7 +11848,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_13"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_13"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_13"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -11934,7 +11934,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%;;{"placeholder":"getvariable","values":{"name":"player_15"}};;%n%|||
+  source = |||%n%;;{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"player_15"}}","cases":"Nobody!:{"placeholder":"local","values":{"key":"clocktower.ui.empty_seat"}}","default":"{"placeholder":"getvariable","values":{"name":"player_15"}}"}};;%n%|||
   source_mode = direct
   shadow = true
   enable_scrolling = false

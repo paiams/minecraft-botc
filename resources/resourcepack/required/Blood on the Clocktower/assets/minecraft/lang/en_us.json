@@ -301,6 +301,7 @@
     "clocktower.ui.grimoire.living_players": "Living Players",
     "clocktower.ui.grimoire.ghost_votes": "Ghost Votes in Play",
     "clocktower.ui.grimoire.current_day": "Current Day",
+    "clocktower.ui.empty_seat": "Empty seat",
     "clocktower.ui.grimoire.toggle_life": "New Button",
     "clocktower.ui.grimoire.add_reminder": "Add reminder token",
     "clocktower.ui.grimoire.clear_bluff": "Clear Bluff",
