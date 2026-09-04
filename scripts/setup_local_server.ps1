@@ -23,6 +23,8 @@ $serverPrefix = $serverRoot.TrimEnd([System.IO.Path]::DirectorySeparatorChar) + 
 $packPath = Join-Path $serverRoot ".cache\Blood on the Clocktower $packVersion.mrpack"
 $markerPath = Join-Path $serverRoot '.botc-pack-version'
 $fabricServerPath = Join-Path $serverRoot 'fabric-server-launch.jar'
+$clientPackPath = Join-Path $serverRoot "client\BotC-ko-KR-$packVersion.zip"
+$resourcePackSource = Join-Path $repoRoot 'resources\resourcepack\required\Blood on the Clocktower'
 
 function Get-SafeServerPath {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -139,6 +141,49 @@ function Copy-LocalizationOverlay {
     }
 }
 
+function New-ClientResourcePack {
+    New-Item -ItemType Directory -Force -Path (Split-Path -Parent $clientPackPath) | Out-Null
+    if (Test-Path -LiteralPath $clientPackPath) {
+        [System.IO.File]::Delete($clientPackPath)
+    }
+    [System.IO.Compression.ZipFile]::CreateFromDirectory(
+        $resourcePackSource,
+        $clientPackPath,
+        [System.IO.Compression.CompressionLevel]::Optimal,
+        $false
+    )
+}
+
+function Assert-ClientResourcePack {
+    if (-not (Test-Path -LiteralPath $clientPackPath)) {
+        throw "Missing client resource pack: $clientPackPath"
+    }
+
+    $archive = [System.IO.Compression.ZipFile]::OpenRead($clientPackPath)
+    try {
+        foreach ($relative in @('pack.mcmeta', 'assets/minecraft/lang/en_us.json', 'assets/minecraft/lang/ko_kr.json')) {
+            $entry = $archive.GetEntry($relative)
+            if (-not $entry) {
+                throw "Client resource pack is missing $relative."
+            }
+            $reader = [System.IO.StreamReader]::new($entry.Open())
+            try {
+                $packed = $reader.ReadToEnd()
+            }
+            finally {
+                $reader.Dispose()
+            }
+            $source = Get-Content -LiteralPath (Join-Path $resourcePackSource $relative) -Raw
+            if ($packed -ne $source) {
+                throw "Client resource pack is stale: $relative"
+            }
+        }
+    }
+    finally {
+        $archive.Dispose()
+    }
+}
+
 function Assert-ServerInstallation {
     param([Parameter(Mandatory)]$Index)
 
@@ -169,6 +214,8 @@ function Assert-ServerInstallation {
     if ((Get-Sha512 $fabricServerPath) -ne $fabricServerSha512) {
         throw 'Fabric server launcher failed SHA-512 verification.'
     }
+
+    Assert-ClientResourcePack
 
     $properties = Get-Content -LiteralPath (Join-Path $serverRoot 'server.properties') -Raw
     if ($properties -notmatch '(?m)^enable-command-block=true\r?$' -or $properties -notmatch '(?m)^server-ip=127\.0\.0\.1\r?$') {
@@ -224,6 +271,9 @@ if (-not $VerifyOnly) {
 
     Write-Host 'Applying the current localization branch...'
     Copy-LocalizationOverlay
+
+    Write-Host 'Building the client resource pack...'
+    New-ClientResourcePack
 
     $serverPropertiesPath = Join-Path $serverRoot 'server.properties'
     if (-not (Test-Path -LiteralPath $serverPropertiesPath)) {
