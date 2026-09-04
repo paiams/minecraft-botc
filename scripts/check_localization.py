@@ -485,6 +485,19 @@ DIRECT_TITLE_RE = re.compile(r'\btitle\s+\S+\s+(?:title|subtitle|actionbar)\s+"(
 DIRECT_CHAT_RE = re.compile(r'(?:^|\brun\s+)(?:say|me|teammsg)\s+(.+)$')
 TARGETED_CHAT_RE = re.compile(r'(?:^|\brun\s+)(?:tell|msg|w)\s+\S+\s+(.+)$')
 FANCYMENU_CHAT_ACTION_RE = re.compile(r'\[action_type:sendmessage\]\s*=\s*(.+)$')
+# Role links must use the internal role ID.  A localized ``.name`` value is
+# valid display text but not a stable wiki slug (and breaks as soon as the
+# client language changes).
+WIKI_OPENLINK_RE = re.compile(
+    r'\[action_type:openlink\]\s*=\s*'
+    r'(?P<url>https?://wiki\.bloodontheclocktower\.com/\S*)',
+    re.IGNORECASE,
+)
+LOCALIZED_WIKI_PATH_RE = re.compile(
+    r'https?://wiki\.bloodontheclocktower\.com/\s*'
+    r'\{\s*"placeholder"\s*:\s*"local"\s*(?=,|\})',
+    re.IGNORECASE,
+)
 WORD_RE = re.compile(r"\b[A-Za-z]{2,}\b")
 
 
@@ -567,6 +580,31 @@ def find_hardcoded_fancymenu(path: Path) -> Iterator[HardcodedText]:
             continue
         if value and _looks_like_user_english(value):
             yield HardcodedText(path, line_number, value)
+
+
+def check_role_wiki_links(root: Path, report: Report) -> None:
+    """Reject role wiki links that substitute a localized display name.
+
+    FancyMenu evaluates ``local`` placeholders on the client.  Putting that
+    result in the wiki URL produces Korean (or another locale's) text instead
+    of the English role slug expected by the wiki.  Keep this check narrow so
+    unrelated external links and translated labels remain valid.
+    """
+
+    directory = root / "config" / "fancymenu" / "customization"
+    for path in iter_files(root, directory, (".txt",)):
+        try:
+            lines = path.read_text(encoding="utf-8-sig").splitlines()
+        except UnicodeDecodeError:
+            continue
+        for line_number, line in enumerate(lines, 1):
+            match = WIKI_OPENLINK_RE.search(line)
+            if not match or not LOCALIZED_WIKI_PATH_RE.search(match.group("url")):
+                continue
+            report.error(
+                f"{_relative(path, root)}:{line_number}: role wiki URL uses a localized name; "
+                "use the role ID placeholder"
+            )
 
 
 def find_hardcoded_datapack(path: Path) -> Iterator[HardcodedText]:
@@ -692,6 +730,13 @@ CHARACTER_FIELD_RE = re.compile(
 )
 REMINDER_ID_RE = re.compile(r'(?:^|[,{])text:([a-z0-9_]+)(?=[,}])')
 NIGHT_KEY_LINE_RE = re.compile(r'"(?:first|other)_night_key"\s*:')
+NIGHT_SENTINEL_RE = re.compile(
+    r'^\s*execute unless data storage ct:script night_order\.'
+    r'(?P<kind>first|other)\[(?P<index>\d+)\]\s+'
+    r'run data modify storage ct:script night_order\.\1 append value '
+    r'\{(?P<value>[^}]*)\}\s*$'
+)
+NIGHT_SENTINEL_SLOTS = 30
 
 
 def character_fields(source: str) -> dict[str, dict[str, str]]:
@@ -786,6 +831,67 @@ def check_character_keys(root: Path, en_keys: Mapping[str, object], ko_keys: Map
             report.error(f"ko_kr missing built-in reminder key: {expected_key}")
 
 
+def check_night_order_sentinels(root: Path, report: Report) -> None:
+    """Ensure empty night-order slots contain every FancyMenu field.
+
+    FancyMenu probes ``localized`` and the corresponding translated hint even
+    for empty slots.  Missing fields therefore spam the server log and leave
+    the Grimoire broken before a real role is selected.
+    """
+
+    path = (
+        root
+        / "resources"
+        / "datapack"
+        / "required"
+        / "ct"
+        / "data"
+        / "ct"
+        / "function"
+        / "script"
+        / "fill_empty_spaces.mcfunction"
+    )
+    if not path.is_file():
+        return
+    try:
+        lines = path.read_text(encoding="utf-8-sig").splitlines()
+    except (OSError, UnicodeDecodeError) as error:
+        report.error(f"cannot read night-order sentinel data: {error}")
+        return
+
+    seen: dict[str, dict[int, int]] = {"first": {}, "other": {}}
+    required = {
+        "first": ("id:none", "first_night_hint:ERROR", 'first_night_key:""', "localized:no"),
+        "other": ("id:none", "other_nights_hint:ERROR", 'other_night_key:""', "localized:no"),
+    }
+    for line_number, line in enumerate(lines, 1):
+        match = NIGHT_SENTINEL_RE.match(line)
+        if not match:
+            continue
+        kind = match.group("kind")
+        index = int(match.group("index"))
+        if index in seen[kind]:
+            report.error(
+                f"{_relative(path, root)}:{line_number}: duplicate {kind} night-order sentinel slot {index} "
+                f"(previous line {seen[kind][index]})"
+            )
+        else:
+            seen[kind][index] = line_number
+        value = match.group("value")
+        for field in required[kind]:
+            if field not in value.split(","):
+                report.error(
+                    f"{_relative(path, root)}:{line_number}: {kind} night-order sentinel slot {index} "
+                    f"missing {field}"
+                )
+    for kind in ("first", "other"):
+        for index in range(NIGHT_SENTINEL_SLOTS):
+            if index not in seen[kind]:
+                report.error(
+                    f"{_relative(path, root)}: missing {kind} night-order sentinel slot {index}"
+                )
+
+
 def check_references(
     root: Path,
     en_keys: Mapping[str, object],
@@ -859,7 +965,9 @@ def run_checks(root: Path, en_path: Path | None = None, ko_path: Path | None = N
         except (OSError, JsoncError):
             ko_keys = {}
         check_character_keys(root, en_keys, ko_keys, report)
+        check_night_order_sentinels(root, report)
         check_references(root, en_keys, report)
+        check_role_wiki_links(root, report)
         check_sound_subtitles(root, en_keys, ko_keys, report)
     check_hardcoded_text(root, report)
     return report
@@ -896,6 +1004,18 @@ def _self_test() -> None:
         "clocktower.ui.x",
         "subtitles.ct.y",
     ]
+    sentinel = NIGHT_SENTINEL_RE.match(
+        'execute unless data storage ct:script night_order.first[20] run '
+        'data modify storage ct:script night_order.first append value '
+        '{id:none,first_night_hint:ERROR,first_night_key:"",localized:no}'
+    )
+    assert sentinel and sentinel.group("kind") == "first" and sentinel.group("index") == "20"
+    assert LOCALIZED_WIKI_PATH_RE.search(
+        'https://wiki.bloodontheclocktower.com/{"placeholder":"local","values":{}}'
+    )
+    assert not LOCALIZED_WIKI_PATH_RE.search(
+        'https://wiki.bloodontheclocktower.com/{"placeholder":"nbt_data_get_server"}'
+    )
     night_sample = '\t\t"sample": {\\\n\t\t\t"first": "Show \\\"YES\\\".",\\\n\t\t\t"first_night_key": "clocktower.role.sample.first_night"\\\n\t\t},\\\n'
     assert character_fields(night_sample) == {
         "sample": {
