@@ -50,7 +50,8 @@ The stylized script-title PNGs are artwork shared by every client, so the
 English lettering embedded in those logos is retained. Script names beside and
 under those images use locale keys. Internal values such as character IDs,
 voice-chat group IDs, and the `Nobody!` empty-seat sentinel also stay English;
-they are command/profile data rather than translated display copy. The
+they are command/profile data rather than translated display copy. FancyMenu
+maps `Nobody!` to a localized empty-seat label wherever it is rendered. The
 `Yambonaut` vote sentinel is a profile name used to render a player-head glyph,
 not a visible label, and is likewise retained.
 The Home Compass uses one translation component for both item creation and the
