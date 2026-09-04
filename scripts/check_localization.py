@@ -389,6 +389,25 @@ PRINTF_RE = re.compile(
 )
 SECTION_RE = re.compile(r"§.", re.DOTALL)
 EMPTY_TRANSLATION_ALLOWED = frozenset({"clocktower.prefix.the"})
+UNCHANGED_TRANSLATIONS_ALLOWED = {
+    "clocktower.command.storyteller_add": "/storyteller add ",
+    "clocktower.role.hidden": "???",
+    "clocktower.prefix.notification": "§l!§r ",
+    "clocktower.prefix.error": "§c!§r ",
+    "clocktower.command.spectator": "/spectator",
+    "clocktower.command.msg": "%s §7→ %s§7: %s",
+    "clocktower.reminder.amnesiac.text": "?",
+    "clocktower.reminder.bootlegger.text": "?",
+    "clocktower.reminder.hermit_1.text": "1",
+    "clocktower.reminder.hermit_2.text": "2",
+    "clocktower.reminder.hermit_3.text": "3",
+    "clocktower.reminder.wizard.text": "?",
+    "clocktower.reminder.xaan_x.text": "X",
+    "clocktower.command.pronouns": "/pronouns <pronouns>",
+    "clocktower.ui.credits.contributors": "^^^%n%Ciel\\_4%n%Jvkeh%n%MacadamiaNut%n%Sybillian%n%CJCougar8%n%aure%n%Jmc%n%MAATbud%n%Lord Woolfy%n%Gendemo%n%Geminpie%n%poof%n%^^^",
+    "clocktower.ui.credits.pixel_art_contributors": "^^^%n%Axo%n%Dos%n%OliverIsJester%n%allie\\_cat\\_\\_%n%khangnsn%n%Starburst%n%jadedragon2000%n%Orange Tears%n%Brokengamer%n%jek\\_le\\_snek%n%hububy%n%^^^",
+    "clocktower.ui.brand_short": "BotC",
+}
 
 
 def format_tokens(value: str) -> dict[str, object]:
@@ -626,6 +645,8 @@ def check_language_files(en_path: Path, ko_path: Path, report: Report) -> tuple[
             report.error(f"{key}: Korean translation contains a replacement character")
         if not ko_value.strip() and en_value.strip() and key not in EMPTY_TRANSLATION_ALLOWED:
             report.error(f"{key}: Korean translation is empty")
+        if en_value and ko_value == en_value and UNCHANGED_TRANSLATIONS_ALLOWED.get(key) != en_value:
+            report.error(f"{key}: Korean translation still matches the English source")
         expected = format_tokens(en_value)
         actual = format_tokens(ko_value)
         if expected != actual:
@@ -847,6 +868,7 @@ def _self_test() -> None:
     assert duplicate.duplicate_keys == ("x",)
     assert format_tokens("%s\n§a") == format_tokens("%s\n§a")
     assert format_tokens("%s") != format_tokens("%d")
+    assert len(UNCHANGED_TRANSLATIONS_ALLOWED) == 17
     assert _looks_like_user_english('prefix {"placeholder":"getvariable"}')
     assert not _looks_like_user_english('%!!unlovable%this is a custom font %!!arial%this is a custom font')
     assert not _looks_like_user_english('{"placeholder":"local","values":{"key":"clocktower.ui.x"}}')
