@@ -481,7 +481,10 @@ def translate_references(directory: Path) -> Iterator[KeyReference]:
 FIELD_RE = re.compile(r"^\s*(label|description|hoverlabel|title|text|source|tooltip|slider_label|slider_list_value_\d+)\s*=\s*(.*)$")
 TEXT_FIELD_RE = re.compile(r'(?<![\w])"?text"?\s*:\s*"((?:\\.|[^"\\])*)"')
 DIRECT_TELLRAW_RE = re.compile(r'\btellraw\s+\S+\s+"((?:\\.|[^"\\])*)"\s*$')
-DIRECT_TITLE_RE = re.compile(r"\btitle\b[^\n]*?\btitle\s+\"([^\"]+)\"")
+DIRECT_TITLE_RE = re.compile(r'\btitle\s+\S+\s+(?:title|subtitle|actionbar)\s+"((?:\\.|[^"\\])*)"\s*$')
+DIRECT_CHAT_RE = re.compile(r'(?:^|\brun\s+)(?:say|me|teammsg)\s+(.+)$')
+TARGETED_CHAT_RE = re.compile(r'(?:^|\brun\s+)(?:tell|msg|w)\s+\S+\s+(.+)$')
+FANCYMENU_CHAT_ACTION_RE = re.compile(r'\[action_type:sendmessage\]\s*=\s*(.+)$')
 WORD_RE = re.compile(r"\b[A-Za-z]{2,}\b")
 
 
@@ -544,6 +547,11 @@ def find_hardcoded_fancymenu(path: Path) -> Iterator[HardcodedText]:
     for line_number, line in enumerate(lines, 1):
         if line.lstrip().startswith("#"):
             continue
+        chat_action = FANCYMENU_CHAT_ACTION_RE.search(line)
+        if chat_action:
+            value = chat_action.group(1).strip()
+            if value and not value.startswith("/") and _looks_like_user_english(value):
+                yield HardcodedText(path, line_number, value)
         match = FIELD_RE.match(line)
         if not match:
             continue
@@ -581,7 +589,12 @@ def find_hardcoded_datapack(path: Path) -> Iterator[HardcodedText]:
                 yield HardcodedText(path, line_number, value)
         if found:
             continue
-        match = DIRECT_TELLRAW_RE.search(line) or DIRECT_TITLE_RE.search(line)
+        match = (
+            DIRECT_TELLRAW_RE.search(line)
+            or DIRECT_TITLE_RE.search(line)
+            or TARGETED_CHAT_RE.search(line)
+            or DIRECT_CHAT_RE.search(line)
+        )
         if match and _looks_like_user_english(match.group(1)):
             yield HardcodedText(path, line_number, match.group(1))
 
@@ -875,6 +888,10 @@ def _self_test() -> None:
     assert not _looks_like_user_english('{"placeholder":"local","values":{"key":"clocktower.ui.x"}}$$value')
     assert TEXT_FIELD_RE.findall('{"text":"Hello there"}') == ["Hello there"]
     assert DIRECT_TELLRAW_RE.search('tellraw @s "Hello there"').group(1) == "Hello there"
+    assert DIRECT_TITLE_RE.search('title @s actionbar "Hello there"').group(1) == "Hello there"
+    assert DIRECT_CHAT_RE.search('execute as @s run say Hello there').group(1) == "Hello there"
+    assert TARGETED_CHAT_RE.search('msg @s Hello there').group(1) == "Hello there"
+    assert FANCYMENU_CHAT_ACTION_RE.search('[action_type:sendmessage] = Hello there').group(1) == "Hello there"
     assert [m.group(1) for m in TRANSLATE_KEY_RE.finditer('{"translate":"clocktower.ui.x"} translate:"subtitles.ct.y"')] == [
         "clocktower.ui.x",
         "subtitles.ct.y",
