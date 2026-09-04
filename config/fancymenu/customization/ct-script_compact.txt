@@ -921,7 +921,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 6e34c102-201f-4bd5-a53c-c3fa4a45ed01-1752561043005
-  [executable_action_instance:c2baaada-2580-4de4-b956-30b059728607-1752561081902][action_type:openlink] = https://wiki.bloodontheclocktower.com/{"placeholder":"local","values":{"key":"clocktower.role.{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}.name"}}
+  [executable_action_instance:c2baaada-2580-4de4-b956-30b059728607-1752561081902][action_type:openlink] = https://wiki.bloodontheclocktower.com/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}
   [executable_block:6e34c102-201f-4bd5-a53c-c3fa4a45ed01-1752561043005][type:generic] = [executables:c2baaada-2580-4de4-b956-30b059728607-1752561081902;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}.png
   backgroundhovered = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}.png
