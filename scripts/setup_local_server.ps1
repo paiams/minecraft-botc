@@ -25,6 +25,8 @@ $markerPath = Join-Path $serverRoot '.botc-pack-version'
 $fabricServerPath = Join-Path $serverRoot 'fabric-server-launch.jar'
 $clientPackPath = Join-Path $serverRoot "client\BotC-ko-KR-$packVersion.zip"
 $resourcePackSource = Join-Path $repoRoot 'resources\resourcepack\required\Blood on the Clocktower'
+$datapackSource = Join-Path $repoRoot 'resources\datapack\required\ct'
+$datapackArchivePath = Join-Path $serverRoot 'resources\datapack\required\ct.zip'
 
 function Get-SafeServerPath {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -154,6 +156,88 @@ function New-ClientResourcePack {
     )
 }
 
+function New-ServerDatapackArchive {
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    if (-not (Test-Path -LiteralPath $datapackSource)) {
+        throw "Missing localized datapack source: $datapackSource"
+    }
+
+    $parent = Split-Path -Parent $datapackArchivePath
+    New-Item -ItemType Directory -Force -Path $parent | Out-Null
+    $partial = "$datapackArchivePath.tmp"
+    if (Test-Path -LiteralPath $partial) {
+        [System.IO.File]::Delete($partial)
+    }
+
+    try {
+        [System.IO.Compression.ZipFile]::CreateFromDirectory(
+            $datapackSource,
+            $partial,
+            [System.IO.Compression.CompressionLevel]::Optimal,
+            $false
+        )
+        Move-Item -LiteralPath $partial -Destination $datapackArchivePath -Force
+    }
+    catch {
+        if (Test-Path -LiteralPath $partial) {
+            [System.IO.File]::Delete($partial)
+        }
+        throw
+    }
+}
+
+function Get-StreamSha512 {
+    param([Parameter(Mandatory)][System.IO.Stream]$Stream)
+
+    $sha512 = [System.Security.Cryptography.SHA512]::Create()
+    try {
+        return ([BitConverter]::ToString($sha512.ComputeHash($Stream))).Replace('-', '').ToLowerInvariant()
+    }
+    finally {
+        $sha512.Dispose()
+    }
+}
+
+function Assert-ServerDatapackArchive {
+    if (-not (Test-Path -LiteralPath $datapackArchivePath)) {
+        throw "Missing server datapack archive: $datapackArchivePath"
+    }
+    if (-not (Test-Path -LiteralPath $datapackSource)) {
+        throw "Missing localized datapack source: $datapackSource"
+    }
+
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $archive = [System.IO.Compression.ZipFile]::OpenRead($datapackArchivePath)
+    try {
+        $sourceFiles = @(Get-ChildItem -LiteralPath $datapackSource -Recurse -File)
+        if (-not $sourceFiles) {
+            throw "Localized datapack source is empty: $datapackSource"
+        }
+
+        foreach ($sourceFile in $sourceFiles) {
+            $relative = $sourceFile.FullName.Substring($datapackSource.Length + 1).Replace('\', '/')
+            $entry = $archive.GetEntry($relative)
+            if (-not $entry) {
+                throw "Server datapack archive is missing $relative"
+            }
+
+            $stream = $entry.Open()
+            try {
+                $packedHash = Get-StreamSha512 $stream
+            }
+            finally {
+                $stream.Dispose()
+            }
+            if ($packedHash -ne (Get-Sha512 $sourceFile.FullName)) {
+                throw "Server datapack archive is stale: $relative"
+            }
+        }
+    }
+    finally {
+        $archive.Dispose()
+    }
+}
+
 function Assert-ClientResourcePack {
     if (-not (Test-Path -LiteralPath $clientPackPath)) {
         throw "Missing client resource pack: $clientPackPath"
@@ -204,6 +288,8 @@ function Assert-ServerInstallation {
             throw "Localization overlay is stale or missing: $relative"
         }
     }
+
+    Assert-ServerDatapackArchive
 
     foreach ($required in @('fabric-server-launch.jar', 'server.properties', 'eula.txt', 'world\level.dat')) {
         if (-not (Test-Path -LiteralPath (Join-Path $serverRoot $required))) {
@@ -271,6 +357,9 @@ if (-not $VerifyOnly) {
 
     Write-Host 'Applying the current localization branch...'
     Copy-LocalizationOverlay
+
+    Write-Host 'Building the server datapack archive...'
+    New-ServerDatapackArchive
 
     Write-Host 'Building the client resource pack...'
     New-ClientResourcePack

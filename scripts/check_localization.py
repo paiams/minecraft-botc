@@ -498,6 +498,7 @@ LOCALIZED_WIKI_PATH_RE = re.compile(
     r'\{\s*"placeholder"\s*:\s*"local"\s*(?=,|\})',
     re.IGNORECASE,
 )
+ROLE_NAME_WIKI_PATH_RE = re.compile(r'\.name(?:["}]|$)', re.IGNORECASE)
 WORD_RE = re.compile(r"\b[A-Za-z]{2,}\b")
 
 
@@ -599,7 +600,16 @@ def check_role_wiki_links(root: Path, report: Report) -> None:
             continue
         for line_number, line in enumerate(lines, 1):
             match = WIKI_OPENLINK_RE.search(line)
-            if not match or not LOCALIZED_WIKI_PATH_RE.search(match.group("url")):
+            if not match:
+                continue
+            url = match.group("url")
+            if not (
+                (
+                    LOCALIZED_WIKI_PATH_RE.search(url)
+                    and "clocktower.role." in url
+                )
+                or ROLE_NAME_WIKI_PATH_RE.search(url)
+            ):
                 continue
             report.error(
                 f"{_relative(path, root)}:{line_number}: role wiki URL uses a localized name; "
@@ -1015,6 +1025,9 @@ def _self_test() -> None:
     )
     assert not LOCALIZED_WIKI_PATH_RE.search(
         'https://wiki.bloodontheclocktower.com/{"placeholder":"nbt_data_get_server"}'
+    )
+    assert ROLE_NAME_WIKI_PATH_RE.search(
+        'https://wiki.bloodontheclocktower.com/{"placeholder":"nbt_data_get_server"}.name'
     )
     night_sample = '\t\t"sample": {\\\n\t\t\t"first": "Show \\\"YES\\\".",\\\n\t\t\t"first_night_key": "clocktower.role.sample.first_night"\\\n\t\t},\\\n'
     assert character_fields(night_sample) == {
