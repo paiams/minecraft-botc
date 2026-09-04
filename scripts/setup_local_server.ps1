@@ -27,6 +27,8 @@ $clientPackPath = Join-Path $serverRoot "client\BotC-ko-KR-$packVersion.zip"
 $resourcePackSource = Join-Path $repoRoot 'resources\resourcepack\required\Blood on the Clocktower'
 $datapackSource = Join-Path $repoRoot 'resources\datapack\required\ct'
 $datapackArchivePath = Join-Path $serverRoot 'resources\datapack\required\ct.zip'
+$carpetDisabledPath = Join-Path $serverRoot 'mods\fabric-carpet-1.21.11-1.4.194+v251223.jar.disabled'
+$carpetPath = Join-Path $serverRoot 'mods\fabric-carpet-1.21.11-1.4.194+v251223.jar'
 
 function Get-SafeServerPath {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -300,6 +302,9 @@ function Assert-ServerInstallation {
     if ((Get-Sha512 $fabricServerPath) -ne $fabricServerSha512) {
         throw 'Fabric server launcher failed SHA-512 verification.'
     }
+    if (-not (Test-Path -LiteralPath $carpetPath) -or (Get-Sha512 $carpetPath) -ne (Get-Sha512 $carpetDisabledPath)) {
+        throw 'The active Carpet server mod is missing or stale.'
+    }
 
     Assert-ClientResourcePack
 
@@ -351,6 +356,9 @@ if (-not $VerifyOnly) {
         Write-Host ("[{0}/{1}] {2}" -f ($i + 1), $serverFiles.Count, $file.path)
         Get-VerifiedDownload $file.downloads[0] (Get-SafeServerPath $file.path) $file.hashes.sha512
     }
+
+    Write-Host 'Enabling Carpet for fake-player tests...'
+    Copy-Item -LiteralPath $carpetDisabledPath -Destination $carpetPath -Force
 
     Write-Host 'Installing the Fabric server launcher...'
     Get-VerifiedDownload $fabricServerUrl $fabricServerPath $fabricServerSha512
