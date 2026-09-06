@@ -10,7 +10,7 @@ for path in layouts.glob("*.txt"):
     assert not re.search(r"night_order\.(first|other)\[\{id:", text), path
     for line in text.splitlines():
         match = re.fullmatch(
-            r"  (?:source|backgroundnormal|backgroundhovered) = "
+            r"  [a-z_]+ = "
             r"\[source:location\]ct:textures/(role|script)/(.+)\.png", line
         )
         if not match or '{"placeholder"' not in match[2]:

@@ -2518,7 +2518,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[0].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[0].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[0].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -2587,7 +2587,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[1].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[1].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[1].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -2656,7 +2656,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[2].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[2].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[2].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -2725,7 +2725,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[3].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[3].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[3].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -2794,7 +2794,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[4].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[4].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[4].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -2863,7 +2863,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[5].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[5].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[5].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -2932,7 +2932,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[6].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[6].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[6].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3001,7 +3001,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[7].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[7].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[7].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3070,7 +3070,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[8].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[8].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[8].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3139,7 +3139,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[9].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[9].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[9].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3208,7 +3208,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[10].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[10].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[10].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3277,7 +3277,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[11].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[11].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[11].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3346,7 +3346,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[12].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[12].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[12].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3415,7 +3415,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[13].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[13].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[13].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3484,7 +3484,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[14].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[14].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[14].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3553,7 +3553,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[15].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[15].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[15].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3622,7 +3622,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[16].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[16].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[16].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3691,7 +3691,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[17].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[17].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[17].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3760,7 +3760,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[18].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[18].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[18].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3829,7 +3829,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[19].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[19].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[19].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3898,7 +3898,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[20].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[20].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[20].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -3967,7 +3967,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[21].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[21].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[21].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -4036,7 +4036,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[22].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[22].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[22].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -4105,7 +4105,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[23].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[23].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[23].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -4174,7 +4174,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[24].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[24].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[24].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -4243,7 +4243,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[25].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[25].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[25].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -4312,7 +4312,7 @@ element {
 element {
   button_element_executable_block_identifier = 2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497
   [executable_block:2c97d1d2-18ee-4c68-bf37-8ca0b86e9f92-1777861603497][type:generic] = [executables:]
-  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[26].id"}}.png
+  background_texture_inactive = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[26].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"night_order.first[26].id"}}"}}.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
