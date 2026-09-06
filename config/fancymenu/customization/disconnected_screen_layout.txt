@@ -13,7 +13,7 @@ layout-meta {
 }
 
 menu_background {
-  image_path = [source:local]/config/fancymenu/assets/menu/connect_bg.png
+  image_path = [source:local]/config/fancymenu/assets/menu/backgrounds/connecting.png
   slide = false
   repeat_texture = false
   parallax = false
