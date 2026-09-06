@@ -392,7 +392,7 @@ element {
   advanced_vertical_tilt_degrees = 0.0
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
-  source = [source:location]ct:textures/role/{"placeholder":"getvariable","values":{"name":"role"}}.png
+  source = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"role"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"getvariable","values":{"name":"role"}}"}}.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
