@@ -29,6 +29,8 @@ $datapackSource = Join-Path $repoRoot 'resources\datapack\required\ct'
 $datapackArchivePath = Join-Path $serverRoot 'resources\datapack\required\ct.zip'
 $carpetDisabledPath = Join-Path $serverRoot 'mods\fabric-carpet-1.21.11-1.4.194+v251223.jar.disabled'
 $carpetPath = Join-Path $serverRoot 'mods\fabric-carpet-1.21.11-1.4.194+v251223.jar'
+$spiffyInitSource = Join-Path $PSScriptRoot 'spiffy-server-init'
+$spiffyInitPath = Join-Path $serverRoot 'mods\botc-spiffy-server-init-1.0.0.jar'
 
 function Get-SafeServerPath {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -366,6 +368,17 @@ if (-not $VerifyOnly) {
     Write-Host 'Applying the current localization branch...'
     Copy-LocalizationOverlay
 
+    $autoJoinPath = Join-Path $serverRoot 'config\enhancedgroups\auto-join-groups.json'
+    if (-not (Test-Path -LiteralPath $autoJoinPath)) {
+        Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'runtime-defaults\auto-join-groups.json') -Destination $autoJoinPath
+    }
+
+    # Fabric's native method entrypoint invokes SpiffyHUD's existing codecs, server only.
+    $spiffyPartial = "$spiffyInitPath.download"
+    if (Test-Path -LiteralPath $spiffyPartial) { Remove-Item -LiteralPath $spiffyPartial }
+    [System.IO.Compression.ZipFile]::CreateFromDirectory($spiffyInitSource, $spiffyPartial)
+    Move-Item -LiteralPath $spiffyPartial -Destination $spiffyInitPath -Force
+
     Write-Host 'Building the server datapack archive...'
     New-ServerDatapackArchive
 
@@ -396,6 +409,19 @@ server-port=25565
 
 Write-Host 'Verifying server files and localization overlay...'
 Assert-ServerInstallation $index
+$spiffyArchive = [System.IO.Compression.ZipFile]::OpenRead($spiffyInitPath)
+try {
+    $entry = $spiffyArchive.GetEntry('fabric.mod.json')
+    if (-not $entry) { throw 'Missing SpiffyHUD server initialization entrypoint.' }
+    $stream = $entry.Open()
+    try {
+        if ((Get-StreamSha512 $stream) -ne (Get-Sha512 (Join-Path $spiffyInitSource 'fabric.mod.json'))) {
+            throw 'SpiffyHUD server initialization pack is stale; run setup again.'
+        }
+    }
+    finally { $stream.Dispose() }
+}
+finally { $spiffyArchive.Dispose() }
 Write-Host "Local server ready: $serverRoot"
 if ((Get-Content -LiteralPath (Join-Path $serverRoot 'eula.txt') -Raw) -notmatch '(?m)^eula=true$') {
     Write-Host 'Before first start, review the Minecraft EULA and change server\eula.txt to eula=true.'
