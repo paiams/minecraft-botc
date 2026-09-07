@@ -1,3 +1,19 @@
+<#
+.SYNOPSIS
+Build or verify a local development server from this Git checkout.
+.DESCRIPTION
+Downloads the pinned upstream pack, then applies this checkout's changes
+(including uncommitted tracked edits). This is not a release mrpack installer.
+Requires Git and Java 21. Binds to localhost and enables Carpet for testing.
+Stop the server and back up its directory before rebuilding. Existing server
+properties and EULA choices are preserved; this script does not configure public
+network access. Use a release mrpack with a compatible server installer for a
+release-matched server, preserving server-overrides.
+.EXAMPLE
+./scripts/setup_local_server.ps1
+.EXAMPLE
+./scripts/setup_local_server.ps1 -VerifyOnly
+#>
 [CmdletBinding()]
 param(
     [string]$ServerDirectory = (Join-Path $PSScriptRoot '..\server'),
@@ -11,7 +27,7 @@ $packVersion = '1.6.0'
 $minecraftVersion = '1.21.11'
 $fabricLoaderVersion = '0.19.4'
 $fabricInstallerVersion = '1.1.2'
-$localizationBaseCommit = 'fc5d8ee'
+$upstreamBaseCommit = 'fc5d8ee'
 $packUrl = 'https://cdn.modrinth.com/data/nihni4Eg/versions/FrfRxPe6/Blood%20on%20the%20Clocktower%201.6.0.mrpack'
 $packSha512 = 'd245fc95f02829263fcf5f4f2f437d9bb13123fbaf1016781e54be3f18c94d77aba6e5e3c066ac7b067ffdeb0f26f4e86dffda776522ed121544f047a9d110dd'
 $fabricServerUrl = "https://meta.fabricmc.net/v2/versions/loader/$minecraftVersion/$fabricLoaderVersion/$fabricInstallerVersion/server/jar"
@@ -23,7 +39,7 @@ $serverPrefix = $serverRoot.TrimEnd([System.IO.Path]::DirectorySeparatorChar) + 
 $packPath = Join-Path $serverRoot ".cache\Blood on the Clocktower $packVersion.mrpack"
 $markerPath = Join-Path $serverRoot '.botc-pack-version'
 $fabricServerPath = Join-Path $serverRoot 'fabric-server-launch.jar'
-$clientPackPath = Join-Path $serverRoot "client\BotC-ko-KR-$packVersion.zip"
+$clientPackPath = Join-Path $serverRoot "client\BotC-resources-$packVersion.zip"
 $resourcePackSource = Join-Path $repoRoot 'resources\resourcepack\required\Blood on the Clocktower'
 $datapackSource = Join-Path $repoRoot 'resources\datapack\required\ct'
 $datapackArchivePath = Join-Path $serverRoot 'resources\datapack\required\ct.zip'
@@ -131,14 +147,14 @@ function Expand-PackOverrides {
 }
 
 function Get-OverlayFiles {
-    $files = @(& git -c core.quotepath=false -C $repoRoot diff --name-only $localizationBaseCommit -- config resources scripts/loaded_script.json)
+    $files = @(& git -c core.quotepath=false -C $repoRoot diff --name-only $upstreamBaseCommit -- config resources scripts/loaded_script.json)
     if ($LASTEXITCODE -ne 0 -or -not $files) {
-        throw 'Could not list localization changes from the pinned 1.6.0 commit with Git.'
+        throw 'Could not list checkout changes from the pinned upstream commit with Git.'
     }
     return $files
 }
 
-function Copy-LocalizationOverlay {
+function Copy-ForkOverlay {
     foreach ($relative in Get-OverlayFiles) {
         $source = Join-Path $repoRoot $relative
         $destination = Get-SafeServerPath $relative
@@ -289,7 +305,7 @@ function Assert-ServerInstallation {
         $source = Join-Path $repoRoot $relative
         $destination = Get-SafeServerPath $relative
         if (-not (Test-Path -LiteralPath $destination) -or (Get-Sha512 $source) -ne (Get-Sha512 $destination)) {
-            throw "Localization overlay is stale or missing: $relative"
+                throw "Fork overlay is stale or missing: $relative"
         }
     }
 
@@ -365,8 +381,8 @@ if (-not $VerifyOnly) {
     Write-Host 'Installing the Fabric server launcher...'
     Get-VerifiedDownload $fabricServerUrl $fabricServerPath $fabricServerSha512
 
-    Write-Host 'Applying the current localization branch...'
-    Copy-LocalizationOverlay
+    Write-Host 'Applying changes from the current Git checkout...'
+    Copy-ForkOverlay
 
     $autoJoinPath = Join-Path $serverRoot 'config\enhancedgroups\auto-join-groups.json'
     if (-not (Test-Path -LiteralPath $autoJoinPath)) {
@@ -391,7 +407,7 @@ if (-not $VerifyOnly) {
 enable-command-block=true
 level-name=world
 max-players=16
-motd=BotC 1.6.0 Korean test server
+motd=Blood on the Clocktower - local development server
 online-mode=true
 server-ip=127.0.0.1
 server-port=25565
@@ -407,7 +423,7 @@ server-port=25565
     New-Item -ItemType Directory -Force -Path (Join-Path $serverRoot '.tmp') | Out-Null
 }
 
-Write-Host 'Verifying server files and localization overlay...'
+Write-Host 'Verifying server files and fork overlay...'
 Assert-ServerInstallation $index
 $spiffyArchive = [System.IO.Compression.ZipFile]::OpenRead($spiffyInitPath)
 try {
@@ -422,7 +438,9 @@ try {
     finally { $stream.Dispose() }
 }
 finally { $spiffyArchive.Dispose() }
-Write-Host "Local server ready: $serverRoot"
+Write-Host "Local development server verified: $serverRoot"
+Write-Host 'Local connections only: localhost:25565. Carpet is enabled for testing.'
+Write-Host "Resource-only client ZIP: $clientPackPath (not a full client mrpack)."
 if ((Get-Content -LiteralPath (Join-Path $serverRoot 'eula.txt') -Raw) -notmatch '(?m)^eula=true$') {
     Write-Host 'Before first start, review the Minecraft EULA and change server\eula.txt to eula=true.'
 }

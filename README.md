@@ -29,8 +29,27 @@ installation, not an in-place patch for an existing instance.
 
 Use the [source preparation and export guide](.github/PACKAGING_INSTRUCTIONS.md)
 to assemble a personal instance and export it. This is a manual workflow, not a
-one-command client installer. The [local server setup script](scripts/setup_local_server.ps1)
-prepares a dedicated server; it does not export a client `.mrpack`.
+one-command client installer.
+
+### Set up a server
+
+For a server matching a release, install the same `.mrpack` using a compatible
+server installer that applies `server-overrides`. Follow the release's server
+notes and review the Minecraft EULA before starting it.
+
+For local development on Windows, use the
+[local server setup script](scripts/setup_local_server.ps1) from a Git checkout
+with Java 21 installed:
+
+```powershell
+./scripts/setup_local_server.ps1
+```
+
+It prepares `server/` from the current checkout, binds to `localhost:25565`, and
+enables Carpet for testing. After reviewing and accepting the EULA in
+`server/eula.txt`, run `start-local-server.cmd`. Stop and back up an existing
+server before rebuilding. This is not a public-server installer and does not
+export a client `.mrpack`.
 
 You will need a world configured for this modpack and compatible client and server
 installations. See [keyboard shortcuts](KEYBINDS.md) for play controls and the

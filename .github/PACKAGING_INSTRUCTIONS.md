@@ -31,9 +31,19 @@ enables Carpet; the client-export instruction below is not a server instruction.
 For a local dedicated server, run `./scripts/setup_local_server.ps1` from a Git
 checkout in PowerShell with Git and Java 21 installed. It downloads pinned
 dependencies and prepares `server/`; review the Minecraft EULA before starting it.
-The generated client resource-pack ZIP contains resources only, not the full fork
+The server is localhost-only and enables Carpet for testing. It applies the
+current checkout, not a selected release asset. Stop and back up the server before
+rerunning setup; existing server properties and EULA choices are preserved.
+Use `-VerifyOnly` to check an existing setup without rebuilding it.
+
+The generated `server/client/BotC-resources-<baseline>.zip` contains resources only, not the full fork
 or an importable `.mrpack`. Do not use the dedicated-server directory as a client
 export source.
+
+Older setups used the filename `BotC-ko-KR-<baseline>.zip`. Rerun setup with the
+server stopped to generate the renamed file; existing copies are not removed.
+For a release-matched server, use the release `.mrpack` and a compatible server
+installer that preserves `server-overrides`, rather than this development script.
 
 ## Export Checklist
 
