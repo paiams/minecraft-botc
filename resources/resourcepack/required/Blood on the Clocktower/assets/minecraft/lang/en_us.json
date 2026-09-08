@@ -1,4 +1,13 @@
 {
+    "key.category.chatbinds.chatbinds": "Chat Binds",
+    "key.category.chatbinds.user": "Blood on the Clocktower",
+    "chatbinds.key.menu": "Message Binds Menu",
+    "chatbinds.key.add_chat": "Bind Message or command",
+    "View Grimoire": "View Grimoire",
+    "View Script": "View Script",
+    "Nomination": "Nomination",
+    "Storyteller Quick Actions": "Storyteller Quick Actions",
+    "Toggle Night Voice Chat": "Toggle Night Voice Chat",
     "flan.noPermission": "",
     "flan.noPermissionSimple": "",
     "flan.noPermissionTooClose": "",

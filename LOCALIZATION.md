@@ -50,11 +50,13 @@ flows.
 The GitHub wiki is a test reference, not part of the pack, and remains English.
 Character flavor text is retained as internal source data because the current baseline never
 renders it. Imported script titles, authors, and unknown night hints are shown
-verbatim. Third-party Chatbind labels, Simple Voice Chat/EnhancedGroups group
-names, and Flan permission-group names remain English because those mods store
-shared literal names instead of resolving a per-client locale; changing them
-would break mixed Korean/English clients or their command bindings. External
-mod and shader settings, optional icon-pack descriptions, and third-party pack
+verbatim. The Controls screen translates the five bundled Chat Binds titles using
+their existing English strings as locale keys, preserving saved key assignments.
+The current category keys use the `key.category.chatbinds` prefix. Chat Binds
+may still display literal titles in its own editor. Simple Voice Chat/EnhancedGroups
+group names and Flan permission-group names remain English because those mods
+store shared literal names; changing them would break command bindings. External
+mod settings other than BetterTab and Sit!, shader settings, optional icon-pack descriptions, and third-party pack
 credits remain in their source language.
 
 The stylized script-title PNGs are artwork shared by every client, so the
@@ -65,6 +67,14 @@ they are command/profile data rather than translated display copy. FancyMenu
 maps `Nobody!` to a localized empty-seat label wherever it is rendered. The
 `Yambonaut` vote sentinel is a profile name used to render a player-head glyph,
 not a visible label, and is likewise retained.
+
+BetterTab 2.1.5 and Sit! 1.2.5.2 Korean translations cover all entries in their
+bundled English locale files, including key bindings, settings, descriptions, and
+messages. These overrides live under `assets/bettertab/lang/ko_kr.json` and
+`assets/sit-oth3r/lang/ko_kr.json` in the required resource pack. Mod names remain
+unchanged. On mod upgrades, compare these files with the new bundled English
+locales and verify placeholders; the main checker only covers the Minecraft
+namespace. Text sent literally by a server may still follow its language setting.
 
 ## Updating
 

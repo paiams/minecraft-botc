@@ -46,7 +46,7 @@ Push-to-talk and voice whisper keys are **unassigned** in this configuration. En
 
 **Quick actions and Iris shader reload are both bound to R.** Pressing R may display a shader reload message or cause a brief stutter. In `Options → Controls → Key Binds`, reassign or unbind only the Iris reload action.
 
-In Chat Binds, G/H/C/R/Enter are listed as `View Grimoire`, `View Script`, `Nomination`, `Storyteller Quick Actions`, and `Toggle Night Voice Chat`.
+With English selected, G/H/C/R/Enter are listed as `View Grimoire`, `View Script`, `Nomination`, `Storyteller Quick Actions`, and `Toggle Night Voice Chat`. The Controls screen localizes these labels in Korean; the saved binding IDs remain English.
 
 ## Execution and Death
 

@@ -1,4 +1,13 @@
 {
+    "key.category.chatbinds.chatbinds": "채팅 단축키",
+    "key.category.chatbinds.user": "시계탑에 흐른 피",
+    "chatbinds.key.menu": "채팅 단축키 메뉴",
+    "chatbinds.key.add_chat": "메시지 또는 명령어 단축키 추가",
+    "View Grimoire": "마도서 보기",
+    "View Script": "스크립트 보기",
+    "Nomination": "지명",
+    "Storyteller Quick Actions": "이야기꾼 빠른 작업",
+    "Toggle Night Voice Chat": "밤 음성 채팅 전환",
     "soundCategory.voice": "시계탑 소리",
     "category.chatbinds.user": "시계탑에 흐른 피",
 
