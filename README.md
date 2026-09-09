@@ -37,6 +37,19 @@ one-command client installer.
 
 ### Set up a server
 
+For daily development, double-click `sync-dev.cmd` to update the existing `server/`
+and `%APPDATA%/ModrinthApp/profiles/Blood on the Clocktower` together. It waits
+for Minecraft and local Fabric servers to close normally (use `stop` in the server
+console), builds the shared mod, and applies the checkout's changes, including
+uncommitted edits and new non-ignored content files. It rebuilds the datapack ZIP
+on both targets and the server's resource ZIP, backs up changed files under
+`.dev-sync-backups/`, verifies copies, and restores applied files if copying fails.
+Worlds, credentials, and unrelated personal settings are preserved. Restart both
+runtimes afterward. This updates development content, not upstream dependencies.
+Run `powershell -NoProfile -File scripts/sync_dev.ps1 -CheckOnly` to validate paths
+without building or changing runtime files; use `-ServerDirectory` and
+`-ClientDirectory` to override the destinations.
+
 For a server matching a release, install the same `.mrpack` using a compatible
 server installer that applies `server-overrides`. Follow the release's server
 notes and review the Minecraft EULA before starting it.

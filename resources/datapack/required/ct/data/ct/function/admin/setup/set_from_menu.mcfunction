@@ -164,3 +164,4 @@ execute if score voudon role_list matches 1 run data modify storage ct:roles rol
 
 tellraw @s [{"text":"! ","color":"yellow","bold":true},{"translate":"clocktower.notice.setup.bag_created","color":"gray","bold":false,"with":[{"translate":"clocktower.ui.start_night_1"}]}]
 execute as @a run function ct:admin/setup/clear_variables
+function ct:util/sync_variables

@@ -92,6 +92,7 @@ config/slurs_filter.txt
 saves/**/data/botc-display-names.json
 /polymer
 /server/
+/.dev-sync-backups/
 config/fancymenu/ui_themes/cherry_blossom.json
 config/fancymenu/ui_themes/cozy_campfire.json
 config/lingua_bib.json
