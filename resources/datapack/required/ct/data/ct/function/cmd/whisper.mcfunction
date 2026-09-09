@@ -10,7 +10,7 @@ execute unless score @s neighbor_check matches -1..1 run return run function ct:
 execute if score @s neighbor_check matches 0 run return run function ct:error/whisper_self
 execute if score phase game_data matches 2 run return run function ct:error/whisper_wrong_phase
 
-$tellraw $(player) [{translate:"clocktower.command.msg",color:gray,with:[{translate:"clocktower.command.msg.you",color:gray},{text:$(target),color:gray},{text:"$(msg)",color:gray}],hover_event:{action:show_text,value:{translate:"clocktower.command.msg.st_visible"}}}]
-$tellraw $(target) [{translate:"clocktower.command.msg",color:gray,with:[{text:$(player),color:gray},{translate:"clocktower.command.msg.you",color:gray},{text:"$(msg)",color:gray}],hover_event:{action:show_text,value:{translate:"clocktower.command.msg.st_visible"}}}]
+$tellraw $(player) [{translate:"clocktower.command.msg",color:gray,with:[{translate:"clocktower.command.msg.you",color:gray},{selector:"@a[name=$(target)]",color:gray},{text:"$(msg)",color:gray}],hover_event:{action:show_text,value:{translate:"clocktower.command.msg.st_visible"}}}]
+$tellraw $(target) [{translate:"clocktower.command.msg",color:gray,with:[{selector:"@a[name=$(player)]",color:gray},{translate:"clocktower.command.msg.you",color:gray},{text:"$(msg)",color:gray}],hover_event:{action:show_text,value:{translate:"clocktower.command.msg.st_visible"}}}]
 
-$execute unless entity @a[name=$(target),tag=storyteller] unless entity @a[name=$(player),tag=storyteller] run tellraw @a[tag=storyteller] [{translate:"clocktower.command.msg",with:[{text:$(player),color:gray},{text:$(target),color:gray},{text:"$(msg)",color:gray}],hover_event:{action:show_text,value:{translate:"clocktower.command.msg.st_visible"}}}]
+$execute unless entity @a[name=$(target),tag=storyteller] unless entity @a[name=$(player),tag=storyteller] run tellraw @a[tag=storyteller] [{translate:"clocktower.command.msg",with:[{selector:"@a[name=$(player)]",color:gray},{selector:"@a[name=$(target)]",color:gray},{text:"$(msg)",color:gray}],hover_event:{action:show_text,value:{translate:"clocktower.command.msg.st_visible"}}}]
