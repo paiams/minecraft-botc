@@ -1,6 +1,7 @@
 {
     "values": [
         "ct:admin/init/root",
+        "ct:script/localize_night_order",
         "ct:loop/every_five_ticks"
     ]
 }
