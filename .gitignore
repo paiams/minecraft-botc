@@ -89,6 +89,7 @@ saves/world/data/Village_index.dat
 config/cardinal-components-api.properties
 /config/polymer
 config/slurs_filter.txt
+saves/**/data/botc-display-names.json
 /polymer
 /server/
 config/fancymenu/ui_themes/cherry_blossom.json

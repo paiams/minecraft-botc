@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "botc_display_names",
+  "version": "${version}",
+  "name": "BotC Display Names",
+  "description": "Shared multilingual display names for BotC menus, chat and voice chat.",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.botc.names.DisplayNames"],
+    "client": ["dev.botc.names.DisplayNamesClient"]
+  },
+  "mixins": ["botc-display-names.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.4",
+    "fabric-api": "*",
+    "minecraft": "1.21.11",
+    "java": ">=21"
+  }
+}

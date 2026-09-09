@@ -23,13 +23,18 @@ enables Carpet; the client-export instruction below is not a server instruction.
    with `git diff <baseline-commit> -- config resources scripts/loaded_script.json`.
    Apply the fork's changed files to the instance, including any removals. Do not
    replace an existing personal profile wholesale or copy runtime logs and settings.
-3. Build the required datapack and resource-pack archives as described below,
+3. With JDK 21 available, run `./scripts/build_display_names.ps1 -FancyMenuJar <instance>/mods/fancymenu_fabric_3.9.10_MC_1.21.11.jar`.
+   Install the resulting `extensions/display-names/build/libs/botc-display-names-1.0.0.jar`
+   in **both** the client and server `mods` directories, while those runtimes are stopped
+   and backed up. Include this JAR in the exported pack; it is required by the updated menus.
+   See [Display Names](../extensions/display-names/README.md) for commands and checks.
+4. Build the required datapack and resource-pack archives as described below,
    retaining their expected paths. Configure a compatible world and matching server,
    then test the instance before exporting it. This manual route requires familiarity
    with Minecraft datapacks and launcher profiles.
 
 For a local dedicated server, run `./scripts/setup_local_server.ps1` from a Git
-checkout in PowerShell with Git and Java 21 installed. It downloads pinned
+checkout in PowerShell with Git and JDK 21 installed. It downloads pinned
 dependencies and prepares `server/`; review the Minecraft EULA before starting it.
 The server is localhost-only and enables Carpet for testing. It applies the
 current checkout, not a selected release asset. Stop and back up the server before

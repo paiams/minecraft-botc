@@ -1,4 +1,4 @@
-$tellraw @a {"translate":"clocktower.notice.pointing","with":[{"text":"$(pointer)"},{"text":"$(target)"}]}
+$tellraw @a {"translate":"clocktower.notice.pointing","with":[{"selector":"@a[name=$(pointer)]"},{"selector":"@a[name=$(target)]"}]}
 $execute as $(target) if entity @s[scores={id=1}] run scoreboard players set $(pointer) pointing_at 1
 $execute as $(target) if entity @s[scores={id=2}] run scoreboard players set $(pointer) pointing_at 2
 $execute as $(target) if entity @s[scores={id=3}] run scoreboard players set $(pointer) pointing_at 3

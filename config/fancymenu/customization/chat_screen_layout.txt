@@ -683,7 +683,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.mark_prefix"}}{"placeholder":"getvariable","values":{"name":"last_nom"}}{"placeholder":"local","values":{"key":"clocktower.ui.chat.mark_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.chat.mark_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"last_nom"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.chat.mark_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.chat.mark"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = 44f90eb7-7079-47e7-b708-801fb5ee46e9-1769646505023

@@ -360,7 +360,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -441,7 +441,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -524,7 +524,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -605,7 +605,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -686,7 +686,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -769,7 +769,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -850,7 +850,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -931,7 +931,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1014,7 +1014,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1095,7 +1095,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1176,7 +1176,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1259,7 +1259,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1340,7 +1340,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1421,7 +1421,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1504,7 +1504,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1585,7 +1585,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1666,7 +1666,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1749,7 +1749,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1830,7 +1830,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1911,7 +1911,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -1994,7 +1994,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2075,7 +2075,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2156,7 +2156,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2239,7 +2239,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2320,7 +2320,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2401,7 +2401,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2484,7 +2484,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2565,7 +2565,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2646,7 +2646,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2729,7 +2729,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2810,7 +2810,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2891,7 +2891,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -2974,7 +2974,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3055,7 +3055,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3136,7 +3136,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3219,7 +3219,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3300,7 +3300,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3381,7 +3381,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3464,7 +3464,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3545,7 +3545,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3626,7 +3626,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3709,7 +3709,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3790,7 +3790,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.teleport_to_pyre"}}%n%{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.light_pyre"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.pyre"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3871,7 +3871,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.execute"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483
@@ -3954,7 +3954,7 @@ element {
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
-  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
+  description = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_prefix"}}{"placeholder":"display_name","values":{"account_name":"{"placeholder":"getvariable","values":{"name":"player_{"placeholder":"getvariable","values":{"name":"editing_player"}}"}}"}}{"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_suffix"}}
   label = {"placeholder":"local","values":{"key":"clocktower.ui.grimoire.change_character"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = b8d48e2c-82a5-47a6-b47e-9c946976899f-1753140079483

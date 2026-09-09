@@ -4,7 +4,7 @@ Build or verify a local development server from this Git checkout.
 .DESCRIPTION
 Downloads the pinned upstream pack, then applies this checkout's changes
 (including uncommitted tracked edits). This is not a release mrpack installer.
-Requires Git and Java 21. Binds to localhost and enables Carpet for testing.
+Requires Git and JDK 21 (including javac). Binds to localhost and enables Carpet for testing.
 Stop the server and back up its directory before rebuilding. Existing server
 properties and EULA choices are preserved; this script does not configure public
 network access. Use a release mrpack with a compatible server installer for a
@@ -47,6 +47,8 @@ $carpetDisabledPath = Join-Path $serverRoot 'mods\fabric-carpet-1.21.11-1.4.194+
 $carpetPath = Join-Path $serverRoot 'mods\fabric-carpet-1.21.11-1.4.194+v251223.jar'
 $spiffyInitSource = Join-Path $PSScriptRoot 'spiffy-server-init'
 $spiffyInitPath = Join-Path $serverRoot 'mods\botc-spiffy-server-init-1.0.0.jar'
+$displayNamesBuiltPath = Join-Path $repoRoot 'extensions\display-names\build\libs\botc-display-names-1.0.0.jar'
+$displayNamesPath = Join-Path $serverRoot 'mods\botc-display-names-1.0.0.jar'
 
 function Get-SafeServerPath {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -395,6 +397,10 @@ if (-not $VerifyOnly) {
     [System.IO.Compression.ZipFile]::CreateFromDirectory($spiffyInitSource, $spiffyPartial)
     Move-Item -LiteralPath $spiffyPartial -Destination $spiffyInitPath -Force
 
+    Write-Host 'Building and installing the shared display-name mod...'
+    & (Join-Path $PSScriptRoot 'build_display_names.ps1') -FancyMenuJar (Join-Path $serverRoot 'mods\fancymenu_fabric_3.9.10_MC_1.21.11.jar')
+    Copy-Item -LiteralPath $displayNamesBuiltPath -Destination $displayNamesPath -Force
+
     Write-Host 'Building the server datapack archive...'
     New-ServerDatapackArchive
 
@@ -425,6 +431,12 @@ server-port=25565
 
 Write-Host 'Verifying server files and fork overlay...'
 Assert-ServerInstallation $index
+if (-not (Test-Path -LiteralPath $displayNamesPath)) {
+    throw 'Missing BotC Display Names mod; run setup again with the server stopped.'
+}
+if ((Test-Path -LiteralPath $displayNamesBuiltPath) -and (Get-Sha512 $displayNamesBuiltPath) -ne (Get-Sha512 $displayNamesPath)) {
+    throw 'BotC Display Names runtime differs from the local build; run setup again with the server stopped.'
+}
 $spiffyArchive = [System.IO.Compression.ZipFile]::OpenRead($spiffyInitPath)
 try {
     $entry = $spiffyArchive.GetEntry('fabric.mod.json')
