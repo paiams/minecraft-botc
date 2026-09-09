@@ -44,6 +44,8 @@ console), builds the shared mod, and applies the checkout's changes, including
 uncommitted edits and new non-ignored content files. It rebuilds the datapack ZIP
 on both targets and the server's resource ZIP, backs up changed files under
 `.dev-sync-backups/`, verifies copies, and restores applied files if copying fails.
+It also builds the sibling `minecraft-botc-broadcast` checkout and updates its
+server-only JAR when the built file differs.
 Worlds, credentials, and unrelated personal settings are preserved. Restart both
 runtimes afterward. This updates development content, not upstream dependencies.
 Run `powershell -NoProfile -File scripts/sync_dev.ps1 -CheckOnly` to validate paths

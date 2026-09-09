@@ -3,12 +3,15 @@
 param(
     [string]$ServerDirectory,
     [string]$ClientDirectory = (Join-Path $env:APPDATA 'ModrinthApp\profiles\Blood on the Clocktower'),
+    [string]$BroadcastDirectory,
     [switch]$CheckOnly
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 if (-not $ServerDirectory) { $ServerDirectory = Join-Path $repo 'server' }
+if (-not $BroadcastDirectory) { $BroadcastDirectory = Join-Path (Split-Path -Parent $repo) 'minecraft-botc-broadcast' }
+$broadcast = [IO.Path]::GetFullPath($BroadcastDirectory)
 $targets = @([IO.Path]::GetFullPath($ServerDirectory), [IO.Path]::GetFullPath($ClientDirectory))
 $checkedPaths = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
 
@@ -42,6 +45,9 @@ foreach ($target in $targets) {
         throw "Expected an existing installed runtime: $target"
     }
 }
+if (-not (Test-Path -LiteralPath (Join-Path $broadcast 'gradlew.bat'))) {
+    throw "Expected the broadcast checkout: $broadcast"
+}
 $paths = @(& git -c core.quotepath=false -C $repo diff --name-only fc5d8ee -- config resources scripts/loaded_script.json)
 if ($LASTEXITCODE) { throw 'Cannot read checkout changes.' }
 $paths += @(& git -c core.quotepath=false -C $repo ls-files --others --exclude-standard -- config resources scripts/loaded_script.json)
@@ -54,6 +60,7 @@ if ($CheckOnly) {
     Write-Host "Validated $($paths.Count) checkout paths for both runtimes. No files changed."
     Write-Host "Server: $($targets[0])"
     Write-Host "Client: $($targets[1])"
+    Write-Host "Broadcast: $broadcast"
     exit 0
 }
 
@@ -61,6 +68,13 @@ Write-Host 'Close Minecraft and type stop in the server console. Waiting for nor
 while (@(Get-RunningGames).Count) { Start-Sleep -Seconds 2 }
 Write-Host 'Building the shared mod...'
 & (Join-Path $PSScriptRoot 'build_display_names.ps1') -FancyMenuJar (Join-Path $targets[0] 'mods\fancymenu_fabric_3.9.10_MC_1.21.11.jar')
+Write-Host 'Building the server broadcast mod...'
+$previousJavaOptions = $env:JAVA_TOOL_OPTIONS
+try {
+    $env:JAVA_TOOL_OPTIONS = "$previousJavaOptions -Djdk.net.unixdomain.tmpdir=C:/Windows/Temp".Trim()
+    & (Join-Path $broadcast 'gradlew.bat') -p $broadcast build --console=plain
+    if ($LASTEXITCODE) { throw "Broadcast build failed with exit code $LASTEXITCODE" }
+} finally { $env:JAVA_TOOL_OPTIONS = $previousJavaOptions }
 
 $backup = Join-Path $repo ('.dev-sync-backups\' + [DateTime]::Now.ToString('yyyyMMdd-HHmmss-fff'))
 $stage = Join-Path $backup 'staged'
@@ -78,6 +92,8 @@ foreach ($relative in $paths) {
 $mod = 'mods/botc-display-names-1.0.0.jar'
 $sources[$mod] = Join-Path $stage 'botc-display-names-1.0.0.jar'
 Copy-Item -LiteralPath (Join-Path $repo "extensions/display-names/build/libs/botc-display-names-1.0.0.jar") -Destination $sources[$mod]
+$broadcastJar = Join-Path $broadcast 'build\libs\botc-broadcast-1.0.0.jar'
+if (-not (Test-Path -LiteralPath $broadcastJar)) { throw "Missing broadcast build: $broadcastJar" }
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $archive = 'resources/datapack/required/ct.zip'
 $sources[$archive] = Join-Path $stage 'ct.zip'
@@ -89,7 +105,10 @@ $resourceZip = Join-Path $stage 'BotC-resources-1.6.0.zip'
 $changes = @()
 for ($i = 0; $i -lt $targets.Count; $i++) {
     $files = $sources.Clone()
-    if ($i -eq 0) { $files['client/BotC-resources-1.6.0.zip'] = $resourceZip }
+    if ($i -eq 0) {
+        $files['client/BotC-resources-1.6.0.zip'] = $resourceZip
+        $files['mods/botc-broadcast-1.0.0.jar'] = $broadcastJar
+    }
     foreach ($relative in $files.Keys) {
         $destination = Get-SafePath $targets[$i] $relative
         $exists = Test-Path -LiteralPath $destination -PathType Leaf
