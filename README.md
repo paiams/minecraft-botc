@@ -10,6 +10,10 @@ English and Korean are included. Korean is the first added translation, but the 
 
 Localization covers the pack's characters, abilities, reminders, night instructions, and in-game interfaces. Some third-party settings and text embedded in artwork remain in their original language. See [Localization](LOCALIZATION.md) for coverage and guidance on adding a language.
 
+Player display names also support multiple writing systems through the included
+[BotC Display Names extension](extensions/display-names/README.md). Install the
+extension on both server and clients; account names remain the internal identifiers.
+
 ## Getting Started
 
 ### Import a release pack
@@ -39,7 +43,7 @@ notes and review the Minecraft EULA before starting it.
 
 For local development on Windows, use the
 [local server setup script](scripts/setup_local_server.ps1) from a Git checkout
-with Java 21 installed:
+with JDK 21 installed (including the Java compiler for the display-name extension):
 
 ```powershell
 ./scripts/setup_local_server.ps1

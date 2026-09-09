@@ -36,10 +36,16 @@ python scripts/check_localization.py
 python scripts/check_localization.py --self-test
 python scripts/check_ui_empty_state.py
 python scripts/check_pyre_target.py
+python scripts/check_display_names.py
 git diff --check
 ```
 
 Static checks do not replace in-game testing. For gameplay changes, test setup → night → day → nomination → vote → execution, as well as death and revival, and record anything still unverified. Test translations in English, Korean, any newly added language, and mixed-language sessions.
+
+For display-name changes, also build the extension with
+`./scripts/build_display_names.ps1` and run its isolated
+`python extensions/display-names/smoke_test.py` check. See the
+[extension guide](extensions/display-names/README.md) for dependencies and client checks.
 
 ## AI and Upstream
 
