@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "package": "dev.botc.names.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["PlayerDisplayNameMixin", "EntitySelectorReaderMixin", "MeliusCommandActionMixin"],
+  "client": ["PlayerListEntryMixin", "VoicePlayerStateMixin"],
+  "injectors": {"defaultRequire": 1}
+}
