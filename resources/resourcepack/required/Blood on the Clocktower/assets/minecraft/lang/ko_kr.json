@@ -1249,6 +1249,7 @@
     "clocktower.notice.boomdandy.pointing": "%1$s님이 %2$s님을 가리키고 있습니다.",
     "clocktower.notice.dev_mode.active": "개발자 모드가 현재 활성화되어 있습니다. 배포하기 전에 패키지 함수를 실행하고 다시 불러오세요.",
     "clocktower.notice.dev_mode.enabled_suffix": " 개발자 모드를 활성화했습니다.",
+    "clocktower.notice.dev_mode.disabled_suffix": " 개발자 모드를 비활성화했습니다.",
     "clocktower.notice.fearmonger.target_selected_suffix": "이 새로운 대상을 선택했습니다.",
     "clocktower.notice.leviathan.in_play_suffix": "이 게임에 참여하고 있습니다.",
     "clocktower.notice.only_legion_voted": "군단만 투표했습니다.",

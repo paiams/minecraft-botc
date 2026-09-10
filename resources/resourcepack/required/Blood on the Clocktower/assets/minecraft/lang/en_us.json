@@ -1288,6 +1288,7 @@
     "clocktower.notice.boomdandy.pointing": "%1$s is/are pointing at %2$s",
     "clocktower.notice.dev_mode.active": "Dev Mode is currently active. Make sure to run the package function and reload again before shipping.",
     "clocktower.notice.dev_mode.enabled_suffix": " Enabled Dev Mode.",
+    "clocktower.notice.dev_mode.disabled_suffix": " Disabled Dev Mode.",
     "clocktower.notice.fearmonger.target_selected_suffix": " has selected a target.",
     "clocktower.notice.leviathan.in_play_suffix": " is in play.",
     "clocktower.notice.only_legion_voted": "Only Legion voted.",
