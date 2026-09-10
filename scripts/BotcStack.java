@@ -1,10 +1,8 @@
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.BindException;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.URI;
-import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -14,7 +12,6 @@ import java.nio.file.Path;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /** One-window lifecycle manager for the local BotC server, broadcast demo, and OBS tunnel. */
@@ -96,14 +93,7 @@ public final class BotcStack {
 
     private boolean externalOverlayReady() {
         try {
-            Properties properties = new Properties();
-            Path config = serverDir.resolve("config").resolve("botc-broadcast.properties");
-            try (InputStream input = Files.newInputStream(config)) {
-                properties.load(input);
-            }
-            String token = properties.getProperty("token", "").trim();
             String url = "https://obs.dotmario.com/overlay?component=roles";
-            if (!token.isEmpty()) url += "&token=" + URLEncoder.encode(token, StandardCharsets.UTF_8);
             HttpClient client = HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(2)).build();
             HttpRequest request = HttpRequest.newBuilder(URI.create(url)).timeout(Duration.ofSeconds(3)).GET().build();
             return client.send(request, HttpResponse.BodyHandlers.discarding()).statusCode() == 200;

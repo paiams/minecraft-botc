@@ -45,14 +45,17 @@ uncommitted edits and new non-ignored content files. It rebuilds the datapack ZI
 on both targets and the server's resource ZIP, backs up changed files under
 `.dev-sync-backups/`, verifies copies, and restores applied files if copying fails.
 It also builds the sibling `minecraft-botc-broadcast` checkout and updates its
-server-only JAR when the built file differs, after its build and self-tests pass.
+JAR on both the server and development client when the built file differs, after
+its build and self-tests pass. The client side reports the Storyteller's private
+menu visibility to the OBS bridge.
 Pregame bag, seating and role UI changes are included, along with OBS event hooks
 in the datapack source; no manual server-only hook patch is needed.
 Worlds, credentials, and unrelated personal settings are preserved. Restart both
 runtimes afterward. This updates development content, not upstream dependencies.
 Run `powershell -NoProfile -File scripts/sync_dev.ps1 -CheckOnly` to validate paths
-without building or changing runtime files; use `-ServerDirectory` and
-`-ClientDirectory` to override the destinations.
+without building or changing runtime files. By default the client target prefers
+the installed BotC Launcher instance and falls back to the Modrinth profile; use
+`-ServerDirectory` and `-ClientDirectory` to override the destinations.
 
 For a server matching a release, install the same `.mrpack` using a compatible
 server installer that applies `server-overrides`. Follow the release's server

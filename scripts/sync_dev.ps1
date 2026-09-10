@@ -2,7 +2,7 @@
 [CmdletBinding()]
 param(
     [string]$ServerDirectory,
-    [string]$ClientDirectory = (Join-Path $env:APPDATA 'ModrinthApp\profiles\Blood on the Clocktower'),
+    [string]$ClientDirectory,
     [string]$BroadcastDirectory,
     [switch]$CheckOnly
 )
@@ -10,6 +10,15 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 if (-not $ServerDirectory) { $ServerDirectory = Join-Path $repo 'server' }
+if (-not $ClientDirectory) {
+    $launcherClient = Join-Path $env:APPDATA '.botclauncher\instances\botc-1.21.11'
+    $modrinthClient = Join-Path $env:APPDATA 'ModrinthApp\profiles\Blood on the Clocktower'
+    if (Test-Path -LiteralPath (Join-Path $launcherClient 'mods')) {
+        $ClientDirectory = $launcherClient
+    } else {
+        $ClientDirectory = $modrinthClient
+    }
+}
 if (-not $BroadcastDirectory) { $BroadcastDirectory = Join-Path (Split-Path -Parent $repo) 'minecraft-botc-broadcast' }
 $broadcast = [IO.Path]::GetFullPath($BroadcastDirectory)
 $targets = @([IO.Path]::GetFullPath($ServerDirectory), [IO.Path]::GetFullPath($ClientDirectory))
@@ -68,7 +77,7 @@ Write-Host 'Close Minecraft and type stop in the server console. Waiting for nor
 while (@(Get-RunningGames).Count) { Start-Sleep -Seconds 2 }
 Write-Host 'Building the shared mod...'
 & (Join-Path $PSScriptRoot 'build_display_names.ps1') -FancyMenuJar (Join-Path $targets[0] 'mods\fancymenu_fabric_3.9.10_MC_1.21.11.jar')
-Write-Host 'Building the server broadcast mod...'
+Write-Host 'Building the broadcast mod...'
 $previousJavaOptions = $env:JAVA_TOOL_OPTIONS
 try {
     $env:JAVA_TOOL_OPTIONS = "$previousJavaOptions -Djdk.net.unixdomain.tmpdir=C:/Windows/Temp".Trim()
@@ -94,6 +103,8 @@ $sources[$mod] = Join-Path $stage 'botc-display-names-1.0.0.jar'
 Copy-Item -LiteralPath (Join-Path $repo "extensions/display-names/build/libs/botc-display-names-1.0.0.jar") -Destination $sources[$mod]
 $broadcastJar = Join-Path $broadcast 'build\libs\botc-broadcast-1.0.0.jar'
 if (-not (Test-Path -LiteralPath $broadcastJar)) { throw "Missing broadcast build: $broadcastJar" }
+$broadcastMod = 'mods/botc-broadcast-1.0.0.jar'
+$sources[$broadcastMod] = $broadcastJar
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 Add-Type -AssemblyName System.IO.Compression
 function New-PortableZip([string]$Directory, [string]$Destination) {
@@ -118,7 +129,6 @@ for ($i = 0; $i -lt $targets.Count; $i++) {
     $files = $sources.Clone()
     if ($i -eq 0) {
         $files['client/BotC-resources-1.6.0.zip'] = $resourceZip
-        $files['mods/botc-broadcast-1.0.0.jar'] = $broadcastJar
     }
     foreach ($relative in $files.Keys) {
         $destination = Get-SafePath $targets[$i] $relative

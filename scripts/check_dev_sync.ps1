@@ -68,7 +68,7 @@ try {
         Assert (Test-Path "$testRoot/$target/mods/botc-display-names-1.0.0.jar") 'Shared mod missing'
     }
     Assert (Test-Path "$testRoot/server/mods/botc-broadcast-1.0.0.jar") 'Server broadcast mod missing'
-    Assert (-not (Test-Path "$testRoot/client/mods/botc-broadcast-1.0.0.jar")) 'Server-only mod reached client'
+    Assert (Test-Path "$testRoot/client/mods/botc-broadcast-1.0.0.jar") 'Client broadcast helper missing'
     $backups = @(Get-ChildItem "$testRoot/.dev-sync-backups" -Recurse -Filter menu.txt |
         Where-Object { (Get-Content -LiteralPath $_.FullName) -eq 'previous' })
     Assert ($backups.Count -eq 2) 'Both previous versions must be backed up'
