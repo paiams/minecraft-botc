@@ -72,7 +72,7 @@ Write-Host 'Building the server broadcast mod...'
 $previousJavaOptions = $env:JAVA_TOOL_OPTIONS
 try {
     $env:JAVA_TOOL_OPTIONS = "$previousJavaOptions -Djdk.net.unixdomain.tmpdir=C:/Windows/Temp".Trim()
-    & (Join-Path $broadcast 'gradlew.bat') -p $broadcast build --console=plain
+    & (Join-Path $broadcast 'gradlew.bat') -p $broadcast build --console=plain --no-watch-fs
     if ($LASTEXITCODE) { throw "Broadcast build failed with exit code $LASTEXITCODE" }
 } finally { $env:JAVA_TOOL_OPTIONS = $previousJavaOptions }
 
@@ -95,11 +95,22 @@ Copy-Item -LiteralPath (Join-Path $repo "extensions/display-names/build/libs/bot
 $broadcastJar = Join-Path $broadcast 'build\libs\botc-broadcast-1.0.0.jar'
 if (-not (Test-Path -LiteralPath $broadcastJar)) { throw "Missing broadcast build: $broadcastJar" }
 Add-Type -AssemblyName System.IO.Compression.FileSystem
+Add-Type -AssemblyName System.IO.Compression
+function New-PortableZip([string]$Directory, [string]$Destination) {
+    $rootPath = [IO.Path]::GetFullPath($Directory).TrimEnd('\') + '\'
+    $zip = [IO.Compression.ZipFile]::Open($Destination, [IO.Compression.ZipArchiveMode]::Create)
+    try {
+        foreach ($file in Get-ChildItem -LiteralPath $rootPath -File -Recurse) {
+            $entry = $file.FullName.Substring($rootPath.Length).Replace('\', '/')
+            $null = [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $file.FullName, $entry)
+        }
+    } finally { $zip.Dispose() }
+}
 $archive = 'resources/datapack/required/ct.zip'
 $sources[$archive] = Join-Path $stage 'ct.zip'
-[IO.Compression.ZipFile]::CreateFromDirectory((Join-Path $repo 'resources/datapack/required/ct'), $sources[$archive])
+New-PortableZip (Join-Path $repo 'resources/datapack/required/ct') $sources[$archive]
 $resourceZip = Join-Path $stage 'BotC-resources-1.6.0.zip'
-[IO.Compression.ZipFile]::CreateFromDirectory((Join-Path $repo 'resources/resourcepack/required/Blood on the Clocktower'), $resourceZip)
+New-PortableZip (Join-Path $repo 'resources/resourcepack/required/Blood on the Clocktower') $resourceZip
 
 # Back up every changed file on BOTH targets before replacing any runtime file.
 $changes = @()

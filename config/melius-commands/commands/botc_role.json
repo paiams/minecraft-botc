@@ -1,0 +1,18 @@
+{
+  "id": "botc_role",
+  "arguments": [
+    {
+      "id": "id",
+      "type": "brigadier:integer",
+      "arguments": [
+        {
+          "id": "character",
+          "type": "brigadier:string word",
+          "executes": [
+            "function ct:cmd/grimoire_role {id:${id},character:${character}}"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -398,7 +398,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[0].id"}}"}}.png
@@ -468,7 +468,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[1].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[1].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[1].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[1].id"}}"}}.png
@@ -538,7 +538,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[2].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[2].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[2].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[2].id"}}"}}.png
@@ -608,7 +608,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[3].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[3].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[3].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[3].id"}}"}}.png
@@ -678,7 +678,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[4].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[4].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[4].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[4].id"}}"}}.png
@@ -748,7 +748,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[5].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[5].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[5].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[5].id"}}"}}.png
@@ -818,7 +818,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[6].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[6].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[6].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[6].id"}}"}}.png
@@ -888,7 +888,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[7].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[7].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[7].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[7].id"}}"}}.png
@@ -958,7 +958,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[8].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[8].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[8].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[8].id"}}"}}.png
@@ -1028,7 +1028,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[9].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[9].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[9].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[9].id"}}"}}.png
@@ -1098,7 +1098,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[10].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[10].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[10].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[10].id"}}"}}.png
@@ -1168,7 +1168,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[11].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[11].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[11].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[11].id"}}"}}.png
@@ -1238,7 +1238,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[12].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[12].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[12].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[12].id"}}"}}.png
@@ -1308,7 +1308,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[13].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[13].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[13].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.townsfolk[13].id"}}"}}.png
@@ -1378,7 +1378,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[0].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[0].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[0].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[0].id"}}"}}.png
@@ -1448,7 +1448,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[1].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[1].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[1].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[1].id"}}"}}.png
@@ -1518,7 +1518,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[2].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[2].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[2].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[2].id"}}"}}.png
@@ -1588,7 +1588,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[3].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[3].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[3].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[3].id"}}"}}.png
@@ -1658,7 +1658,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[4].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[4].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[4].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[4].id"}}"}}.png
@@ -1728,7 +1728,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[5].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[5].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[5].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[5].id"}}"}}.png
@@ -1798,7 +1798,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[6].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[6].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[6].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[6].id"}}"}}.png
@@ -1868,7 +1868,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[7].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[7].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[7].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[7].id"}}"}}.png
@@ -1938,7 +1938,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[8].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[8].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[8].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[8].id"}}"}}.png
@@ -2008,7 +2008,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[9].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[9].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[9].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[9].id"}}"}}.png
@@ -2078,7 +2078,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[10].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[10].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[10].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[10].id"}}"}}.png
@@ -2148,7 +2148,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[11].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[11].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[11].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[11].id"}}"}}.png
@@ -2218,7 +2218,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[12].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[12].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[12].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[12].id"}}"}}.png
@@ -2288,7 +2288,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[13].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[13].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[13].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.outsiders[13].id"}}"}}.png
@@ -2358,7 +2358,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[0].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[0].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[0].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[0].id"}}"}}.png
@@ -2428,7 +2428,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[1].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[1].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[1].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[1].id"}}"}}.png
@@ -2498,7 +2498,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[2].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[2].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[2].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[2].id"}}"}}.png
@@ -2568,7 +2568,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[3].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[3].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[3].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[3].id"}}"}}.png
@@ -2638,7 +2638,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[4].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[4].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[4].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[4].id"}}"}}.png
@@ -2708,7 +2708,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[5].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[5].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[5].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[5].id"}}"}}.png
@@ -2778,7 +2778,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[6].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[6].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[6].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[6].id"}}"}}.png
@@ -2848,7 +2848,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[7].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[7].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[7].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[7].id"}}"}}.png
@@ -2918,7 +2918,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[8].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[8].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[8].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[8].id"}}"}}.png
@@ -2988,7 +2988,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[9].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[9].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[9].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[9].id"}}"}}.png
@@ -3058,7 +3058,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[10].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[10].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[10].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[10].id"}}"}}.png
@@ -3128,7 +3128,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[11].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[11].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[11].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[11].id"}}"}}.png
@@ -3198,7 +3198,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[12].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[12].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[12].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.minions[12].id"}}"}}.png
@@ -3268,7 +3268,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[0].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[0].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[0].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[0].id"}}"}}.png
@@ -3338,7 +3338,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[1].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[1].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[1].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[1].id"}}"}}.png
@@ -3408,7 +3408,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[2].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[2].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[2].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[2].id"}}"}}.png
@@ -3478,7 +3478,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[3].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[3].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[3].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[3].id"}}"}}.png
@@ -3548,7 +3548,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[4].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[4].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[4].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[4].id"}}"}}.png
@@ -3618,7 +3618,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[5].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[5].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[5].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[5].id"}}"}}.png
@@ -3688,7 +3688,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[6].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[6].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[6].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[6].id"}}"}}.png
@@ -3758,7 +3758,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[7].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[7].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[7].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[7].id"}}"}}.png
@@ -3828,7 +3828,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[8].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[8].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[8].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[8].id"}}"}}.png
@@ -3898,7 +3898,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[9].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[9].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[9].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[9].id"}}"}}.png
@@ -3968,7 +3968,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[10].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[10].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[10].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[10].id"}}"}}.png
@@ -4038,7 +4038,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[11].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[11].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[11].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[11].id"}}"}}.png
@@ -4108,7 +4108,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836
-  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:set_variable] = p{"placeholder":"getvariable","values":{"name":"editing_player"}}_role:{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[12].id"}}
+  [executable_action_instance:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526][action_type:sendmessage] = /botc_role {"placeholder":"getvariable","values":{"name":"editing_player"}} {"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[12].id"}}
   [executable_action_instance:38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539][action_type:disable_layout] = ct-role_toggler
   [executable_block:74cc34bd-9c2d-462d-9f5a-158a1565ecc8-1752204281836][type:generic] = [executables:947dd1e8-351c-4fc7-87a5-684890179358-1752204821526;38951736-cd1a-4417-ae34-7d08ec329dae-1752205071539;d370ea9d-791a-4c32-bec2-9c4e4c2dfacd-1752629866265;]
   backgroundnormal = [source:location]ct:textures/role/{"placeholder":"switch_case","values":{"value":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[12].id"}}","cases":":none,faded/:faded/none","default":"{"placeholder":"nbt_data_get_server","values":{"source_type":"storage","storage_id":"ct:script","nbt_path":"script.demons[12].id"}}"}}.png

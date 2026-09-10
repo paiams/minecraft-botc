@@ -1,0 +1,12 @@
+{
+  "id": "botc_bag",
+  "arguments": [
+    {
+      "id": "count",
+      "type": "brigadier:integer",
+      "executes": [
+        "function ct:admin/setup/apply {count:${count}}"
+      ]
+    }
+  ]
+}

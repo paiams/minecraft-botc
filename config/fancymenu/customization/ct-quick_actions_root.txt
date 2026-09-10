@@ -1186,10 +1186,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_1,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 1
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_1"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_1"}}/100.png
   underline_label_on_hover = false
@@ -1260,7 +1258,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -1419,10 +1417,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_2,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 2
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_2"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_2"}}/100.png
   underline_label_on_hover = false
@@ -1493,7 +1489,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -1565,10 +1561,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_3,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 3
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_3"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_3"}}/100.png
   underline_label_on_hover = false
@@ -1639,7 +1633,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -1711,10 +1705,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_4,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 4
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_4"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_4"}}/100.png
   underline_label_on_hover = false
@@ -1785,7 +1777,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -1857,10 +1849,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_5,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 5
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_5"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_5"}}/100.png
   underline_label_on_hover = false
@@ -1931,7 +1921,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2003,10 +1993,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_6,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 6
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_6"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_6"}}/100.png
   underline_label_on_hover = false
@@ -2077,7 +2065,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2149,10 +2137,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_7,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 7
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_7"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_7"}}/100.png
   underline_label_on_hover = false
@@ -2223,7 +2209,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2295,10 +2281,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_8,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 8
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_8"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_8"}}/100.png
   underline_label_on_hover = false
@@ -2369,7 +2353,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2441,10 +2425,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_12,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 9
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_12"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_12"}}/100.png
   underline_label_on_hover = false
@@ -2515,7 +2497,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2587,10 +2569,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_11,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 10
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_11"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_11"}}/100.png
   underline_label_on_hover = false
@@ -2661,7 +2641,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2733,10 +2713,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_10,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 11
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_10"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_10"}}/100.png
   underline_label_on_hover = false
@@ -2807,7 +2785,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -2879,10 +2857,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_9,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 12
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_9"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_9"}}/100.png
   underline_label_on_hover = false
@@ -2953,7 +2929,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -3025,10 +3001,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_15,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 13
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_15"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_15"}}/100.png
   underline_label_on_hover = false
@@ -3099,7 +3073,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -3171,10 +3145,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_14,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 14
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_14"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_14"}}/100.png
   underline_label_on_hover = false
@@ -3245,7 +3217,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
@@ -3317,10 +3289,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /tp @s @e[tag=house_13,limit=1,sort=nearest]
-  [executable_action_instance:22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038][action_type:disable_layout] = ct-noms_nominator
-  [executable_action_instance:a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514][action_type:enable_layout] = ct-noms_nominee
-  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;22b2102e-9bed-418b-a429-4cbfa2bdba26-1775862344038;a0d1bfda-b4cd-42b1-ab62-70718df757c4-1775862362514;]
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 15
+  [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_13"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_13"}}/100.png
   underline_label_on_hover = false
@@ -3391,7 +3361,7 @@ element {
   advanced_rotation_degrees = 0.0
   vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.125
+  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true

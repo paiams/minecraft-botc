@@ -16,6 +16,8 @@ tag @a remove voting_banshee
 tag @a[team=!00_spectator] add voting_no
 function ct:util/color_names
 tellraw @a {"translate":"clocktower.notice.nomination","with":[{"selector":"@a[tag=nominator]"},{"selector":"@a[tag=nominee]"}]}
+function ct:loop/vote/required_votes
+tellraw @a {"translate":"clocktower.notice.nomination_required","with":[{"score":{"name":"#required","objective":"vote"},"color":"white","bold":true}]}
 function ct:util/color_prefixes
 
 execute as @e[type=minecraft:item_display,tag=vote_marker] if score @s id <= player_count game_data run data modify entity @s view_range set value 1
@@ -26,6 +28,8 @@ rotate @e[type=minecraft:item_display,limit=1,tag=nominee_arm] facing entity @e[
 tag @e[type=minecraft:item_display,tag=vote_marker,tag=arm_target] remove arm_target
 bossbar set ct:votes visible true
 bossbar set ct:votes players @a
+function ct:loop/vote/update_counter
 
 execute as @e[type=minecraft:item_display,tag=arm] at @s run tp @s ~ ~ ~ ~ 0
 execute as @a run function ct:loop/vote/save_nom with storage ct:nominations
+function #ct:broadcast/nomination_started

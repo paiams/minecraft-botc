@@ -1,0 +1,52 @@
+{
+  "id": "botc_test",
+  "executes": [
+    "function botc_test:menu"
+  ],
+  "literals": [
+    {
+      "id": "setup",
+      "executes": [
+        "function botc_test:confirm"
+      ],
+      "literals": [
+        {
+          "id": "confirm",
+          "executes": [
+            "function botc_test:setup"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day",
+      "executes": [
+        "function botc_test:day"
+      ]
+    },
+    {
+      "id": "stop",
+      "executes": [
+        "function botc_test:stop"
+      ]
+    },
+    {
+      "id": "vote",
+      "arguments": [
+        {
+          "id": "yes",
+          "type": "brigadier:integer",
+          "arguments": [
+            {
+              "id": "seat",
+              "type": "brigadier:integer",
+              "executes": [
+                "function botc_test:vote {yes:${yes},seat:${seat}}"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

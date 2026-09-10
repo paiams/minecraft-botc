@@ -30,6 +30,8 @@ scoreboard players set ghost_votes game_data 0
 scoreboard players set alive_players game_data 0
 scoreboard players set current_day game_data 0
 scoreboard players set phase game_data 0
+data remove storage ct:grimoire roles
+scoreboard players set #prepared game_data 0
 scoreboard players set vote_active game_data 0
 
 scoreboard players set organ_grinder settings 0

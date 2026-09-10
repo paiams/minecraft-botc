@@ -4760,7 +4760,7 @@ element {
 element {
   button_element_executable_block_identifier = bfb89307-73a0-41a1-a53a-e42584dab6d5-1751841379540
   [executable_action_instance:15f37a08-42ea-4b62-8fc6-d9a877173b08-1751852789679][action_type:closegui] = 
-  [executable_action_instance:9d5e0c37-c5e5-40e4-b72e-74c9da03767e-1751847638215][action_type:sendmessage] = /function ct:admin/setup/set_from_menu
+  [executable_action_instance:9d5e0c37-c5e5-40e4-b72e-74c9da03767e-1751847638215][action_type:sendmessage] = /botc_bag {"placeholder":"getvariable","values":{"name":"stored_player_count"}}
   [executable_block:bfb89307-73a0-41a1-a53a-e42584dab6d5-1751841379540][type:generic] = [executables:15f37a08-42ea-4b62-8fc6-d9a877173b08-1751852789679;9d5e0c37-c5e5-40e4-b72e-74c9da03767e-1751847638215;]
   underline_label_on_hover = false
   transparent_background = false

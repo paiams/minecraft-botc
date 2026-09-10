@@ -12,3 +12,4 @@ execute at @s run summon minecraft:lightning_bolt
 tag @s remove being_executed
 tag @s remove marked_for_execution
 execute if entity @s[tag=!dead] run function ct:kill/die
+function #ct:broadcast/execution

@@ -163,6 +163,7 @@
     "clocktower.vote.eyes": "EYES",
     "clocktower.notice.setup.bag_created": "You've made a bag with the characters you selected. Press T and click \"%1$s\" in the top right to hand them out.",
     "clocktower.notice.nomination": "%1$s has nominated %2$s.",
+    "clocktower.notice.nomination_required": "At least %s votes are needed to become the execution candidate.",
     "clocktower.notice.voting.changed": "Changed your vote to %1$s to execute %2$s.",
     "clocktower.notice.voting.current": "You are voting %1$s to execute %2$s.",
     "clocktower.notice.voting.cast": "You voted %1$s to execute %2$s.",

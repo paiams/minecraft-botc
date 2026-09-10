@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 cd /d "%~dp0server"
 rem Avoid Java Unix socket failures caused by an 8.3-form TEMP path on Windows.
 if not exist ".tmp" mkdir ".tmp"

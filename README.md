@@ -45,7 +45,9 @@ uncommitted edits and new non-ignored content files. It rebuilds the datapack ZI
 on both targets and the server's resource ZIP, backs up changed files under
 `.dev-sync-backups/`, verifies copies, and restores applied files if copying fails.
 It also builds the sibling `minecraft-botc-broadcast` checkout and updates its
-server-only JAR when the built file differs.
+server-only JAR when the built file differs, after its build and self-tests pass.
+Pregame bag, seating and role UI changes are included, along with OBS event hooks
+in the datapack source; no manual server-only hook patch is needed.
 Worlds, credentials, and unrelated personal settings are preserved. Restart both
 runtimes afterward. This updates development content, not upstream dependencies.
 Run `powershell -NoProfile -File scripts/sync_dev.ps1 -CheckOnly` to validate paths

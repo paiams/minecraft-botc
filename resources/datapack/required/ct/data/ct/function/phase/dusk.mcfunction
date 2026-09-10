@@ -7,6 +7,7 @@ execute as @e[type=minecraft:item_display,tag=exclamation_red] run data modify e
 gamerule advance_time false
 
 scoreboard players set current_majority vote 0
+tag @a remove marked_for_execution
 scoreboard players set already_incremented vote 0
 
 execute as @a at @s run playsound ct:clocktower.bell voice @s

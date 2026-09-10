@@ -21,4 +21,5 @@ tellraw @a [{"selector":"@s"},{"translate":"clocktower.notice.player_revived","c
 execute as @a at @s run playsound ct:clocktower.revive voice @s ~ ~ ~ 1
 
 execute as @a run function ct:util/update_shrouds
+function ct:admin/variables/score
 function ct:util/sync_variables

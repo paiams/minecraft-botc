@@ -24,9 +24,9 @@ clear @a minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["voti
 clear @a minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["voting_no"]}]
 clear @a minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["voting_ghost"]}]
 
-execute if score already_incremented vote matches 0 if score total vote >= majority math run function ct:loop/vote/set_majority
-execute if score already_incremented vote matches 1 if score total vote > current_majority vote run function ct:loop/vote/increase_majority
+function ct:loop/vote/resolve_result
 
+function #ct:broadcast/vote_finished
 scoreboard players set total vote 0
 scoreboard players set first vote 0
 scoreboard players set current vote 0

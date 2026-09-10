@@ -100,6 +100,7 @@
     "clocktower.vote.eyes": "주세요",
     "clocktower.notice.setup.bag_created": "선택한 캐릭터로 가방을 만들었습니다. T를 누른 다음 오른쪽 위의 \"%1$s\" 버튼을 눌러 역할을 나눠 주세요.",
     "clocktower.notice.nomination": "%1$s 님이 %2$s 님을 지목했습니다.",
+    "clocktower.notice.nomination_required": "처형 예정자가 되려면 최소 %s표가 필요합니다.",
     "clocktower.notice.voting.changed": "%2$s 처형 투표를 %1$s(으)로 변경했습니다.",
     "clocktower.notice.voting.current": "현재 투표: %1$s — 처형 대상 %2$s",
     "clocktower.notice.voting.cast": "투표 완료: %1$s — 처형 대상 %2$s.",

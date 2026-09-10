@@ -1,0 +1,16 @@
+{
+  "id": "botc_seat",
+  "arguments": [
+    {
+      "id": "id",
+      "type": "brigadier:integer",
+      "arguments": [
+        {
+          "id": "target",
+          "type": "brigadier:integer",
+          "executes": ["function ct:cmd/swap_next_seat {id:${id},target:${target}}"]
+        }
+      ]
+    }
+  ]
+}

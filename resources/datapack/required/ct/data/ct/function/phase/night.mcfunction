@@ -11,6 +11,7 @@ execute as @a[tag=!storyteller,tag=!spectator] at @s run playsound ct:clocktower
 execute as @a run playsound ct:clocktower.bell voice @s ~ ~ ~ 1 0.7
 
 scoreboard players set current_majority vote 0
+tag @a remove marked_for_execution
 scoreboard players set already_incremented vote 0
 
 tellraw @a [{"text":"⌚ ","color":"blue"},{"translate":"clocktower.notice.phase.night","color":"gray"}]
