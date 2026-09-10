@@ -20,8 +20,6 @@ public final class BotcStack {
     private final Path broadcast;
     private final Path serverDir;
     private final Path serverScript;
-    private final Path tunnelScript;
-    private final Path demoScript;
     private final Path pidFile;
     private final Path stopFile;
 
@@ -33,15 +31,13 @@ public final class BotcStack {
         this.repo = repo.toAbsolutePath().normalize();
         this.broadcast = this.repo.getParent().resolve("minecraft-botc-broadcast").normalize();
         this.serverDir = this.repo.resolve("server");
-        this.serverScript = this.repo.resolve("start-local-server.cmd");
-        this.tunnelScript = this.repo.resolve("start-obs-tunnel.cmd");
-        this.demoScript = this.broadcast.resolve("start-broadcast.bat");
+        this.serverScript = this.repo.resolve("start.cmd");
         this.pidFile = this.serverDir.resolve(".botc-stack.pid");
         this.stopFile = this.serverDir.resolve(".botc-stack.stop");
     }
 
     private void validate() throws IOException {
-        for (Path path : List.of(serverScript, tunnelScript, demoScript, serverDir.resolve("fabric-server-launch.jar"))) {
+        for (Path path : List.of(serverScript, broadcast.resolve("gradlew.bat"), serverDir.resolve("fabric-server-launch.jar"))) {
             if (!Files.isRegularFile(path)) throw new IOException("Missing required file: " + path);
         }
     }
@@ -187,18 +183,18 @@ public final class BotcStack {
             System.out.println("  External OBS     : obs.dotmario.com");
             System.out.println();
 
-            server = startScript(serverScript, "--managed");
-            demo = startScript(demoScript);
+            server = startScript(serverScript, "server", "--managed");
+            demo = startScript(serverScript, "demo", "--managed");
             waitForCore();
             if (Files.exists(stopFile)) return 0;
 
-            tunnel = startScript(tunnelScript, "--managed");
+            tunnel = startScript(serverScript, "tunnel", "--managed");
             waitForTunnel();
             if (Files.exists(stopFile)) return 0;
 
             System.out.println();
             System.out.println("BotC stack is running.");
-            System.out.println("Double-click start-all-botc.cmd again to stop EVERYTHING.");
+            System.out.println("Double-click start.cmd again to stop EVERYTHING.");
             System.out.println("You can also type q then Enter in this window.");
             startConsoleStopReader();
 
@@ -226,8 +222,8 @@ public final class BotcStack {
         if (args.length > 1 && args[1].equalsIgnoreCase("--check")) {
             stack.validate();
             System.out.println("[OK] Minecraft server: " + stack.serverScript);
-            System.out.println("[OK] OBS tunnel:      " + stack.tunnelScript);
-            System.out.println("[OK] Broadcast demo:  " + stack.demoScript);
+            System.out.println("[OK] OBS tunnel:      " + stack.serverScript + " tunnel");
+            System.out.println("[OK] Broadcast demo:  " + stack.broadcast.resolve("gradlew.bat"));
             System.out.println("[OK] Manager: Java " + Runtime.version().feature() + ", one-window start/stop mode.");
             return;
         }

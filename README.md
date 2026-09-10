@@ -71,9 +71,22 @@ with JDK 21 installed (including the Java compiler for the display-name extensio
 
 It prepares `server/` from the current checkout, binds to `localhost:25565`, and
 enables Carpet for testing. After reviewing and accepting the EULA in
-`server/eula.txt`, run `start-local-server.cmd`. Stop and back up an existing
+`server/eula.txt`, run `start.cmd server`. Stop and back up an existing
 server before rebuilding. This is not a public-server installer and does not
 export a client `.mrpack`.
+
+### Windows start/stop
+
+Double-click `start.cmd` to run the local server, broadcast demo and OBS tunnel
+in one window; double-click it again to request a safe shutdown, or type `q`
+and Enter in the running window. This requires the sibling
+`minecraft-botc-broadcast` checkout and the configured `kbrp` SSH alias.
+
+For individual services, use `start.cmd server`, `start.cmd demo`, or
+`start.cmd tunnel`. Run `start.cmd --check` to validate required files without
+starting services. The demo uses port 8770; the live server bridge uses 8771.
+Release builds are separate: use `../botc-launcher/release.bat` and select game
+content or the launcher.
 
 You will need a world configured for this modpack and compatible client and server
 installations. See [keyboard shortcuts](KEYBINDS.md) for play controls and the
