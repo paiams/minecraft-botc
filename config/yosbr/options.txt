@@ -176,6 +176,7 @@ key_View Script:key.keyboard.h
 key_Nomination:key.keyboard.c
 key_Storyteller Quick Actions:key.keyboard.r
 key_Toggle Night Voice Chat:key.keyboard.enter
+key_iris.keybind.reload:key.keyboard.unknown
 key_key.emotecraft.fastchoose:key.keyboard.b
 key_key.emotecraft.stop:key.keyboard.unknown
 key_key.modmenu.open_menu:key.keyboard.unknown

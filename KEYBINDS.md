@@ -40,11 +40,11 @@ Push-to-talk and voice whisper keys are **unassigned** in this configuration. En
 | N | BetterTab settings |
 | O | Shader pack selection |
 | K | Toggle shaders |
-| R | Reload shaders — see conflict below |
+| Unassigned | Reload shaders (BOTC leaves Iris reload unassigned so it does not collide with Storyteller quick actions.) |
 
-## R Key Conflict
+## R Key Migration
 
-**Quick actions and Iris shader reload are both bound to R.** Pressing R may display a shader reload message or cause a brief stutter. In `Options → Controls → Key Binds`, reassign or unbind only the Iris reload action.
+Older BOTC installs could have both Storyteller quick actions and Iris shader reload bound to **R**. The launcher performs a one-time migration only when it finds that exact pair, unassigning Iris reload while preserving Storyteller quick actions. If either binding was already customized, the launcher preserves the user's choices and never overwrites them later.
 
 With English selected, G/H/C/R/Enter are listed as `View Grimoire`, `View Script`, `Nomination`, `Storyteller Quick Actions`, and `Toggle Night Voice Chat`. The Controls screen localizes these labels in Korean; the saved binding IDs remain English.
 
