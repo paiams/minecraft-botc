@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.BindException;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
@@ -14,31 +16,49 @@ import java.time.Instant;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/** One-window lifecycle manager for the local BotC server, broadcast demo, and OBS tunnel. */
+/** One-window lifecycle manager for the local BotC server, broadcast demo, OBS tunnel, and Playit voice tunnel. */
 public final class BotcStack {
     private final Path repo;
     private final Path broadcast;
     private final Path serverDir;
     private final Path serverScript;
+    private final Path playitCli;
     private final Path pidFile;
     private final Path stopFile;
 
     private Process server;
     private Process demo;
     private Process tunnel;
+    private boolean playitManaged;
 
     private BotcStack(Path repo) {
         this.repo = repo.toAbsolutePath().normalize();
         this.broadcast = this.repo.getParent().resolve("minecraft-botc-broadcast").normalize();
         this.serverDir = this.repo.resolve("server");
         this.serverScript = this.repo.resolve("start.cmd");
+        String programFiles = System.getenv().getOrDefault("ProgramFiles", "C:\\Program Files");
+        this.playitCli = Path.of(programFiles).resolve("playit_gg").resolve("bin").resolve("playit.exe");
         this.pidFile = this.serverDir.resolve(".botc-stack.pid");
         this.stopFile = this.serverDir.resolve(".botc-stack.stop");
     }
 
     private void validate() throws IOException {
-        for (Path path : List.of(serverScript, broadcast.resolve("gradlew.bat"), serverDir.resolve("fabric-server-launch.jar"))) {
+        for (Path path : List.of(serverScript, broadcast.resolve("gradlew.bat"), serverDir.resolve("fabric-server-launch.jar"), playitCli)) {
             if (!Files.isRegularFile(path)) throw new IOException("Missing required file: " + path);
+        }
+    }
+
+    private void runPlayit(String action) throws Exception {
+        Process process = new ProcessBuilder(playitCli.toString(), action)
+            .redirectOutput(ProcessBuilder.Redirect.INHERIT)
+            .redirectError(ProcessBuilder.Redirect.INHERIT)
+            .start();
+        if (!process.waitFor(15, TimeUnit.SECONDS)) {
+            process.destroyForcibly();
+            throw new IOException("Playit " + action + " timed out.");
+        }
+        if (process.exitValue() != 0) {
+            throw new IOException("Playit " + action + " failed with code " + process.exitValue());
         }
     }
 
@@ -100,16 +120,21 @@ public final class BotcStack {
 
     private void startConsoleStopReader() {
         Thread input = new Thread(() -> {
-            try {
-                byte[] buffer = new byte[128];
-                while (true) {
-                    int count = System.in.read(buffer);
-                    if (count < 0) return;
-                    String text = new String(buffer, 0, count, StandardCharsets.UTF_8).trim();
-                    if (text.equalsIgnoreCase("q") || text.equalsIgnoreCase("stop")) {
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    String command = line.trim();
+                    if (command.isEmpty()) continue;
+                    if (command.equalsIgnoreCase("q") || command.equalsIgnoreCase("stop")) {
                         Files.writeString(stopFile, "stop", StandardCharsets.UTF_8);
                         return;
                     }
+                    if (server == null || !server.isAlive()) {
+                        System.err.println("Minecraft server is not running; command was not sent: " + line);
+                        continue;
+                    }
+                    server.getOutputStream().write((line + "\r\n").getBytes(StandardCharsets.UTF_8));
+                    server.getOutputStream().flush();
                 }
             } catch (IOException ignored) {
             }
@@ -163,6 +188,14 @@ public final class BotcStack {
         forceTree(tunnel, "OBS tunnel");
         forceTree(demo, "broadcast demo");
         stopDetachedDemoProcesses();
+        if (playitManaged) {
+            try {
+                System.out.println("Stopping Playit voice tunnel...");
+                runPlayit("stop");
+            } catch (Exception e) {
+                System.err.println("WARNING: Playit shutdown issue: " + e.getMessage());
+            }
+        }
         try { Files.deleteIfExists(pidFile); } catch (IOException ignored) {}
         try { Files.deleteIfExists(stopFile); } catch (IOException ignored) {}
         System.out.println("BotC stack stopped.");
@@ -181,7 +214,12 @@ public final class BotcStack {
             System.out.println("  Minecraft server : 25565 / live broadcast 8771");
             System.out.println("  Broadcast demo   : 8770");
             System.out.println("  External OBS     : obs.dotmario.com");
+            System.out.println("  Voice tunnel     : Playit -> UDP 27722");
             System.out.println();
+
+            System.out.println("Starting Playit voice tunnel...");
+            runPlayit("start");
+            playitManaged = true;
 
             server = startScript(serverScript, "server", "--managed");
             demo = startScript(serverScript, "demo", "--managed");
@@ -224,6 +262,7 @@ public final class BotcStack {
             System.out.println("[OK] Minecraft server: " + stack.serverScript);
             System.out.println("[OK] OBS tunnel:      " + stack.serverScript + " tunnel");
             System.out.println("[OK] Broadcast demo:  " + stack.broadcast.resolve("gradlew.bat"));
+            System.out.println("[OK] Playit voice:    " + stack.playitCli);
             System.out.println("[OK] Manager: Java " + Runtime.version().feature() + ", one-window start/stop mode.");
             return;
         }

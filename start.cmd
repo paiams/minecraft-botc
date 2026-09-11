@@ -13,7 +13,7 @@ exit /b 2
 
 :help
 echo Usage: start.cmd [all^|server^|tunnel^|demo^|--check^|--help]
-echo Default/all: start the stack, or request a stop if already running.
+echo Default/all: start Minecraft, broadcast, OBS tunnel, and Playit voice tunnel; run again to stop all.
 echo Individual services: Ctrl+C stops them. --check only validates files.
 exit /b 0
 

@@ -1,3 +1,4 @@
+$fmvariable set home_faces_ready false false
 $fmvariable set player_1 false $(p1)
 $fmvariable set player_2 false $(p2)
 $fmvariable set player_3 false $(p3)
@@ -13,3 +14,4 @@ $fmvariable set player_12 false $(p12)
 $fmvariable set player_13 false $(p13)
 $fmvariable set player_14 false $(p14)
 $fmvariable set player_15 false $(p15)
+$fmvariable set home_faces_ready false true

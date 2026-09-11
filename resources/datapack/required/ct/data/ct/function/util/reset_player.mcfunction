@@ -73,6 +73,7 @@ fmvariable set p13_role false none
 fmvariable set p14_role false none
 fmvariable set p15_role false none
 
+fmvariable set home_faces_ready false false
 fmvariable set player_1 false Nobody!
 fmvariable set player_2 false Nobody!
 fmvariable set player_3 false Nobody!

@@ -1228,8 +1228,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 97926198-6bbf-482c-9923-49fb05ab94fe-1778642842247
-  [loading_requirement_container_meta:97926198-6bbf-482c-9923-49fb05ab94fe-1778642842247] = [groups:][instances:eee216f7-a6fc-4e43-99a7-1e1b0ad44d33-1778642842247;]
+  [loading_requirement_container_meta:97926198-6bbf-482c-9923-49fb05ab94fe-1778642842247] = [groups:][instances:eee216f7-a6fc-4e43-99a7-1e1b0ad44d33-1778642842247;home-face-ready-1;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:eee216f7-a6fc-4e43-99a7-1e1b0ad44d33-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-1] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -1459,8 +1460,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = b782a44f-e5ff-4373-be28-5b02abe30253-1778642842247
-  [loading_requirement_container_meta:b782a44f-e5ff-4373-be28-5b02abe30253-1778642842247] = [groups:][instances:19206ca4-6cb6-48c4-98dc-a08929a2c99c-1778642842247;]
+  [loading_requirement_container_meta:b782a44f-e5ff-4373-be28-5b02abe30253-1778642842247] = [groups:][instances:19206ca4-6cb6-48c4-98dc-a08929a2c99c-1778642842247;home-face-ready-2;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:19206ca4-6cb6-48c4-98dc-a08929a2c99c-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-2] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -1603,8 +1605,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 2c1c3486-2048-41b2-b993-fe6e8650ba81-1778642842247
-  [loading_requirement_container_meta:2c1c3486-2048-41b2-b993-fe6e8650ba81-1778642842247] = [groups:][instances:227afe9d-82b4-455d-a3c9-6cafd29b22af-1778642842247;]
+  [loading_requirement_container_meta:2c1c3486-2048-41b2-b993-fe6e8650ba81-1778642842247] = [groups:][instances:227afe9d-82b4-455d-a3c9-6cafd29b22af-1778642842247;home-face-ready-3;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:227afe9d-82b4-455d-a3c9-6cafd29b22af-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-3] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -1747,8 +1750,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = ed451bed-f991-45b9-8d9c-b3d3c2f80b5a-1778642842247
-  [loading_requirement_container_meta:ed451bed-f991-45b9-8d9c-b3d3c2f80b5a-1778642842247] = [groups:][instances:66d1eb7d-ade1-4f08-8539-658ad69420c3-1778642842247;]
+  [loading_requirement_container_meta:ed451bed-f991-45b9-8d9c-b3d3c2f80b5a-1778642842247] = [groups:][instances:66d1eb7d-ade1-4f08-8539-658ad69420c3-1778642842247;home-face-ready-4;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:66d1eb7d-ade1-4f08-8539-658ad69420c3-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-4] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -1891,8 +1895,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 17ad3fb1-34c3-4b34-91ac-22a626e32ba3-1778642842247
-  [loading_requirement_container_meta:17ad3fb1-34c3-4b34-91ac-22a626e32ba3-1778642842247] = [groups:][instances:c65aaa84-7aa2-4599-8286-3adbeabeb0d7-1778642842247;]
+  [loading_requirement_container_meta:17ad3fb1-34c3-4b34-91ac-22a626e32ba3-1778642842247] = [groups:][instances:c65aaa84-7aa2-4599-8286-3adbeabeb0d7-1778642842247;home-face-ready-5;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:c65aaa84-7aa2-4599-8286-3adbeabeb0d7-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-5] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2035,8 +2040,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 8804e9b5-8ff0-488b-b182-b95e1dac5543-1778642842247
-  [loading_requirement_container_meta:8804e9b5-8ff0-488b-b182-b95e1dac5543-1778642842247] = [groups:][instances:ea987b4c-faed-4184-ba64-f9fcfcad757a-1778642842247;]
+  [loading_requirement_container_meta:8804e9b5-8ff0-488b-b182-b95e1dac5543-1778642842247] = [groups:][instances:ea987b4c-faed-4184-ba64-f9fcfcad757a-1778642842247;home-face-ready-6;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:ea987b4c-faed-4184-ba64-f9fcfcad757a-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-6] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2179,8 +2185,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 4740b2a5-7cd8-4bf6-ae8a-cd95f3f912a2-1778642842247
-  [loading_requirement_container_meta:4740b2a5-7cd8-4bf6-ae8a-cd95f3f912a2-1778642842247] = [groups:][instances:c72b583e-9969-4c73-a5d1-177b5f4c338e-1778642842247;]
+  [loading_requirement_container_meta:4740b2a5-7cd8-4bf6-ae8a-cd95f3f912a2-1778642842247] = [groups:][instances:c72b583e-9969-4c73-a5d1-177b5f4c338e-1778642842247;home-face-ready-7;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:c72b583e-9969-4c73-a5d1-177b5f4c338e-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-7] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2323,8 +2330,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 1ceac408-fc7a-43b7-a46a-3ef181c1f573-1778642842247
-  [loading_requirement_container_meta:1ceac408-fc7a-43b7-a46a-3ef181c1f573-1778642842247] = [groups:][instances:5773de16-6768-4ed9-8cf5-93fcc113ce34-1778642842247;]
+  [loading_requirement_container_meta:1ceac408-fc7a-43b7-a46a-3ef181c1f573-1778642842247] = [groups:][instances:5773de16-6768-4ed9-8cf5-93fcc113ce34-1778642842247;home-face-ready-8;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:5773de16-6768-4ed9-8cf5-93fcc113ce34-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-8] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2425,7 +2433,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 9
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 12
   [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_12"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_12"}}/100.png
@@ -2467,8 +2475,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 26430153-eb3a-4b2f-b1d6-9b5ec0b1127e-1778642842247
-  [loading_requirement_container_meta:26430153-eb3a-4b2f-b1d6-9b5ec0b1127e-1778642842247] = [groups:][instances:850f3081-b1b1-4afd-a15e-1c811c427c39-1778642842247;]
+  [loading_requirement_container_meta:26430153-eb3a-4b2f-b1d6-9b5ec0b1127e-1778642842247] = [groups:][instances:850f3081-b1b1-4afd-a15e-1c811c427c39-1778642842247;home-face-ready-12;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:850f3081-b1b1-4afd-a15e-1c811c427c39-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-12] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2569,7 +2578,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 10
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 11
   [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_11"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_11"}}/100.png
@@ -2611,8 +2620,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = fbc569d6-22c1-4e76-874f-7c21c9b14f76-1778642842247
-  [loading_requirement_container_meta:fbc569d6-22c1-4e76-874f-7c21c9b14f76-1778642842247] = [groups:][instances:51f48544-ff34-4bf8-8de2-ba7e081e73fb-1778642842247;]
+  [loading_requirement_container_meta:fbc569d6-22c1-4e76-874f-7c21c9b14f76-1778642842247] = [groups:][instances:51f48544-ff34-4bf8-8de2-ba7e081e73fb-1778642842247;home-face-ready-11;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:51f48544-ff34-4bf8-8de2-ba7e081e73fb-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-11] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2713,7 +2723,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 11
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 10
   [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_10"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_10"}}/100.png
@@ -2755,8 +2765,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = d2b567aa-b1cb-460d-a151-36992df7290c-1778642842247
-  [loading_requirement_container_meta:d2b567aa-b1cb-460d-a151-36992df7290c-1778642842247] = [groups:][instances:26e4cd8e-910a-445b-9df8-cc0cf94e149f-1778642842247;]
+  [loading_requirement_container_meta:d2b567aa-b1cb-460d-a151-36992df7290c-1778642842247] = [groups:][instances:26e4cd8e-910a-445b-9df8-cc0cf94e149f-1778642842247;home-face-ready-10;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:26e4cd8e-910a-445b-9df8-cc0cf94e149f-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-10] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -2857,7 +2868,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 12
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 9
   [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_9"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_9"}}/100.png
@@ -2899,8 +2910,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = 10a6637a-18e2-4be9-99b1-3c9708ee4bd8-1778642842247
-  [loading_requirement_container_meta:10a6637a-18e2-4be9-99b1-3c9708ee4bd8-1778642842247] = [groups:][instances:669c8ba8-b3d7-47a9-8fef-61aa7d65cebc-1778642842247;]
+  [loading_requirement_container_meta:10a6637a-18e2-4be9-99b1-3c9708ee4bd8-1778642842247] = [groups:][instances:669c8ba8-b3d7-47a9-8fef-61aa7d65cebc-1778642842247;home-face-ready-9;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:669c8ba8-b3d7-47a9-8fef-61aa7d65cebc-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-9] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -3001,7 +3013,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 13
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 15
   [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_15"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_15"}}/100.png
@@ -3043,8 +3055,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = d6108402-afd4-4543-96a6-436d77655791-1778642842247
-  [loading_requirement_container_meta:d6108402-afd4-4543-96a6-436d77655791-1778642842247] = [groups:][instances:49b90eec-1635-4c73-96bd-be8c83788d48-1778642842247;]
+  [loading_requirement_container_meta:d6108402-afd4-4543-96a6-436d77655791-1778642842247] = [groups:][instances:49b90eec-1635-4c73-96bd-be8c83788d48-1778642842247;home-face-ready-15;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:49b90eec-1635-4c73-96bd-be8c83788d48-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-15] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -3187,8 +3200,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = d35ce7cf-eeda-4ee9-9d50-7312d4f16dd6-1778642842247
-  [loading_requirement_container_meta:d35ce7cf-eeda-4ee9-9d50-7312d4f16dd6-1778642842247] = [groups:][instances:027dab4d-9fb9-4fae-805b-56d93edcf5dc-1778642842247;]
+  [loading_requirement_container_meta:d35ce7cf-eeda-4ee9-9d50-7312d4f16dd6-1778642842247] = [groups:][instances:027dab4d-9fb9-4fae-805b-56d93edcf5dc-1778642842247;home-face-ready-14;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:027dab4d-9fb9-4fae-805b-56d93edcf5dc-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-14] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -3289,7 +3303,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508
-  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 15
+  [executable_action_instance:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412][action_type:sendmessage] = /botc_home 13
   [executable_block:460ad4ac-7366-4e34-bdb7-743fa597ce22-1775844618508][type:generic] = [executables:7b46f23c-5870-4a1c-8ff1-58d9e302d961-1775860736412;]
   backgroundnormal = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_13"}}/100.png
   backgroundhovered = [source:web]https://minotar.net/helm/{"placeholder":"getvariable","values":{"name":"player_13"}}/100.png
@@ -3331,8 +3345,9 @@ element {
   height = 20
   stay_on_screen = true
   element_loading_requirement_container_identifier = e7568aef-d329-4d03-8006-965a79c9fd2e-1778642842247
-  [loading_requirement_container_meta:e7568aef-d329-4d03-8006-965a79c9fd2e-1778642842247] = [groups:][instances:9990ff0b-6685-4f9d-b81d-c059cae46e6e-1778642842247;]
+  [loading_requirement_container_meta:e7568aef-d329-4d03-8006-965a79c9fd2e-1778642842247] = [groups:][instances:9990ff0b-6685-4f9d-b81d-c059cae46e6e-1778642842247;home-face-ready-13;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:9990ff0b-6685-4f9d-b81d-c059cae46e6e-1778642842247] = quickaction:tphouse
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:home-face-ready-13] = home_faces_ready:true
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
